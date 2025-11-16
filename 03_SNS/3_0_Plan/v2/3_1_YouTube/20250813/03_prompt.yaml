@@ -1,0 +1,88 @@
+scenes:
+  - scene: 1
+    description: "リビングの自然光の中、男性がテーブル越しに挑発的に問いかける。映像だけで“常識を疑う導入”が伝わる。"
+    higgsfield_prompt: |
+      A man sits at a wooden table in a bright living room, sunlight streaming through the window.
+      He leans forward slightly, pointing his finger as if challenging a common belief.
+      He looks directly at the camera with a confident expression.
+      His face is natural and unchanged, no artificial alterations.
+      The background shows subtle household elements like a bookshelf and a potted plant, creating a lived-in home atmosphere.
+      Camera: Crash Zoom In on his face as he begins to speak, emphasizing the sense of revelation.
+      Style: Cinematic, professional yet personal.
+    veo3_prompt: |
+      Base: Use the Higgsfield still image of the man at the table in the bright living room.
+      Language: Japanese (ja-JP). Do NOT translate.
+      Dialogue (use exactly, generate voice from this and sync lips to audio):
+      「プロテインのゴールデンタイム。それ、嘘かもしれません。」
+      Voice: natural, calm, confident male; studio-clean; no accent exaggeration.
+      Timing: total ~1.5s; keep a slight 0.2s pause after the first clause.
+      Lip-sync: phoneme-level alignment to generated Japanese audio; prioritize audio as the master track.
+      Motion: preserve cinematic crash-zoom emphasis on the line.
+      Lighting/Framing: match the still image; soft daylight; no facial alterations or added accessories.
+
+  - scene: 2
+    description: "研究机で論文やグラフを指し示し、『タイミングより総量』を科学的に説明する。映像だけで“根拠の提示”が分かる。"
+    higgsfield_prompt: |
+      A man sits at a tidy wooden desk in a study room with bookshelves and a laptop behind him.
+      On the desk are a protein shaker, a plate with chicken breast, and printed scientific papers with visible graphs.
+      He gestures naturally, pointing at the paper while explaining, looking directly at the camera.
+      His face remains unaltered, completely natural.
+      Soft lamp light and window daylight mix, giving a scholarly yet approachable atmosphere.
+      Camera: Dolly In + subtle Arc, starting from desk items and transitioning to his expressive face.
+      Style: Cinematic, documentary-like, professional yet clear.
+    veo3_prompt: |
+      Base: Use the Higgsfield still image at the desk with papers, shaker, and food.
+      Language: Japanese (ja-JP). Do NOT translate.
+      Dialogue (use exactly, keep sentence breaks as pauses):
+      「結論。タイミングより『1日の総摂取量』が重要。 
+        これが科学的な根拠です。 
+        だから、トレーニング後の30分には、もう拘らない。 
+        食事と合わせ、1日の中で均等に摂る。これが新しい常識。 
+        ただし注意点。これは一般トレーニーの話。 
+        まず総量を満たす。それが全ての基本です。」
+      Voice: neutral male Japanese; clear diction; academic but friendly.
+      Timing: ~23.5s window; insert micro-pauses (0.25–0.35s) at line breaks; slight emphasis on 「総摂取量」.
+      Lip-sync: drive visemes from generated Japanese audio; maintain jaw and labial closures on /m, p, b/; avoid English viseme mapping.
+      Motion: maintain dolly-in + gentle arc keyed to line emphasis on “総摂取量”.
+      Ambience: subtle page rustle sfx at first graph point (very low -28 LUFS), otherwise clean.
+
+  - scene: 3
+    description: "キッチンのカウンターで体重計とノートを使い、式を書きながら“今日やるべきアクション＝総量計算”を提示。"
+    higgsfield_prompt: |
+      A man stands casually at a kitchen counter, with a digital scale, a notebook, and a pen in front of him.
+      He writes the formula "Bodyweight × 1.6g – 2.2g" on the notebook while explaining, looking directly at the camera.
+      His face remains exactly the same, natural, no modifications.
+      The kitchen background shows clean, modern appliances with soft daylight from a nearby window.
+      Camera: Over-the-shoulder close-up of the notebook, then Dolly Up to his face.
+      Style: Cinematic, practical, approachable.
+    veo3_prompt: |
+      Base: Use the Higgsfield still image in the kitchen with the notebook and scale.
+      Language: Japanese (ja-JP). Do NOT translate.
+      Dialogue (use exactly):
+      「今日やるべき、たった一つのこと。 
+       それは、ご自身のタンパク質『総量』の計算。 
+       目安は、体重×1.6gから2.2gです。」
+      Voice: measured, motivating; natural male Japanese.
+      Timing: ~7s total; 0.3s pause before最後の「目安は…」で式を書き終える動きに合わせる。
+      Lip-sync: strict alignment; keep tongue/dental closures on /t, d, s/; avoid over-open vowels.
+      Motion: start on notebook over-shoulder; dolly up to face timed with「目安は」。
+      On-screen action (non-textual): hand writes “体重 × 1.6g – 2.2g” legibly; no captions are added.
+
+  - scene: 4
+    description: "ソファでスマホを掲げ、視聴者に“保存して今すぐ計算”を促す。映像だけで“行動喚起”が伝わる。"
+    higgsfield_prompt: |
+      A man holds a smartphone in one hand while sitting comfortably on a sofa in a bright living room.
+      He looks directly at the camera, slightly raising the phone toward the viewer as if encouraging them to act.
+      His face remains completely natural and unchanged.
+      The room is warmly lit with daylight and subtle shadows, creating a relaxed but motivating mood.
+      Camera: Slow Dolly In to his face and phone, ending with a confident, engaging close-up.
+      Style: Cinematic, motivational, professional yet warm.
+    veo3_prompt: |
+      Base: Use the Higgsfield still image of the man on the sofa holding a smartphone.
+      Language: Japanese (ja-JP). Do NOT translate.
+      Dialogue (use exactly):
+      「保存して、今すぐ計算してみてください。」
+      Voice: friendly CTA tone; short and crisp; end with an encouraging upward inflection.
+      Timing: ~3s; 0.15s hold after “保存して” then continue.
+      Lip-sync: lock visemes to Japanese audio; maintain perfect bilabial closure on /m/ in 「みて」.
+      Motion: smooth dolly-in ends on face+phone; no extra gestures added; keep face unaltered.

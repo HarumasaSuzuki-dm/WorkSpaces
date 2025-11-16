@@ -1,0 +1,36 @@
+
+
+{
+    "scene": "animation",
+    "style": "Futuristic Apple-style minimalism, photorealistic, cinematic lighting, seamless transitions",
+    "sequence": [
+      {
+        "shot": "Logo Reveal",
+        "camera": "slow push-in",
+        "description": "Begin with the brand logo floating in the center of a soft, gradient-lit void. The lighting subtly shifts, creating elegant metallic reflections on the logo surface, as if it's crafted from polished liquid metal."
+      },
+      {
+        "transition": "Without any cut, the camera smoothly moves closer. The logo starts to morph—its edges melt into flowing particles, like nanotech dust in zero gravity. These particles drift and reform continuously into the shape of the product, creating a seamless metamorphosis from logo to watch."
+      },
+      {
+        "shot": "Product Formation",
+        "camera": "continuous motion, no cut",
+        "description": "The particles condense and materialize into the luxury watch. The watch gently rotates as it forms, now resting on a sleek, futuristic table made of brushed aluminum with frosted glass inlays. The table surface emits a soft, dynamic underglow that subtly interacts with the product's reflections."
+      },
+      {
+        "environment": "Without breaking the shot, the background subtly transitions. Minimalist architectural forms fade into view—curved white walls, floating light panels, and ambient reflections—creating a clean, futuristic showroom feel. The transition is so smooth it feels like the scene is breathing into existence."
+      },
+      {
+        "motion": "Soft volumetric lighting rays and fine dust particles drift in the air, enhancing depth without distracting from the product. A gentle ripple of light moves across the table, as if it’s responding to the product's arrival."
+      },
+      {
+        "close-up": "The camera glides closer in one continuous move, focusing on the watch’s craftsmanship—macro shots of the crown, polished metal, seamless glass, and reflections, all captured in a single cinematic motion path."
+      },
+      {
+        "ending": "The camera gently pulls back, revealing the product fully formed with the brand logo elegantly appearing beside it, both centered in frame. The environment softly fades to a minimalist white gradient, keeping the focus on the product."
+      }
+    ],
+    "audio": {
+      "soundtrack": "Soft, futuristic ambient music with seamless transitions between soundscapes; delicate digital chimes enhance the continuous flow of the animation."
+    }
+  }

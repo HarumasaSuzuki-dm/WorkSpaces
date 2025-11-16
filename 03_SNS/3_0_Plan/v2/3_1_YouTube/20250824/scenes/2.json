@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "base_style": "hyper-realistic, cinematic food choreography, seamless transitions",
+    "aspect_ratio": "16:9",
+    "negative_prompts": ["no text overlays", "no visible human faces"]
+  },
+  "sequence": [
+    {
+      "shot": "Floating Ingredients",
+      "camera": "slow orbital tracking shot, slight upward tilt",
+      "description": "Chicken breast slices, broccoli florets, whole eggs, and a protein shaker remain suspended mid-air in ultra slow motion, glowing softly in warm kitchen light."
+    },
+    {
+      "transition": "As the camera circles, each raw ingredient begins transforming mid-air: chicken breast sears with golden grill marks, broccoli turns vibrant green as if steamed, eggs crack and hard-boiled halves float apart with yolk exposed, and rice grains materialize in a neat mound."
+    },
+    {
+      "shot": "Cooking in Mid-Air",
+      "camera": "macro zooms on each transformation, then dolly back to wide shot",
+      "description": "The food completes its transformation mid-flight. Chicken breast is now juicy and perfectly grilled, broccoli steaming lightly, boiled eggs gleaming, and a mound of fluffy white rice forms on the cutting board surface. The protein shaker finishes assembling itself with condensation droplets forming on the glass."
+    },
+    {
+      "motion": "Zero-gravity choreography: cooked ingredients orbit gracefully, then descend in sync toward a white porcelain plate appearing on the kitchen table. Steam rises as they settle neatly onto the plate.",
+      "special_effects": "light flares reflecting on glistening chicken, steam trails from broccoli, condensation forming in real time on the shaker"
+    },
+    {
+      "ending": "The final hero shot reveals a complete muscle-meal plate: grilled chicken breast, steamed broccoli, fluffy white rice, and boiled eggs, neatly plated with a chilled protein shake beside it, all resting on a clean wooden kitchen table."
+    }
+  ],
+  "audio": {
+    "music": "Ethereal cinematic strings swelling into a triumphant resolution as the dish completes",
+    "sound_effects": "sizzle of chicken searing, subtle hiss of steam, soft clink as food lands on plate",
+    "mix_level": "balanced mix with sounds synced tightly to each transformation"
+  }
+}

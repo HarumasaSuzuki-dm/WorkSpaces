@@ -1,0 +1,169 @@
+{
+    "theme": "Day9｜朝1分スイッチON（呼吸＋セルフトーク）",
+    "research_fields": [
+        "睡眠医学（睡眠慣性）",
+        "呼吸生理・自律神経",
+        "認知神経科学",
+        "行動変容（実装意図）",
+        "スポーツ心理学（モチベーショナル・セルフトーク）"
+    ],
+    "background_problem": {
+        "summary": "起床直後の“だるさ”は睡眠慣性（Sleep Inertia）による一時的な注意・意思決定・反応速度の低下で、明確な即時対策は限定的。",
+        "key_terms": [
+            "睡眠慣性",
+            "起床困難",
+            "主観的眠気",
+            "PVT反応時間",
+            "前頭前野",
+            "自律神経",
+            "実装意図（if–then）"
+        ]
+    },
+    "mechanism": {
+        "summary": "起床直後は脳・自律神経が“睡眠モード”から完全復帰していない。鼻呼吸は吸気相で辺縁系/海馬の興奮度を変調し注意・想起を一過性に高める。並行して、モチベーショナル・セルフトークや実装意図は“行動開始”の意思決定コストを下げ、ベッドからの第一歩を促す。",
+        "core_process": [
+            "睡眠慣性による認知/警戒低下",
+            "鼻呼吸と脳波・神経活動の同調",
+            "呼吸ペースによる自律神経調整（vmHRV）",
+            "セルフトーク/実装意図で行動起点を明確化"
+        ]
+    },
+    "intervention": {
+        "summary": "起床直後に“生理的ため息（cyclic sigh）×3〜5回＋if–thenセルフトーク”を約1分で実施し、主観的だるさをリセットして行動開始に接続する。",
+        "steps": [
+            "①目を開け仰向けで片手を腹に：姿勢を整える（10秒）",
+            "②生理的ため息×3〜5回：鼻から素早く吸う→もう一度軽く吸い足す→口からゆっくり長く吐く（6–8秒）",
+            "③モチベーショナル・セルフトーク：短く肯定文を声に出す（例「よし、いける」）",
+            "④実装意図（if–then）を宣言：例「アラームが鳴ったら、足を床につけて、水を一口飲む」",
+            "⑤実行：足を床へ→立ち上がる→カーテンを開ける（光へ）"
+        ],
+        "duration": "合計45〜60秒（呼吸30〜40秒＋セルフトーク/宣言10〜20秒）"
+    },
+    "evidence": [
+        {
+            "study_title": "Time to wake up: reactive countermeasures to sleep inertia",
+            "authors_year": "Hilditch, Dorrian, Banks, 2016",
+            "institution": "University of South Australia",
+            "method": "構造化レビュー（系統的レビュー相当）",
+            "sample_size": "レビュー論文（臨床/実験研究の集約）",
+            "population": "主に健常成人・シフトワーカー等",
+            "key_results": "起床後に即効で有効と断言できる対策は限定的。カフェインは事前投与で有望、光・温度は主観的警戒を改善する可能性もあるが更なる検証が必要。",
+            "statistical_strength": "レビュー結論：確立した即時対策のエビデンス不足",
+            "link": "[https://pubmed.ncbi.nlm.nih.gov/27193071/](https://pubmed.ncbi.nlm.nih.gov/27193071/)"
+        },
+        {
+            "study_title": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+            "authors_year": "Balban et al., 2023",
+            "institution": "Stanford University",
+            "method": "ランダム化比較試験（呼吸法vs.マインドフルネス）",
+            "sample_size": "呼吸群n=78（うちcyclic sigh等）、MB群n=22",
+            "population": "健常成人",
+            "key_results": "1日5分×4週間で呼吸法はマインドフルネスよりネガティブ感情の低下が大きく、呼吸数も有意に低下。cyclic sighが最も効果的。",
+            "statistical_strength": "群間差p<0.05（主要指標）",
+            "link": "[https://pubmed.ncbi.nlm.nih.gov/36630953/](https://pubmed.ncbi.nlm.nih.gov/36630953/)"
+        },
+        {
+            "study_title": "Slow-Paced Breathing and HRV: A Systematic Review and Meta-Analysis",
+            "authors_year": "Laborde et al., 2022",
+            "institution": "German Sport University Cologneほか",
+            "method": "メタ分析",
+            "sample_size": "複数試験の統合（多数）",
+            "population": "健常成人・臨床混在",
+            "key_results": "低頻度のペース呼吸はセッション中および直後の迷走神経系指標（vmHRV）を有意に増加。",
+            "statistical_strength": "メタ分析で一貫した有意効果（詳細効果量は試験で異なる）",
+            "link": "[https://pubmed.ncbi.nlm.nih.gov/35721671/](https://pubmed.ncbi.nlm.nih.gov/35721671/)"
+        },
+        {
+            "study_title": "Nasal Respiration Entrains Human Limbic Oscillations and Modulates Cognitive Function",
+            "authors_year": "Zelano et al., 2016",
+            "institution": "Northwestern University",
+            "method": "ヒトiEEG＋行動課題（実験）",
+            "sample_size": "iEEG患者n=7＋行動課題健常者n≈60",
+            "population": "難治てんかん患者/健常成人",
+            "key_results": "鼻呼吸の吸気相で扁桃体・海馬の活動と認知課題（恐怖弁別・記憶想起）が向上。口呼吸では効果減弱。",
+            "statistical_strength": "p<0.05（複数比較補正後の有意クラスター）",
+            "link": "[https://pubmed.ncbi.nlm.nih.gov/27927961/](https://pubmed.ncbi.nlm.nih.gov/27927961/)"
+        },
+        {
+            "study_title": "Talking yourself out of exhaustion: the effects of self-talk on endurance performance",
+            "authors_year": "Blanchfield et al., 2014",
+            "institution": "Bangor Universityほか",
+            "method": "ランダム化対照（事前–事後）",
+            "sample_size": "n=24",
+            "population": "健常成人（サイクリスト）",
+            "key_results": "2週間のモチベーショナル・セルフトーク訓練でTTEが637±210秒→750±295秒に増加（約+18%）。RPE低下。",
+            "statistical_strength": "p<0.05（群×テスト交互作用）",
+            "link": "[https://pubmed.ncbi.nlm.nih.gov/24121242/](https://pubmed.ncbi.nlm.nih.gov/24121242/)"
+        },
+        {
+            "study_title": "Effects of Motivational Self-Talk on Endurance and Cognitive Performance in the Heat",
+            "authors_year": "Wallace et al., 2017",
+            "institution": "McMaster Universityほか",
+            "method": "ランダム化対照試験",
+            "sample_size": "n=~28（研究全体）",
+            "population": "健常成人",
+            "key_results": "高温環境でセルフトークにより持久系指標と認知パフォーマンスが改善。",
+            "statistical_strength": "主要指標でp<0.05",
+            "link": "[https://pubmed.ncbi.nlm.nih.gov/27580154/](https://pubmed.ncbi.nlm.nih.gov/27580154/)"
+        },
+        {
+            "study_title": "Implementation Intentions and Goal Achievement: A Meta-Analysis of Effects and Processes",
+            "authors_year": "Gollwitzer & Sheeran, 2006",
+            "institution": "University of Konstanz / University of Sheffield",
+            "method": "メタ分析（94研究）",
+            "sample_size": "総参加者8,000超（レビュー記述）",
+            "population": "多様な一般成人",
+            "key_results": "実装意図（if–thenプラン）は目標達成・開始行動を中〜大の効果量で促進。",
+            "statistical_strength": "d=0.65（95%CI 0.60–0.70）",
+            "link": "[https://www.sciencedirect.com/science/article/pii/S0065260106380021](https://www.sciencedirect.com/science/article/pii/S0065260106380021)"
+        },
+        {
+            "study_title": "A Meta-Analysis of the Effects of Mental Contrasting With Implementation Intentions (MCII) on Goal Attainment",
+            "authors_year": "Wang et al., 2021",
+            "institution": "Northeast Normal University",
+            "method": "メタ分析（24効果量）",
+            "sample_size": "15,907名（総計）",
+            "population": "一般成人",
+            "key_results": "MCIIは目標達成を小〜中の効果量で促進。",
+            "statistical_strength": "Hedges’ g=0.336",
+            "link": "[https://pmc.ncbi.nlm.nih.gov/articles/PMC8149892/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8149892/)"
+        }
+    ],
+    "effectiveness": {
+        "summary": "呼吸法は“気分・生理的覚醒の調整”に、セルフトーク/実装意図は“行動開始”に有効で、組み合わせることで睡眠慣性下でも“最初の一歩”を切り出しやすくなる可能性が高い（ただし睡眠慣性そのものの即時解消は未確立）。",
+        "quantitative_data": [
+            "セルフトーク訓練：TTE 約+18%、RPE低下（p<0.05）",
+            "実装意図メタ分析：d=0.65（中〜大）",
+            "MCIIメタ分析：g=0.336（小〜中）",
+            "呼吸法RCT：呼吸群がMBよりネガティブ感情↓＆呼吸数↓（p<0.05）",
+            "鼻呼吸吸気相で認知課題パフォーマンス↑（p<0.05）"
+        ]
+    },
+    "comparisons": {
+        "alternative_methods": [
+            "カフェインの事前投与（プロアクティブ）",
+            "強度/波長調整した光照射（主観的警戒の改善可能性）",
+            "メロディックなアラーム音（主観的睡眠慣性の軽減報告）",
+            "軽い運動・冷水洗顔などの刺激"
+        ],
+        "differences": "本介入は“器具不要・ベッドの中で60秒以内”で実施でき、行動開始（ベッド離脱）に直結させやすい一方、睡眠慣性への直接的エビデンスは間接的である。"
+    },
+    "safety_notes": {
+        "precautions": "めまい・息苦しさ・動悸を感じたら中止。過換気にならないよう“ゆっくり長く吐く”を重視。立ちくらみ防止に、座位→立位の順で。",
+        "contraindications": "呼吸器・循環器疾患、妊娠中、パニック症状が出やすい方は無理をせず、医療専門職へ相談。起床後の強い眠気が持続・日中機能障害がある場合は睡眠障害の可能性があり受診を検討。※本情報は医療助言ではありません。"
+    },
+    "limitations": [
+        "睡眠慣性に対する“呼吸＋セルフトーク”の直接RCTは未整備",
+        "主観評価（気分/やる気）の改善が中心で客観課題の即時改善エビデンスは限定的",
+        "個人差・慣れの影響が大きい（訓練効果が必要）"
+    ],
+    "user_needs": {
+        "questions": [
+            "何回・何秒で体感できる？ → まずは“生理的ため息3〜5回（30〜40秒）＋声出し10秒”から。",
+            "声を出せない環境でもOK？ → ささやき/心の中でも可。if–thenは短く具体的に。",
+            "他と組み合わせるなら？ → 立ち上がったら即“光”へ（カーテン/照明）、水一口、簡単ストレッチ。",
+            "逆効果は？ → 過換気や激しい呼吸は避ける。吐く時間を長めに保つ。"
+        ]
+    },
+    "final_summary": "E（事実）：朝のだるさ＝睡眠慣性。確立した即時対策は少ないが、呼吸で状態を整え、セルフトーク/実装意図で“行動スイッチ”を入れると第一歩が軽くなる。A（行動）：起床直後に“生理的ため息×3〜5回→『よし、いける』→『アラームが鳴ったら足を床へ』宣言”。R（効果）：主観的だるさの軽減と行動開始までの時間短縮が期待でき、継続で朝の立ち上がりが安定する（個人差あり）。"
+}

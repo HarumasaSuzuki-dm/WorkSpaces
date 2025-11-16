@@ -1,0 +1,33 @@
+// https://x.com/EHuanglu/status/1947705558137770201
+
+{
+  "description": "An elegant, high-end animated sequence on a seamless soft white background. At the center, a minimalist Apple-branded iPhone box (logo embossed subtly). The box levitates gently, opens with a slow, graceful motion. Products—latest iPhone (edge lighting glowing softly), AirPods Pro (case opening with fluid animation), MagSafe charger (magnetically snapping into place), and a sleek Apple Watch band (unfurling delicately)—float into formation with precision. Silver, space gray, and ceramic white tones dominate, creating a refined, sophisticated mood. No hard cuts—only smooth, continuous movement. Text: 'iPhone – Innovation Refined.'",
+  "style": "cinematic, premium minimalism, Apple aesthetic",
+  "camera": "starts ultra close on embossed Apple logo, gentle dolly out with floating camera motion, subtle parallax for depth",
+  "lighting": "soft, diffused illumination with delicate reflections and shadows, evoking a calm premium feel",
+  "room": "infinite seamless white environment—no walls, no floor—just soft gradients and floating products",
+  "elements": [
+    "Apple-branded iPhone box (subtle emboss, matte finish)",
+    "latest iPhone with subtle edge glow animation",
+    "AirPods Pro case with smooth lid animation",
+    "MagSafe charger snapping into place magnetically",
+    "Apple Watch band unfurling in slow motion",
+    "no extra decor—pure focus on the products"
+  ],
+  "motion": "Box levitates gently, opens in a slow, elegant lift. Products float up, rotate gracefully, align themselves into a symmetrical formation with seamless, natural motion—no sharp cuts.",
+  "ending": "Perfectly balanced Apple product display in a soft white space. 'iPhone – Innovation Refined' text fades in with delicate typography.",
+  "text": "iPhone – Innovation Refined",
+  "keywords": [
+    "16:9",
+    "Apple",
+    "iPhone",
+    "minimalistic",
+    "premium aesthetic",
+    "silver, white, space gray",
+    "fluid assembly",
+    "elegant motion",
+    "soft lighting",
+    "no hard cuts",
+    "calm luxury"
+  ]
+}

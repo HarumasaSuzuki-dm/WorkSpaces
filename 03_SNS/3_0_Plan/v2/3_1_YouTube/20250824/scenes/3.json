@@ -1,0 +1,34 @@
+{
+    "metadata": {
+      "base_style": "cinematic realism, photorealistic detail, shallow depth of field, warm sunlight",
+      "aspect_ratio": "16:9",
+      "negative_prompts": ["no text overlays", "no visible human faces"]
+    },
+    "sequence": [
+      {
+        "shot": "Hero Meal Reveal",
+        "camera": "top-down reveal → slow dolly out",
+        "description": "The camera begins with a top-down view of the completed muscle meal: perfectly grilled chicken breast with golden sear marks, steamed broccoli glowing green with rising steam, fluffy white rice, and halved boiled eggs with vivid yolks. A chilled protein shake glass sits beside the plate, condensation droplets forming on its surface."
+      },
+      {
+        "transition": "As the camera pulls back, the wooden kitchen table environment comes into frame. A single metallic dumbbell rests casually near the plate, grounding the scene in the gym-to-kitchen theme."
+      },
+      {
+        "shot": "User Entry",
+        "camera": "shift from table focus → slight tilt up to mid-frame",
+        "description": "A male user enters from the background, shown only from the back and shoulders down. He pulls a chair inward and sits, his torso silhouette partially lit by warm sunlight pouring through the kitchen window."
+      },
+      {
+        "motion": "Steam continues drifting upward from the hot food. The dumbbell subtly rolls a few centimeters as if freshly placed. The chair scrapes softly across the floor while the user leans forward toward the plate, muscles in his arms and shoulders outlined beneath a fitted T-shirt."
+      },
+      {
+        "ending": "The frame locks into a cinematic composition: the meal in crisp focus at the foreground, the dumbbell beside it as a symbolic anchor, and the user’s upper torso blurred in the background silhouette—face unseen but presence strongly felt."
+      }
+    ],
+    "audio": {
+      "music": "Warm cinematic score with subtle heroic undertone, fading into a calm sustained note",
+      "sound_effects": "chair slide, faint dumbbell roll, subtle cloth movement, soft exhale, steam hiss",
+      "mix_level": "balanced and natural, emphasizing realism without overpowering the visual focus"
+    }
+  }
+  

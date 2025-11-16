@@ -1,0 +1,35 @@
+// https://x.com/EHuanglu/status/1947705558137770201
+{
+    "description": "A cinematic, vibrant shot of a serene, sun-drenched coffee bar. At the center, a sleek Starbucks cup (green logo glowing subtly) rests on a polished wood table. The cup begins to steam, pulses softly, then the entire scene transforms dynamically: coffee beans scatter in slow motion, milk swirls mid-air, ice cubes fall into place, and a cold brew assembles itself in a transparent cup with precision. A fresh bakery item—a croissant—lands gently beside it. Warm tones of wood, green plants, and natural textures fill the background, evoking calm energy. No text.",
+    "style": "cinematic, warm modern minimalism, sensory-rich",
+    "camera": "starts ultra close on cup logo, then smooth dolly out and gentle crane up to reveal the full setup",
+    "lighting": "golden hour sunlight with soft shadows and warm highlights",
+    "environment": "cozy Starbucks interior with wooden textures, green plants, and ambient natural light",
+    "elements": [
+      "Starbucks cup (hot drink, logo subtly glowing)",
+      "cold brew coffee in clear Starbucks cup (ice dropping in slow motion)",
+      "coffee beans scattering and settling dynamically",
+      "milk swirling in mid-air, seamlessly blending into the coffee",
+      "fresh croissant landing softly on a wooden plate",
+      "polished wooden table with visible grain",
+      "small succulent plant for a natural touch",
+      "subtle ambient decor (e.g., bookshelf, green accents)",
+      "refined ceramic saucer and spoon",
+      "sunlight casting moving reflections through window blinds"
+    ],
+    "motion": "Starbucks cup gently pulses with warmth, coffee elements assemble in a mesmerizing flow, cold brew builds with cascading ice, bakery item lands with soft motion",
+    "ending": "a beautifully arranged Starbucks moment on the table, steam rising, ice sparkling, inviting and serene",
+    "text": "none",
+    "keywords": [
+      "16:9",
+      "Starbucks",
+      "coffee ritual",
+      "warm aesthetic",
+      "dynamic assembly",
+      "natural light",
+      "golden hour",
+      "sensory",
+      "no text",
+      "inviting atmosphere"
+    ]
+  }

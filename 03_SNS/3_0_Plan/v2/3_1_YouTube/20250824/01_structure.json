@@ -1,0 +1,83 @@
+{
+    "動画タイトル案": "筋肉はキッチンから始まる！🍳💪",
+    "想定ターゲット": "20〜30代の筋トレ初心者〜中級者、フィジーク志向の社会人男性・女性",
+    "動画のねらいと特徴": "ジムだけでなく食事が体づくりの本質であることを、視覚的に強烈に印象づける。AI生成動画に最適化したシーン構成で、ユーザーの行動喚起（食事改善）につなげる。",
+    "冒頭アイディア": "ダンベルが置かれたテーブルに突然フライパンが飛び込み、衝突した瞬間に鶏胸肉や野菜がスローモーションで宙を舞う。驚きのVFXでフック。",
+    "構成案（時系列・秒数目安込み）": [
+      {
+        "秒数目安": "0-2秒",
+        "内容": {
+          "description": "暗い背景にジムのダンベルが1つだけ置かれている。カメラが低角度から寄っていくと、突然フライパンが画面左から飛び込み、ダンベルにぶつかる。",
+          "style": "photorealistic cinematic",
+          "camera": "low angle, slow push-in, impact moment with dynamic shake",
+          "lighting": "dramatic spotlight on dumbbell, then burst of bright kitchen light",
+          "elements": [
+            "single metallic dumbbell (center)",
+            "black background fades into bright kitchen light",
+            "flying iron frying pan entering from left"
+          ],
+          "motion": "pan collides with dumbbell, sparks of light scatter, scene transitions into kitchen",
+          "ナレーション": "筋肉は…ジムじゃなくて、キッチンで作られる。"
+        }
+      },
+      {
+        "秒数目安": "3-7秒",
+        "内容": {
+          "description": "白を基調としたキッチンテーブル。鶏胸肉、ブロッコリー、卵、プロテインシェイカーが空中にスローモーションで舞いながら集合していく。",
+          "style": "high-detail photorealism",
+          "camera": "slow orbital shot around floating food items, slight tilt upward",
+          "lighting": "soft morning sunlight streaming through kitchen window",
+          "elements": [
+            "raw chicken breast slices glowing slightly",
+            "fresh broccoli florets spinning slowly",
+            "whole eggs cracking mid-air with yolk floating",
+            "protein shaker bottle assembling itself",
+            "cutting board appearing mid-air"
+          ],
+          "motion": "ingredients fly in from off-screen, orbit in gravity-defying slow motion, slowly descending onto cutting board",
+          "ナレーション": "筋トレで必要な材料は、食事の中にある。"
+        }
+      },
+      {
+        "秒数目安": "8-13秒",
+        "内容": {
+          "description": "テーブルの上に『筋肉飯プレート』が完成する。蒸気が立ちのぼり、横にジムグローブが置かれている。ユーザーは後ろ姿で登場し、席につこうとしているシルエット。",
+          "style": "cinematic realism, shallow depth of field",
+          "camera": "overhead top-down reveal, then slight zoom out to include user silhouette",
+          "lighting": "natural warm sunlight, subtle glow highlighting steam",
+          "elements": [
+            "plate of chicken breast, broccoli, rice, boiled eggs",
+            "protein shake glass with condensation",
+            "gym gloves casually placed on table",
+            "steam rising slowly from hot food",
+            "silhouette of user (back view, sitting down, face not visible)"
+          ],
+          "motion": "steam drifting upward, gloves sliding slightly as if just placed, user silhouette moving chair inward",
+          "ナレーション": "ジムは刺激を与えるだけ。体を作る工場は、キッチンだ。"
+        }
+      },
+      {
+        "秒数目安": "14-15秒",
+        "内容": {
+          "description": "完成したプレートをカメラがズームアップ。最後に空中からプロテインパウダーの白い粉がふわっと舞い降り、光を反射して消える。",
+          "style": "hyper-detailed slow motion",
+          "camera": "close-up push-in on food, macro focus on protein shake glass",
+          "lighting": "lens flare glint as powder falls",
+          "elements": [
+            "chicken breast glistening",
+            "condensation droplets on protein glass",
+            "floating protein powder particles sparkling in sunlight"
+          ],
+          "motion": "protein powder falls from above, dispersing like mist, final freeze frame on plate and shake",
+          "ナレーション": "今日の食事が、明日の筋肉をつくる。"
+        }
+      }
+    ],
+    "エンゲージメント促進アイディア": "最後にユーザーが食事を前にする“無言シーン”を残すことで『あなたの食事は筋肉を裏切ってない？』と自然に問いかけを想起させる。コメント誘導として『あなたの筋トレ飯は何？』を概要欄に仕込む。",
+    "ハッシュタグ・タイトル案・カバーメッセージ等": [
+      "ハッシュタグ: #筋トレ飯 #体はキッチンで作られる #筋肉は食事から",
+      "サムネ文字案: 『筋肉はジムじゃなくキッチンで作る！』",
+      "SEOタイトル案: 『【筋トレの真実】体はキッチンで作られる！食事が最強の筋トレ』"
+    ]
+  }
+  

@@ -1,0 +1,33 @@
+// https://x.com/EHuanglu/status/1947705558137770201
+{
+    "scene": "animation",
+    "style": "Futuristic Apple-style minimalism, photorealistic, cinematic lighting, continuous single shot",
+    "product": "Apple Watch Ultra, front view",
+    "sequence": [
+      {
+        "shot": "Logo Reveal",
+        "camera": "start with a centered still frame, then slow push-in",
+        "description": "Begin in complete darkness. A soft pulse of light gradually illuminates the Apple logo from behind, creating a glowing silhouette. The logo slowly rotates 15 degrees, revealing its metallic surface with subtle reflections—brushed titanium texture, matching the Apple Watch Ultra aesthetic."
+      },
+      {
+        "transition": "In the same motion, the logo gently deconstructs into nano-particles. These particles swirl upward in elegant spirals, following a smooth path around the camera lens to create a dynamic parallax effect. The particles merge and seamlessly reform into the Apple Watch Ultra, front view, without any cut."
+      },
+      {
+        "shot": "Product Animation Reveal",
+        "camera": "orbit around the product, maintaining front focus",
+        "description": "The Apple Watch Ultra is now fully formed, floating just above a sleek, futuristic table. As the watch stabilizes in the air, its screen activates with a smooth ripple effect—like water spreading across the display. The interface softly glows, showing minimal yet dynamic UI animations, such as animated fitness rings slowly rotating, or a compass needle subtly moving."
+      },
+      {
+        "motion": "The watch performs an elegant, controlled animation: it gently tilts 5 degrees forward, showcasing its flat sapphire front, then returns to center. The crown and side button emit soft reflections as light moves across the surface. The titanium body subtly breathes with micro-reflections from the environment."
+      },
+      {
+        "environment": "Simultaneously, the environment reveals itself. The background transitions into a vast, minimal Apple-style space—curved white architecture with floating ambient lights, dynamic soft glows, and subtle lens flares. A futuristic table with brushed titanium and frosted glass supports the floating watch, emitting a soft underglow."
+      },
+      {
+        "ending": "The camera slowly pulls back in one continuous motion, keeping the Apple Watch Ultra perfectly centered. The particles that formed the watch now subtly orbit around it like micro-ambient effects. The Apple logo gently reappears beside the watch in the same frame. The background fades to a clean gradient, leaving the product and logo as the final hero shot."
+      }
+    ],
+    "audio": {
+      "soundtrack": "Elegant, futuristic ambient music with evolving textures. Begin with soft digital pulses for the logo reveal, transition to gentle spatial soundscapes during the watch animations, ending with a subtle chime that echoes into silence."
+    }
+  }

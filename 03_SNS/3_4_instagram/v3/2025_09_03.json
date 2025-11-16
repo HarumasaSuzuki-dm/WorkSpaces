@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "block_name": "day2_full_0to45",
+    "language": "ja",
+    "tone": "やさしめ・明るい・親近感",
+    "objective": "毎日の散歩と週3-5回の筋トレを無理なく続けていることを、より口語的で親しみやすい語り口で伝える。細切れな表現を避け、一連の流れを作る。",
+    "notes": "話者が読むのは talk_script のみ。scenes は撮影・編集用。『感染しない』の文言は使用しない。Day1の体裁・挨拶に準拠。親近感を重視しつつ、軽薄にならないようにバランスをとる。"
+  },
+  "rendering_guidelines": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitle_max_lines": 2,
+    "subtitle_chars_per_line": "8-13",
+    "bgm_bpm": "80-100",
+    "bgm_duck_db": -6,
+    "speech_rate_chars_per_sec": "6-7",
+    "cut_tempo_sec": "2-4"
+  },
+  "opening_greeting_template": {
+    "text": "僕はSLEを持っているトレーニーです。",
+    "duration_sec": [0.0, 2.0],
+    "telemetry": {
+      "bgm_duck_range_sec": [0.0, 2.2],
+      "sfx": [{ "type": "snare_or_click", "at_sec": 0.0, "gain_db": -8 }]
+    },
+    "visual": "朝の窓辺→靴ひもを結ぶ手元CU→半身スマイル",
+    "subtitle": ["僕はSLEを持っているトレーニーです。", "Day 2"]
+  },
+  "persistent_overlays": [
+    {
+      "text": "症状は人それぞれ／ぼくは軽度です",
+      "position": "bottom_left",
+      "visible_range_sec": [3.0, 18.0]
+    }
+  ],
+  "talk_script": [
+    {
+      "id": "L0",
+      "time_sec": [0.0, 2.0],
+      "text": "僕はSLEを持っているトレーニーです。",
+      "mandatory": true,
+      "reading_notes": "明るくハキハキ。言い切りで短く。"
+    },
+    {
+      "id": "L1",
+      "time_sec": [3.0, 10.0],
+      "text": "先日の大会では予選敗退…来年はもっといい成績が残せるように奮闘中！っと頑張ってみようと思う反面、体が思うように動かないことも…だから自分ができる範囲で少しずつ頑張ってます！",
+      "mandatory": true,
+      "reading_notes": "少し内面を話す感じで。でも表情は前向きに。『本気でやってるからこそ』を少しだけ噛み締めるように。"
+    },
+    {
+      "id": "L2",
+      "time_sec": [10.0, 18.0],
+      "text": "日によっては朝、指がこわばったり、見た目じゃ分からない倦怠感があったり。だから無理は禁物。毎日の散歩と、週3から5回の筋トレを、自分の体と相談しながら続けています。",
+      "mandatory": true,
+      "reading_notes": "症状は淡々と。でも『続けています』は少し意志を込めて。"
+    },
+    {
+      "id": "L3",
+      "time_sec": [19.0, 25.0],
+      "text": "今日のメニューは散歩。15分でも30分でも、呼吸が気持ちいいなって思えるペースが、僕のちょうどいいんです。",
+      "mandatory": true,
+      "reading_notes": "『今日のメニューは』と少し楽しげに。『僕のちょうどいいんです』で頷きながら。"
+    },
+    {
+      "id": "L4",
+      "time_sec": [28.0, 34.0],
+      "text": "はい、完了。今日は20分歩けました。この“できた”っていう小さな達成感が、本当に大事で。",
+      "mandatory": true,
+      "reading_notes": "『完了』で少し笑顔。達成感を噛み締めるように、少しゆっくりと。"
+    },
+    {
+      "id": "L5",
+      "time_sec": [36.0, 45.0],
+      "text": "皆さんが今日、大切にしたい“一歩”は何ですか？ 僕は明日、通院帰りに小さなご褒美を探しに行こうかな。",
+      "mandatory": true,
+      "reading_notes": "視聴者に語りかけるように、優しい表情で。最後は少し未来への期待感を込めて。"
+    }
+  ],
+  "teleprompter": {
+    "mode": "line_by_line",
+    "font_size": "L",
+    "script": [
+      "＜L0＞ 僕はSLEを持っているトレーニーです。",
+      "＜L1＞ 先日の大会では予選敗退…来年はもっといい成績が残せるように奮闘中！っと頑張ってみようと思う反面、体が思うように動かないことも…だから自分ができる範囲で少しずつ頑張ってます！",
+      "＜L2＞ 日によっては朝、指がこわばったり、見た目じゃ分からない倦怠感があったり。だから無理は禁物。毎日の散歩と、週3から5回の筋トレを、自分の体と相談しながら続けています。",
+      "＜L3＞ 今日のメニューは散歩。15分でも30分でも、呼吸が気持ちいいなって思えるペースが、僕のちょうどいいんです。",
+      "＜L4＞ はい、完了。今日は20分歩けました。この“できた”っていう小さな達成感が、本当に大事で。",
+      "＜L5＞ 皆さんが今日、大切にしたい“一歩”は何ですか？ 僕は明日、通院帰りに小さなご褒美を探しに行こうかな。"
+    ],
+    "reading_tips": [
+      "全体的に、少し視聴者に話しかけるような親密さを意識。",
+      "各セリフの間に自然な“間”を入れて、焦らずに。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "label": "固定挨拶",
+      "time_sec": [0.0, 2.0],
+      "script_ref": "L0",
+      "subtitles": ["僕はSLEを持っているトレーニーです。", "Day 2"],
+      "visual": "朝の窓辺→手元CUで靴ひも→半身スマイル",
+      "sfx": [{ "type": "snare_or_click", "at_sec": 0.0, "gain_db": -8 }],
+      "bgm_duck_range_sec": [0.0, 2.2],
+      "notes": ["言い切りで短く。BGMは一瞬だけ下げる。"]
+    },
+    {
+      "id": "S02",
+      "label": "ビート転換",
+      "time_sec": [2.0, 3.0],
+      "script_ref": null,
+      "subtitles": [],
+      "visual": "玄関ドアノブ→外の光を入れてカットイン",
+      "motion": [{ "type": "whip_pan", "at_sec": 2.6, "duration_sec": 0.2 }]
+    },
+    {
+      "id": "S03",
+      "label": "悔しさ→本気の証拠",
+      "time_sec": [3.0, 10.0],
+      "script_ref": "L1",
+      "subtitles": ["去年の予選敗退は正直こわい", "でも、それって本気の証拠"],
+      "visual": "手元で大会リザルトを軽く見て閉じる→半身で深呼吸して、前を向く",
+      "bgm_duck_range_sec": [3.0, 10.2]
+    },
+    {
+      "id": "S04",
+      "label": "ぼくの日常とトレーニング",
+      "time_sec": [10.0, 18.0],
+      "script_ref": "L2",
+      "subtitles": ["指がこわばる日、倦怠感がある日", "だから体と相談して、散歩と筋トレ"],
+      "visual": "指をゆっくり握って伸ばす手元CU→自宅で軽いダンベルを持ってアームカール→ストレッチポールで体をほぐす",
+      "icons": [
+        { "name": "joint", "anim": "pop", "at_sec": 10.5 },
+        { "name": "dumbbell", "anim": "pop", "at_sec": 15.0 }
+      ]
+    },
+    {
+      "id": "S05",
+      "label": "今日の一歩（計画）",
+      "time_sec": [19.0, 25.0],
+      "script_ref": "L3",
+      "subtitles": ["今日のメニューは散歩", "気持ちいいペースが一番"],
+      "visual": "昼の公園：歩き始め→歩幅そろえる→リズムを刻む足元",
+      "icons": [{ "name": "footsteps", "anim": "slide_right", "at_sec": 19.5 }]
+    },
+    {
+      "id": "S06",
+      "label": "今日の一歩（実行）",
+      "time_sec": [25.0, 28.0],
+      "script_ref": null,
+      "subtitles": [],
+      "visual": "ベンチで軽ストレッチ→歩数計をチラ見→並木道で深呼吸",
+      "motion": [{ "type": "speed_ramp_gentle", "at_sec": 26.0, "duration_sec": 0.6 }]
+    },
+    {
+      "id": "S07",
+      "label": "小さな達成",
+      "time_sec": [28.0, 34.0],
+      "script_ref": "L4",
+      "subtitles": ["できた。今日は20分", "この達成感が、大事"],
+      "visual": "歩数計アップ（20:00を表示）→親指グッ→青空にパン",
+      "icons": [{ "name": "thumbs_up", "anim": "pop", "at_sec": 28.5 }]
+    },
+    {
+      "id": "S08",
+      "label": "CTA＋予告",
+      "time_sec": [36.0, 45.0],
+      "script_ref": "L5",
+      "subtitles": ["あなたの大切にしたい“一歩”は？", "明日は“小さなご褒美”探し"],
+      "visual": "青空Bロールに白テロップ／微風で雲が流れる",
+      "sfx": [{ "type": "whoosh_soft", "at_sec": 36.0, "gain_db": -12 }]
+    }
+  ],
+  "transition_to_next_block": {
+    "next_block_id": "day3_small_reward",
+    "cue_at_sec": 45.0,
+    "message": "明日は『通院帰りの小さなご褒美』に接続"
+  },
+  "compliance": {
+    "no_medical_advice": true,
+    "avoid_terms": ["重い", "ツラすぎ", "無理"],
+    "preferred_terms": ["波", "調整", "一歩", "できる時間帯", "体と相談"],
+    "privacy": ["通院先名・処方情報は映さない", "顔の全写りは避ける（半身〜目元中心）"]
+  }
+}

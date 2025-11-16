@@ -1,0 +1,29 @@
+{
+    "metadata": {
+      "base_style": "cinematic, photoreal with surreal Apple-like minimalism",
+      "aspect_ratio": "16:9",
+      "negative_prompts": ["no face shown", "no text overlays"]
+    },
+    "sequence": [
+      {
+        "shot": "Logo/Trigger Reveal",
+        "camera": "slow push-in centered on chest and bar, head excluded",
+        "description": "暗いインダストリアルジムの中。胸にバーベルが触れた瞬間、プレートから赤い火花と光の衝撃波が走り、金属と汗のディテールを浮かび上がらせる。"
+      },
+      {
+        "transition": "火花は渦を巻きながら上昇。カメラはバーの軌道を追従し、光のパターンが環境を一時的に照らし出す。"
+      },
+      {
+        "shot": "Motion Expansion",
+        "camera": "45°上方視点へゆっくり切り替え",
+        "description": "バーの上昇に合わせて赤いエネルギーが螺旋を描き、胸と腕の動きに同期して渦巻く。頭部は常に画面外。"
+      },
+      {
+        "ending": "ロックアウトの瞬間、光は一点に収束し、バーの周囲に赤い光輪が浮かぶ。暗い背景に胸とバーが対角で強調され、静寂のヒーローショットとなる。"
+      }
+    ],
+    "audio": {
+      "soundtrack": "低音の電子アンビエント。火花の瞬間に鋭いサウンドアクセント、ロックアウトで静に落ちる。"
+    }
+  }
+  

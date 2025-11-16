@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>業務委託契約書 - BMCパーソナルジム & 鈴木晴勝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 日本語フォントが美しく表示されるように設定 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f3f4f6; /* 背景色を少しグレーに */
+        }
+        /* 印刷時専用のスタイル */
+        @media print {
+            /* ページのデフォルトマージンをここで管理 */
+            @page {
+                margin: 2cm;
+            }
+            body {
+                background-color: #fff;
+                font-size: 9pt;
+                margin: 0; /* bodyのマージンもリセット */
+            }
+            .no-print { 
+                display: none; 
+            }
+
+            /* --- 印刷レイアウトの再定義 --- */
+            /* コンテナのパディングは不要に */
+            #contract {
+                padding: 0; /* @pageで余白を管理するためリセット */
+                box-shadow: none !important;
+                border: none !important;
+            }
+            
+            /* 個別のTailwindクラスを上書きするのではなく、要素を直接指定してスタイルを調整 */
+            #contract h1 { font-size: 16pt; margin-bottom: 24px; }
+            #contract h2 { font-size: 10pt; margin-bottom: 6px; padding-bottom: 3px; }
+            #contract p { line-height: 1.45; }
+            #contract .space-y-6 > * + * { margin-top: 16px; }
+            #contract .space-y-3 > * + * { margin-top: 8px; }
+            #contract .space-y-1 > * + * { margin-top: 4px; }
+            #contract p + p { margin-top: 6px; }
+            #contract .signature-section { margin-top: 32px; page-break-inside: avoid; }
+            #contract .signature-section p { margin-bottom: 12px; }
+            #contract .grid { margin-top: 24px; }
+        }
+        .seal-space {
+            display: inline-block;
+            width: 80px; /* 印鑑スペースの幅 */
+            text-align: right;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contract" class="contract-container max-w-4xl mx-auto my-8 p-12 bg-white rounded-lg shadow-2xl border border-gray-200">
+
+        <h1 class="text-3xl font-bold text-center mb-10">業務委託契約書</h1>
+
+        <p class="mb-8 leading-relaxed">
+            BMCパーソナルジム（以下「甲」という。）と鈴木晴勝（以下「乙」という。）は、以下のとおり業務委託契約（以下「本契約」という。）を締結する。
+        </p>
+
+        <div class="space-y-6 text-base leading-relaxed">
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第1条（目的）</h2>
+                <p>
+                    甲は乙に対し、甲の事業におけるBMCパーソナルジムに関するコンサルティング業務（以下「本業務」という。）を委託し、乙はこれを受託する。
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第2条（業務内容）</h2>
+                <p class="mb-2">1. 乙が甲のために実施する本業務の具体的な内容は、以下のとおりとする。</p>
+                <ol class="list-decimal list-inside ml-6 space-y-1">
+                    <li>甲の運営するウェブサイトにおける売上向上を目的とした戦略立案</li>
+                    <li>ウェブ広告の運用代行および改善提案</li>
+                    <li>月次パフォーマンスに関するレポート作成および報告</li>
+                    <li>その他、甲乙協議の上で別途合意した事項</li>
+                </ol>
+                <p class="mt-2">2. 乙は、本業務の進捗状況について、毎月第5営業日までに甲所定の形式で報告するものとする。</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第3条（報酬）</h2>
+                <p>1. 本業務に関する報酬の具体的な金額、算定方法、および支払条件については、甲乙が誠実に協議の上、別途書面（電子メール等の電磁的記録を含む）にて合意するものとする。</p>
+                <p class="mt-2">2. 甲および乙は、毎月月初5営業日以内に、前月の業務内容および成果を基に、当月以降の報酬について協議を行う。</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第4条（秘密保持）</h2>
+                <p>1. 甲および乙は、本契約の履行に関連して知り得た相手方の技術上、営業上、その他一切の情報（売上、コンバージョン、顧客データ、問い合わせ内容等を含むがこれらに限定されない。以下「秘密情報」という。）を、相手方の事前の書面による承諾なく、第三者に開示または漏洩してはならない。</p>
+                <p class="mt-2">2. 前項の規定にかかわらず、法令に基づき開示が義務付けられた場合は、必要な範囲で開示することができる。ただし、その場合、速やかに相手方にその旨を通知するものとする。</p>
+                <p class="mt-2">3. 本条の規定は、本契約終了後3年間、有効に存続するものとする。</p>
+            </div>
+            
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第5条（知的財産権）</h2>
+                <p>乙が本業務の過程で作成し、甲に納品した報告書、資料等の成果物に関する知的財産権（著作権法第27条および第28条の権利を含む）は、本業務に関する報酬が完済された時点で、乙から甲に移転するものとする。</p>
+            </div>
+            
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第6条（契約期間）</h2>
+                <p>1. 本契約の有効期間は、2025年10月8日から2026年4月7日までの6ヶ月間とする。</p>
+                <p class="mt-2">2. 期間満了の1ヶ月前までに甲乙いずれからも書面による申し出がない場合、本契約は同一条件でさらに6ヶ月間自動的に更新されるものとし、以後も同様とする。</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第7条（契約解除）</h2>
+                <p>甲または乙は、相手方に本契約の重大な違反があり、相当の期間を定めて是正を催告したにもかかわらず、これが是正されないときは、本契約を解除することができる。</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第8条（損害賠償）</h2>
+                <p>甲または乙は、自己の責に帰すべき事由により相手方に損害を与えた場合、その損害を賠償する責任を負うものとする。</p>
+            </div>
+
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第9条（合意管轄）</h2>
+                <p>本契約に関する紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とする。</p>
+            </div>
+            
+            <div>
+                <h2 class="text-lg font-bold border-b-2 border-gray-200 pb-2 mb-3">第10条（協議）</h2>
+                <p>本契約に定めのない事項、または本契約の解釈に疑義が生じた事項については、甲乙誠意をもって協議の上、円満に解決を図るものとする。</p>
+            </div>
+        </div>
+
+        <div class="signature-section mt-12">
+            <p class="mb-6">本契約の成立を証するため、本書2通を作成し、甲乙記名押印の上、各1通を保有する。</p>
+            <p class="text-right">契約締結日： 2025年10月8日</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+                <div class="space-y-3">
+                    <p class="font-bold">甲：</p>
+                    <p>住所：</p>
+                    <p>法人名/屋号： BMCパーソナルジム</p>
+                    <p class="mt-4">代表者/氏名：<span class="seal-space">印</span></p>
+                </div>
+                <div class="space-y-3">
+                    <p class="font-bold">乙：</p>
+                    <p>住所：</p>
+                    <p>氏名： 鈴木晴勝<span class="seal-space">印</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

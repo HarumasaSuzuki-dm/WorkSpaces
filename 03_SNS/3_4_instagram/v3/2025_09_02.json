@@ -1,0 +1,220 @@
+{
+    "meta": {
+      "block_name": "day1_full_0to45",
+      "language": "ja",
+      "tone": "やさしめ・明るい",
+      "objective": "固定挨拶→軽度SLEと自己免疫疾患についての説明→自身の具体的な症状→体調の波と散歩習慣→30分の散歩→小さな達成→CTAを45秒以内で伝える",
+      "notes": "話者が読むのは talk_script のみ。scenes は撮影・編集用。『感染しない』の文言は使用しない。"
+    },
+    "rendering_guidelines": {
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "subtitle_max_lines": 2,
+      "subtitle_chars_per_line": "7-12",
+      "bgm_bpm": "80-100",
+      "bgm_duck_db": -6,
+      "speech_rate_chars_per_sec": "6-7",
+      "cut_tempo_sec": "2-4"
+    },
+    "opening_greeting_template": {
+      "text": "僕はSLEを持っているトレーニーです。",
+      "duration_sec": [0.0, 2.0],
+      "telemetry": {
+        "bgm_duck_range_sec": [0.0, 2.2],
+        "sfx": [{ "type": "snare_or_click", "at_sec": 0.0, "gain_db": -8 }]
+      },
+      "visual": "朝の窓辺→靴ひもを結ぶ手元CU→半身スマイル",
+      "subtitle": ["僕はSLEを持っているトレーニーです。", "Day 1"]
+    },
+    "persistent_overlays": [
+      {
+        "text": "症状は人それぞれ／ぼくは軽度",
+        "position": "bottom_left",
+        "visible_range_sec": [3.0, 13.0]
+      }
+    ],
+    "talk_script": [
+      {
+        "id": "L0",
+        "time_sec": [0.0, 2.0],
+        "text": "僕はSLEを持っているトレーニーです。",
+        "mandatory": true,
+        "reading_notes": "明るくハキハキ。言い切りで短く。"
+      },
+      {
+        "id": "L1",
+        "time_sec": [3.0, 8.0],
+        "text": "軽度のSLEという自己免疫の病気です。自分の体を自分で攻撃しちゃう病気で、一見大丈夫そうでも結構本人はしんどい症状があるんだよね。",
+        "mandatory": true,
+        "reading_notes": "落ち着いた笑顔で。『軽度』をやや強調し、病気の説明は分かりやすく。"
+      },
+      {
+        "id": "L3",
+        "time_sec": [8.0, 13.0],
+        "text": "人によって症状は様々ですが、僕の場合は朝の指のこわばりや、見た目じゃ分かりにくい倦怠感が主です。また熱が出たり、食欲が落ちたり、関節が痛むこともあります。",
+        "mandatory": true,
+        "reading_notes": "一文で滑らかに。自分の症状を淡々と、でも実感を込めて。"
+      },
+      {
+        "id": "L4",
+        "time_sec": [13.0, 15.0],
+        "text": "夜はしんどい日が多いので、明るい時間に一歩。",
+        "mandatory": true,
+        "reading_notes": "『明るい時間に一歩』で微笑み・軽く頷く。"
+      },
+      {
+        "id": "L5",
+        "time_sec": [16.0, 21.0],
+        "text": "毎日30分を目安に散歩しています。無理しないで、動ける時に動くようにしています。",
+        "mandatory": true,
+        "reading_notes": "『30分』を伝えつつ、無理しない姿勢を強調。テンポよく。"
+      },
+      {
+        "id": "L6",
+        "time_sec": [28.0, 32.0],
+        "text": "できた。今日はこれで十分。気分がちょっと明るくなった。",
+        "mandatory": true,
+        "reading_notes": "『できた』で小さくガッツポーズ。言い切り。"
+      },
+      {
+        "id": "L7",
+        "time_sec": [36.0, 45.0],
+        "text": "あなたの“明るい一歩”は？ 明日は、続けるコツを話します。",
+        "mandatory": true,
+        "reading_notes": "質問はフレンドリーに。『続けるコツ』で少し前向きな表情。"
+      }
+    ],
+    "teleprompter": {
+      "mode": "line_by_line",
+      "font_size": "L",
+      "script": [
+        "＜L0＞ 僕はSLEを持っているトレーニーです。",
+        "＜L1＞ 軽度のSLEという自己免疫の病気です。自分の体を自分で攻撃しちゃう病気で、一見大丈夫そうでも結構本人はしんどい症状があるんだよね。",
+        "＜L3＞ 人によって症状は様々ですが、僕の場合は朝の指のこわばりや、見た目じゃ分かりにくい倦怠感が主です。また熱が出たり、食欲が落ちたり、関節が痛むこともあります。",
+        "＜L4＞ 夜はしんどい日が多いので、明るい時間に一歩。",
+        "＜L5＞ 毎日30分を目安に散歩しています。無理しないで、動ける時に動くようにしています。",
+        "＜L6＞ できた。今日はこれで十分。気分がちょっと明るくなった。",
+        "＜L7＞ あなたの“明るい一歩”は？ 明日は、続けるコツを話します。"
+      ],
+      "reading_tips": [
+        "否定語は柔らかく。できる行動を前面に。",
+        "各行の頭に一拍の“間”を置くと聞きやすい。"
+      ]
+    },
+    "scenes": [
+      {
+        "id": "S01",
+        "label": "固定挨拶",
+        "time_sec": [0.0, 2.0],
+        "script_ref": "L0",
+        "subtitles": ["僕はSLEを持っているトレーニーです。", "Day 1"],
+        "visual": "朝の窓辺→手元CUで靴ひも→半身スマイル",
+        "sfx": [{ "type": "snare_or_click", "at_sec": 0.0, "gain_db": -8 }],
+        "bgm_duck_range_sec": [0.0, 2.2],
+        "notes": ["言い切りで短く。BGMは一瞬だけ下げる。"]
+      },
+      {
+        "id": "S02",
+        "label": "ビート転換",
+        "time_sec": [2.0, 3.0],
+        "script_ref": null,
+        "subtitles": [],
+        "visual": "玄関ドアノブ→外の光を入れてカットイン",
+        "motion": [{ "type": "whip_pan", "at_sec": 2.6, "duration_sec": 0.2 }]
+      },
+      {
+        "id": "S03",
+        "label": "やさしめ導入（事実）",
+        "time_sec": [3.0, 8.0],
+        "script_ref": "L1",
+        "subtitles": ["軽度のSLEという自己免疫の病気", "見た目では分かりにくい症状も"],
+        "visual": "玄関前で靴をトントン→半身スマイル（自然光）",
+        "icons": [],
+        "bgm_duck_range_sec": [3.0, 8.2]
+      },
+      {
+        "id": "S04",
+        "label": "ぼくの症状",
+        "time_sec": [8.0, 13.0],
+        "script_ref": "L3",
+        "subtitles": ["朝、指がこわばる", "急にくる倦怠感"],
+        "visual": "指をゆっくり握って伸ばす手元CU→ソファで肩を回して深呼吸",
+        "icons": [
+          { "name": "joint", "anim": "pop", "at_sec": 8.1 },
+          { "name": "battery_low", "anim": "pop", "at_sec": 10.5 }
+        ]
+      },
+      {
+        "id": "S05",
+        "label": "波→前向き転換",
+        "time_sec": [13.0, 15.0],
+        "script_ref": "L4",
+        "subtitles": ["夜はしんどい日が多い", "だから明るい時間に“一歩”"],
+        "visual": "夜の時計CU（20:30）→朝日の窓にクロス→窓辺で軽い深呼吸",
+        "motion": [
+          { "type": "cross_dissolve", "at_sec": 13.3, "duration_sec": 0.6 },
+          {
+            "type": "energy_bar",
+            "position": "bottom_center",
+            "from_ratio": 0.3,
+            "to_ratio": 0.7,
+            "duration_sec": 0.4,
+            "at_sec": 13.9
+          }
+        ],
+        "icons": [{ "name": "sun", "anim": "slide_right", "at_sec": 14.0 }]
+      },
+      {
+        "id": "S06",
+        "label": "今日の一歩（計画）",
+        "time_sec": [16.0, 21.0],
+        "script_ref": "L5",
+        "subtitles": ["毎日30分を目安に散歩", "無理しない／気持ちよく"],
+        "visual": "昼の公園：歩き始め→歩幅そろえる→リズムを刻む足元",
+        "icons": [
+          { "name": "footsteps", "anim": "pulse", "at_sec": 16.2 },
+          { "name": "watch", "anim": "tick", "at_sec": 17.0 }
+        ]
+      },
+      {
+        "id": "S07",
+        "label": "今日の一歩（実行）",
+        "time_sec": [21.0, 28.0],
+        "script_ref": "L5",
+        "subtitles": [],
+        "visual": "ベンチで軽ストレッチ→歩数計をチラ見→深呼吸",
+        "motion": [{ "type": "speed_ramp_gentle", "at_sec": 24.0, "duration_sec": 0.6 }]
+      },
+      {
+        "id": "S08",
+        "label": "小さな達成",
+        "time_sec": [28.0, 32.0],
+        "script_ref": "L6",
+        "subtitles": ["できた。今日はこれでOK", "気分がちょっと明るく"],
+        "visual": "歩数計アップ→親指グッ→青空にパン",
+        "icons": [{ "name": "thumbs_up", "anim": "pop", "at_sec": 28.5 }]
+      },
+      {
+        "id": "S09",
+        "label": "CTA＋予告",
+        "time_sec": [36.0, 45.0],
+        "script_ref": "L7",
+        "subtitles": ["あなたの“明るい一歩”は？", "明日は“続けるコツ”"],
+        "visual": "青空Bロールに白テロップ／微風で雲が流れる",
+        "sfx": [{ "type": "whoosh_soft", "at_sec": 36.0, "gain_db": -12 }]
+      }
+    ],
+    "transition_to_next_block": {
+      "next_block_id": "day2_hook_continue_tips",
+      "cue_at_sec": 45.0,
+      "message": "明日は『続けるコツ』に接続"
+    },
+    "compliance": {
+      "no_medical_advice": true,
+      "avoid_terms": ["重い", "ツラすぎ", "無理"],
+      "preferred_terms": ["波", "調整", "一歩", "できる時間帯"],
+      "privacy": ["通院先名・処方情報は映さない", "顔の全写りは避ける（半身〜目元中心）"]
+    }
+  }
+  

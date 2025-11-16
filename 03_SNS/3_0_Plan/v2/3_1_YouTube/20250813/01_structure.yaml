@@ -1,0 +1,43 @@
+meta:
+  platform: "YouTube Shorts"
+  duration_sec: 35
+  fps: 30
+  canvas: "1080x1920"
+  style_tag: ["white-black-minimal", "one-claim", "clean-type"]
+
+hook:
+  statement: "プロテイン、本当のゴールデンタイム"
+  alt_variations: ["AI vs 科学論文", "タンパク質摂取の新常識"]
+
+beats:
+  - t_in: 0.0
+    t_out: 1.5
+    purpose: "フック（問いかけ）"
+    on_screen_text: ["プロテインのゴールデンタイムは嘘だった？"]
+    narration: ""
+    camera: {angle: "front", framing: "center", lens: "35mm相当", movement: "static"}
+    motion: {in: "fade-up 240ms", out: "none", move_px: 20}
+  - t_in: 1.5
+    t_out: 25.0
+    purpose: "本論：根拠→実装→注意"
+    on_screen_text:
+      - "根拠：\nタイミングより「1日の総摂取量」が重要"
+      - "実装：\nトレ後30分に拘らず、食事と合わせ均等に"
+      - "注意：\n一般のトレーニーなら、まず総量を意識"
+    camera: {angle: "side", framing: "mid", lens: "50mm相当", movement: "static"}
+    motion: {in: "cut", out: "none"}
+  - t_in: 25.0
+    t_out: 32.0
+    purpose: "まとめ（今日やる1手）"
+    on_screen_text:
+      - "今日やるべき１アクション"
+      - "自分のタンパク質「総量」を計算する"
+      - "（体重 × 1.6〜2.2gが目安）"
+    camera: {angle: "top", framing: "center", lens: "35mm相当", movement: "static"}
+    motion: {in: "fade 200ms", out: "fade 200ms"}
+  - t_in: 32.0
+    t_out: 35.0
+    purpose: "エンド（クリックSFX/ロゴ無）"
+    on_screen_text: ["保存→今すぐ計算"]
+    camera: {angle: "front", framing: "center"}
+    motion: {in: "none", out: "none"}

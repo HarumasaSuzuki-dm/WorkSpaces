@@ -1,0 +1,35 @@
+{
+    "metadata": {
+      "base_style": "cinematic, hyper-detailed photorealism, seamless transitions with explosive energy",
+      "aspect_ratio": "16:9",
+      "negative_prompts": ["no text overlays"]
+    },
+    "sequence": [
+      {
+        "shot": "Gym Origin",
+        "camera": "low angle, slow push-in",
+        "description": "A single metallic dumbbell sits in a dark void, spotlighted dramatically. Heavy atmosphere, evoking pure gym energy."
+      },
+      {
+        "transition": "A frying pan whips in from the left in bullet-time motion, colliding with the dumbbell. The impact triggers a cinematic shockwave: metallic sparks burst outward, then morph into glowing food particles suspended mid-air."
+      },
+      {
+        "shot": "Explosion to Kitchen",
+        "camera": "whip pan tracking → snap zoom → bullet-time orbit",
+        "description": "Sparks stretch into glowing shards that transform into raw chicken slices, broccoli florets, eggs, and a protein shaker. They float explosively across the void, then freeze in mid-air like ingredients suspended in zero gravity."
+      },
+      {
+        "motion": "Freeze-frame on flying ingredients → ultra-slow slicing, cracking, and spinning → then slamming down onto an invisible grid plane, which morphs into a bright kitchen table surface.",
+        "special_effects": "light shockwaves from collisions, steam vapor trails, glowing dust as particles reform"
+      },
+      {
+        "ending": "The dark void has now fully transitioned into a clean white kitchen. The dumbbell rolls off-screen while the pan spins down onto the table surface, surrounded by floating food ingredients setting up for Scene 2."
+      }
+    ],
+    "audio": {
+      "music": "Cinematic trap hybrid — deep bass hits layered with percussive impacts, synced with collision and food bursts",
+      "sound_effects": "metallic clang, particle whoosh, food slicing echoes, vapor hiss",
+      "mix_level": "punchy mix, hard stereo impacts timed with visual shockwaves"
+    }
+  }
+  

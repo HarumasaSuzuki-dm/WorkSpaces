@@ -1,0 +1,33 @@
+// https://x.com/EHuanglu/status/1947705558137770201
+
+{
+    "description": "Cinematic sequence begins in a dark, futuristic sci-fi chamber. A mysterious, glowing box levitates at the center, surrounded by subtle floating particles and beams of light. The box hums, pulses, and slowly opens—releasing a soft burst of energy. In one seamless transition, the environment morphs from this sci-fi setting into a pristine, modern studio. The box's contents materialize into furniture and decor, assembling themselves with precision and elegance, forming a fully designed Scandinavian-inspired interior. No text.",
+    "style": "cinematic, sci-fi meets minimalism",
+    "camera": "starts with a slow dolly-in on the mysterious box, then transitions into a wide-angle shot of the studio as elements assemble",
+    "lighting": "begins with dramatic, cool-toned sci-fi lighting (neon blue glows, rim lights), smoothly transitions into soft, natural studio lighting with warm highlights",
+    "environment": "from a sci-fi chamber with metallic walls and holographic elements to a bright Scandinavian studio",
+    "elements": [
+        "mysterious glowing box (futuristic design, no visible logo)",
+        "energy pulses and levitation effects",
+        "transition portal effect or seamless morph to studio environment",
+        "modern Scandinavian bed with minimalist yellow throw",
+        "sleek modular shelves assembling mid-air",
+        "reading chair unfolding smoothly",
+        "curtains materializing from particles",
+        "plants growing from digital particles into real form",
+        "mirror and art snapping into place",
+        "ambient futuristic elements fading away into clean interior lines"
+    ],
+    "motion": "the box levitates, opens with energy pulses, releasing elements that build the studio in a fluid, continuous shot without cuts",
+    "ending": "a calm, modern studio space with subtle traces of sci-fi glow fading out, leaving only the clean Scandinavian design",
+    "text": "none",
+    "keywords": [
+        "16:9",
+        "sci-fi to minimalism",
+        "futuristic assembly",
+        "cinematic transition",
+        "continuous shot",
+        "Scandinavian interior",
+        "no text"
+    ]
+}

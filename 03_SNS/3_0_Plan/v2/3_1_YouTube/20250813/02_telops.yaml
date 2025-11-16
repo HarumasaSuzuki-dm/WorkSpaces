@@ -1,0 +1,25 @@
+teleops:
+  - time: "00:00.20"
+    text: "プロテインのゴールデンタイムは嘘だった？"
+    style: {size: "タイトル大", weight: 800, case: "JP", align: "center"}
+  - time: "00:01.70"
+    text: "根拠：\nタイミングより「1日の総摂取量」が重要"
+    style: {size: "本文", weight: 700, case: "JP", align: "left"}
+  - time: "00:08.50"
+    text: "実装：\nトレ後30分に拘らず、食事と合わせ均等に"
+    style: {size: "本文", weight: 700, case: "JP", align: "left"}
+  - time: "00:16.50"
+    text: "注意：\n一般のトレーニーなら、まず総量を意識"
+    style: {size: "本文", weight: 700, case: "JP", align: "left"}
+  - time: "00:25.20"
+    text: "今日やるべき１アクション"
+    style: {size: "本文", weight: 700, case: "JP", align: "center"}
+  - time: "00:26.50"
+    text: "自分のタンパク質「総量」を計算する"
+    style: {size: "タイトル大", weight: 800, case: "JP", align: "center"}
+  - time: "00:28.50"
+    text: "（体重 × 1.6〜2.2gが目安）"
+    style: {size: "本文+", weight: 600, case: "JP", align: "center"}
+  - time: "00:32.20"
+    text: "保存→今すぐ計算"
+    style: {size: "タイトル大", weight: 800, case: "JP", align: "center"}

@@ -1,0 +1,46 @@
+{
+    "shot": {
+      "composition": "begins with an extreme macro shot of a dumbbell grip, transitions into a sweeping side-angle pan along the forearm, then cuts to a wide dynamic shot of the athlete’s torso straining under the weight",
+      "lens": "macro for texture detail, then 35mm anamorphic for cinematic depth",
+      "frame_rate": "60fps",
+      "camera_movement": "slow orbital tracking around the hand and forearm, followed by a lateral sweep revealing the athlete’s powerful movement"
+    },
+  
+    "subject": {
+      "description": "a male athlete gripping a heavy dumbbell with bulging veins and sweat droplets illuminated by a spotlight; the camera avoids his face, focusing instead on hand, forearm, and upper torso",
+      "wardrobe": "minimal dark training tank top highlighting muscular arms",
+      "props": "black steel dumbbell with subtle gleam under the spotlight"
+    },
+  
+    "scene": {
+      "location": "dimly lit modern gym with metallic textures and a smoky cinematic haze",
+      "time_of_day": "undefined, emphasizing controlled studio-like lighting",
+      "environment": "darkened background with spotlight shafts cutting through subtle gym fog"
+    },
+  
+    "visual_details": {
+      "action": "veins tighten as the athlete’s grip flexes, sweat drips in slow motion, the forearm trembles with strain while the dumbbell tilts slightly from pressure",
+      "special_effects": "sweat droplets sparkling like particles in the spotlight, subtle ripple distortion of air around the forearm to emphasize intensity",
+      "hair_clothing_motion": "tank top stretches against contracting muscles; no face shown"
+    },
+  
+    "cinematography": {
+      "lighting": "single overhead spotlight with rim light on the muscles, deep shadows for contrast, subtle volumetric haze in the background",
+      "color_palette": "matte blacks, metallic silvers, glistening skin highlights",
+      "tone": "epic, raw, elegant"
+    },
+  
+    "audio": {
+      "music": "deep bass electronic pulse synced with heartbeat tempo, gradually layering tension",
+      "ambient": "gym room hum, faint metallic clink in the distance",
+      "sound_effects": "intensified grip crunch sound, micro reverb on sweat drop impacts",
+      "mix_level": "low ambient, strong focus on grip detail with rising musical undercurrent"
+    },
+  
+    "dialogue": {
+      "character": "",
+      "line": "",
+      "subtitles": false
+    }
+  }
+  

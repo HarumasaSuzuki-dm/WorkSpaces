@@ -29,3 +29,25 @@
 
 当日は、私が整理しながら進めますので、ざっくばらんに壁打ちしましょう！
 よろしくお願いいたします。
+
+
+## アールハープ様
+
+おはようございます！
+
+今回、経営陣や内部で意思決定をスムーズに行うために
+こちらの希望するPLの導入を行っていただきたく
+ご連絡しました！
+
+つきましては、以下の内容を確認していただき
+ステップに沿って進行していただけませんでしょうか？
+
+何かご不明点があればご連絡お願いします。 
+
+[info]
+▼ 経営判断高度化に向けた「管理会計（実質PL）」運用のご相談
+https://docs.google.com/document/d/1H0NjuFPZEsf8IYGR_M9ivaaQU71uuf6W0P9KcqWXo14/edit?tab=t.0
+
+▼論点確認チェックリスト
+https://docs.google.com/spreadsheets/d/1fm7i7mUV5k0Kilj_Z4nnUms5Ki-nNl3zQjwlDOYKdjM/edit?gid=2105893275#gid=2105893275
+[/info]

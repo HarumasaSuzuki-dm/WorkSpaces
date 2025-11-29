@@ -1,6 +1,6 @@
 # ShapeFitナレッジシェルフ データモデリング
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Last Updated:** 2025/11/29  
 **Parent Document:** [ShapeFitナレッジシェルフ定義書](./ShapeFitナレッジシェルフ.md)
 
@@ -21,12 +21,16 @@ erDiagram
     RACI_Master ||--|{ Knowledge_Base : "業務紐付け"
     RACI_Master ||--|{ Projects : "体制定義"
 
-    %% 03_プロジェクト
+    %% 03_プロジェクト & 会議ログ
     Projects ||--|{ Tasks_Issues : "管理"
     Projects ||--|{ Knowledge_Base : "成果物/参照"
+    Meeting_Catalog ||--|{ Meeting_Log : "開催履歴"
+    Projects ||--|{ Meeting_Log : "会議記録"
 
     %% 04_人事・評価
     HR_Values }|--|{ HR_Evaluation : "基準タグ"
+    Praise_Log }|--|{ HR_Values : "行動タグ"
+    Praise_Log }|--|{ HR_Evaluation : "参照"
 
     %% 05_業務ナレッジ
     Knowledge_Base ||--|{ Tasks_Issues : "参照/紐付け"
@@ -50,6 +54,11 @@ erDiagram
     Meeting_Catalog["03.会議体カタログDB"] {
         string 会議名
         select 頻度
+    }
+    Meeting_Log["10.議事録・動画ログDB"] {
+        date 開催日
+        string テーマ
+        url 録画URL
     }
     Projects["04.プロジェクトマスタDB"] {
         string プロジェクト名
@@ -75,6 +84,13 @@ erDiagram
         select 種別
         status ステータス
         person 担当者
+        url ソースURL
+    }
+    Praise_Log["09.称賛・GoodActionログDB"] {
+        person 送り主
+        person 対象者
+        string メッセージ
+        date 日付
     }
     Meta_Log["99.ナレッジ運用ログDB"] {
         date 日付
@@ -104,6 +120,7 @@ erDiagram
 ### 02. RACIマスタ DB
 * **ID:** `DB_RACI`
 * **目的:** 業務・PJ・会議における役割と権限レベルを定義する辞書。
+* **運用注意:** タスク一つ一つに紐付けるのではなく、「プロジェクト」や「業務プロセス（マニュアル）」単位での定義を基本とし、メンテナンス負荷を下げること。
 
 | プロパティ名 | 型 (Type) | 設定・選択肢例 | 説明 |
 | :--- | :--- | :--- | :--- |
@@ -128,7 +145,8 @@ erDiagram
 | **目的** | Text | - | 会議のゴール |
 | **参加者** | Person | - | 必須参加者 |
 | **関連RACI** | Relation | -> `DB_RACI` | この会議で扱う業務領域 |
-| **議事録URL** | URL | - | 議事録格納フォルダ/ページへのリンク |
+| **議事録URL** | URL | - | 議事録格納フォルダ/ページへのリンク（※特定フォルダがある場合） |
+| **開催ログ** | Relation | -> `DB_MEETING_LOG` | 過去の開催履歴 |
 
 ### 04. プロジェクトマスタ DB
 * **ID:** `DB_PROJECT`
@@ -146,6 +164,7 @@ erDiagram
 | **関連RACI** | Relation | -> `DB_RACI` | 関連する業務定義 |
 | **課題・タスク** | Relation | -> `DB_TASK` | 子タスク一覧 |
 | **成果物** | Relation | -> `DB_KNOWLEDGE` | PJによる成果物 |
+| **会議ログ** | Relation | -> `DB_MEETING_LOG` | 関連会議のログ |
 
 ### 05. 評価シート DB
 * **ID:** `DB_EVALUATION`
@@ -158,7 +177,7 @@ erDiagram
 | **期** | Select | 2025上期, 2025下期... | - |
 | **期待権限レベル** | Select | Lv1 〜 Lv5 | 期初に設定した期待値 |
 | **実績権限レベル** | Select | Lv1 〜 Lv5 | 期末の到達度 |
-| **Shape行動タグ** | Relation | -> `DB_VALUES` | 体現できた行動（タグ付け） |
+| **Shape行動タグ** | Relation | -> `DB_VALUES` | 体現できた行動（期末にまとめて選択） |
 | **コメント** | Text | - | フィードバック内容 |
 
 ### 06. Shapeらしさ行動 DB
@@ -190,6 +209,7 @@ erDiagram
 ### 08. 課題・タスク DB
 * **ID:** `DB_TASK`
 * **目的:** 全社のToDo、課題、アイデアの管理。
+* **運用注意:** パフォーマンス維持のため、完了後3ヶ月以上経過したタスクは定期的にアーカイブ（別DB移動またはフィルタ除外）すること。
 
 | プロパティ名 | 型 (Type) | 設定・選択肢例 | 説明 |
 | :--- | :--- | :--- | :--- |
@@ -199,7 +219,37 @@ erDiagram
 | **優先度** | Select | 高, 中, 低 | - |
 | **期限** | Date | - | Due Date |
 | **担当者 (R)** | Person | - | 実行者 |
-| **関連プロジェクト** | Relation | -> `DB_PROJECT` | 親プロジェクト |
-| **関連RACI** | Relation | -> `DB_RACI` | 関連業務 |
+| **関連プロジェクト** | Relation | -> `DB_PROJECT` | 親プロジェクト（入力推奨） |
+| **関連RACI** | Relation | -> `DB_RACI` | 関連業務（任意・PJから継承可） |
 | **関連ナレッジ** | Relation | -> `DB_KNOWLEDGE` | 参照マニュアル等 |
+| **ソースURL** | URL | - | 音声メモ、参照サイト等のURL |
+| **最終更新日時** | Last Edited Time | - | 自動更新（放置タスク発見用） |
+
+### 09. 称賛・GoodActionログ DB
+* **ID:** `DB_PRAISE`
+* **目的:** 日々の業務における「良い行動」や「感謝」をスタンプ感覚で送り合い、評価の客観的根拠（Unipos的運用）とする。
+* **運用注意:** 投稿ハードルを下げるため、プロパティは極力シンプルにする。
+
+| プロパティ名 | 型 (Type) | 設定・選択肢例 | 説明 |
+| :--- | :--- | :--- | :--- |
+| **メッセージ** | Title | - | 称賛や感謝の内容 |
+| **送り主** | Created By | - | 自動入力 |
+| **対象者** | Person | - | 称賛する相手 |
+| **日付** | Created Time | - | 自動入力 |
+| **Shape行動タグ** | Relation | -> `DB_VALUES` | どのバリューを体現したか |
+| **関連評価** | Relation | -> `DB_EVALUATION` | 期末に紐付け（任意） |
+
+### 10. 議事録・動画ログ DB
+* **ID:** `DB_MEETING_LOG`
+* **目的:** 会議の録画・録音データ（Zoom/Meet等）のURLと要点を時系列で蓄積する。
+
+| プロパティ名 | 型 (Type) | 設定・選択肢例 | 説明 |
+| :--- | :--- | :--- | :--- |
+| **テーマ** | Title | 例: 11/29 定例MTG | - |
+| **開催日** | Date | - | - |
+| **録画URL** | URL | - | Zoom/Meet/YouTube等のURL |
+| **関連会議体** | Relation | -> `DB_MEETING` | 親となる会議カタログ |
+| **関連プロジェクト** | Relation | -> `DB_PROJECT` | どのPJの会議か |
+| **参加者** | Person | - | - |
+| **重要事項メモ** | Text | - | 決定事項や要点の箇条書き |
 

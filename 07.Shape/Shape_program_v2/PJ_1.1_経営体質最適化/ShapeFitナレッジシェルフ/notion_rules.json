@@ -1,0 +1,64 @@
+{
+    "stakeholder_mapping_rules": [
+      {
+        "description": "システム開発・導入の法人主体",
+        "identity_name": "フレアネスト株式会社",
+        "notion_db_value": "フレアネスト株式会社",
+        "role_category": "Partner (Organization)"
+      },
+      {
+        "description": "DX・システムPM担当者（フレアネスト所属）",
+        "identity_name": "平澤 陽生",
+        "notion_db_value": "平澤 陽生",
+        "role_category": "Partner (Individual)"
+      },
+      {
+        "description": "共同経営者 / インフルエンサー（旧：Shape Fitチーム表記）",
+        "identity_name": "なーすけ",
+        "notion_db_value": "Shape Fitチーム",
+        "role_category": "Key Stakeholder",
+        "note": "Notion上の表記は現状『Shape Fitチーム』となっていますが、実体はなーすけ様個人、あるいはなーすけ様を含む合議体を指します。"
+      },
+      {
+        "description": "コンサルタント / PMO（鈴木様）",
+        "identity_name": "鈴木 晴正",
+        "notion_db_value": "新harumasa suzuki",
+        "role_category": "Consultant"
+      },
+      {
+        "description": "代表 / オーナー",
+        "identity_name": "天池 紫音",
+        "notion_db_value": "天池 紫音",
+        "role_category": "Owner"
+      },
+      {
+        "description": "バックオフィス / オペレーション",
+        "identity_name": "神保 彩",
+        "notion_db_value": "神保 彩",
+        "role_category": "Internal Staff"
+      },
+      {
+        "description": "クリエイティブ / イベント制作",
+        "identity_name": "神成 栞",
+        "notion_db_value": "神成 栞",
+        "role_category": "Internal Staff"
+      },
+      {
+        "description": "経営企画 / コアメンバー",
+        "identity_name": "中井 華音",
+        "notion_db_value": "中井 華音",
+        "role_category": "Core Member"
+      },
+      {
+        "description": "イベントPM（外部パートナー）",
+        "identity_name": "的場 天佑 (Tenyu)",
+        "notion_db_value": "TenyuMatoba",
+        "role_category": "Partner (Individual)"
+      }
+    ],
+    "metadata": {
+      "version": "1.1",
+      "updated_at": "2025-11-30",
+      "purpose": "Define mapping between real-world stakeholders and Notion database entries."
+    }
+  }

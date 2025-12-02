@@ -28,3 +28,13 @@
 
 強豪のバイネーム
 → 完全に複数社が参入中
+
+k-nagata@pteron.co.jp
+k-ito@pteron.co.jp
+r-tottori@pteron.co.jp
+r-yamazaki@pteron.co.jp
+t-nagashima@pteron.co.jp
+y-nakatake@pteron.co.jp
+k-miyake@pteron.co.jp
+h-ito@pteron.co.jp
+

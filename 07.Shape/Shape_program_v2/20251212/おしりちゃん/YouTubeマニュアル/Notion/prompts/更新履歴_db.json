@@ -1,0 +1,54 @@
+{
+    "database_definition": {
+      "title": "098_更新履歴・マニュアル管理DB",
+      "description": "マニュアルの変更履歴を管理するDB。詳細な変更内容は各ページ内に記載する。",
+      "properties": {
+        "更新タイトル": {
+          "type": "title",
+          "description": "変更の結論。（例：NGリストへの「配送伝票」追加）",
+          "rule": "「〇〇について」は禁止。動作（追加・削除・変更）まで書く。"
+        },
+        "更新日": {
+          "type": "date",
+          "description": "マニュアル反映日"
+        },
+        "重要度": {
+          "type": "select",
+          "options": [
+            { "name": "★★★ (即周知・必読)", "color": "red" },
+            { "name": "★★☆ (実務に影響)", "color": "yellow" },
+            { "name": "★☆☆ (微修正・誤字)", "color": "gray" }
+          ]
+        },
+        "対象ページ": {
+          "type": "select",
+          "options": [
+            { "name": "00_はじめに" },
+            { "name": "01_編集方針・マインド" },
+            { "name": "02_重要ルール・リスク管理" },
+            { "name": "03_実務・テクニカルガイド" },
+            { "name": "04_納品・運用フロー" },
+            { "name": "05_採用トライアル" },
+            { "name": "06_編集者評価制度" },
+            { "name": "097_編集者マネジメントガイド" },
+            { "name": "その他" }
+          ]
+        },
+        "更新者": {
+          "type": "people"
+        },
+        "バージョン": {
+          "type": "rich_text",
+          "description": "適用後のバージョン（例：v1.2）"
+        },
+        "周知ステータス": {
+          "type": "status",
+          "options": [
+            { "name": "未周知", "group": "To-do", "color": "red" },
+            { "name": "LINE共有済", "group": "In-progress", "color": "blue" },
+            { "name": "完了", "group": "Complete", "color": "green" }
+          ]
+        }
+      }
+    }
+  }

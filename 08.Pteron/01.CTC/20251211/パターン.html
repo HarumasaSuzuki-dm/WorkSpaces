@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>パターン.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>以下は、いただいた「業務フローパターン出し（ロジックツリー展開）」を <strong>As-Is業務フロー分析用にロジックツリーとして可視化</strong>したものです（Mermaidでエラーが出にくいよう <strong>flowchart TD</strong> で記述）。</p>
+<pre><code class="language-mermaid"><div class="mermaid">flowchart TD
+  A["As-Is 業務フロー分析：パターン出し（ロジックツリー）"]
+
+  A --> B["1. 販売・契約・顧客チャネル"]
+  B --> B1["車両種別"]
+  B1 --> B11["新車"]
+  B1 --> B12["中古車"]
+  B1 --> B13["既納客の後付け"]
+
+  B --> B2["顧客属性"]
+  B2 --> B21["個人"]
+  B2 --> B22["法人・フリート"]
+  B2 --> B23["集合・賃貸で許可必要（家族/管理組合/オーナー）"]
+
+  B --> B3["同時購入"]
+  B3 --> B31["車両と同時契約"]
+  B3 --> B32["車両購入後の追加契約"]
+
+  B --> B4["補助金"]
+  B4 --> B41["利用あり（申請主体・書類・失注要因）"]
+  B4 --> B42["利用なし"]
+
+  A --> C["2. 設置環境・工学的条件"]
+  C --> C1["住居形態"]
+  C1 --> C11["戸建て（持家）"]
+  C1 --> C12["集合住宅（マンション/アパート）"]
+  C1 --> C13["賃貸戸建て"]
+
+  C --> C2["設置場所"]
+  C2 --> C21["壁面"]
+  C2 --> C22["ポール設置"]
+  C2 --> C23["ガレージ内"]
+
+  C --> C3["工事難易度（追加工事）"]
+  C3 --> C31["標準工事内"]
+  C3 --> C32["容量変更・幹線工事など追加あり"]
+  C3 --> C33["特殊事情（隠蔽配線不可等）"]
+
+  C --> C4["現地調査（現調）"]
+  C4 --> C41["施工会社が実施"]
+  C4 --> C42["施工管理会社が実施"]
+  C4 --> C43["販売店が同席"]
+
+  C --> C5["法的・近隣要件"]
+  C5 --> C51["道路占用など許認可"]
+  C5 --> C52["騒音・工事時間制約（近隣調整）"]
+
+  A --> D["3. 商流・金流・ステータス"]
+  D --> D1["見積・請求"]
+  D1 --> D11["車両見積に合算"]
+  D1 --> D12["工事費は別見積（提示者・回収者が誰か）"]
+
+  D --> D2["キャンセル・例外処理"]
+  D2 --> D21["現調前キャンセル"]
+  D2 --> D22["現調後キャンセル（工事不可/高額見積）"]
+  D2 --> D23["調査費・キャンセル料の精算（請求先・回収ルート）"]
+
+  D --> D3["保証の責任分界"]
+  D3 --> D31["機器不良（メーカー側）"]
+  D3 --> D32["施工不備（施工側）"]
+
+  A --> E["4. 物流・日程調整"]
+  E --> E1["納品形態"]
+  E1 --> E11["販売店入庫・手渡し"]
+  E1 --> E12["顧客宅へ直送"]
+  E1 --> E13["施工会社が持ち込み"]
+
+  E --> E2["日程調整の主体"]
+  E2 --> E21["顧客↔施工管理"]
+  E2 --> E22["顧客↔施工会社"]
+  E2 --> E23["販売店が仲介"]
+
+  E --> E3["手戻りリスク"]
+  E3 --> E31["部材不足"]
+  E3 --> E32["写真不足・情報不足"]
+  E3 --> E33["不在・天候順延（再調整）"]
+
+  E --> E4["在庫・欠品対応"]
+  E4 --> E41["欠品時の代替/優先順位"]
+  E4 --> E42["納期回答の責任所在"]
+
+  A --> F["5. アフター・運用"]
+  F --> F1["正常系"]
+  F1 --> F11["定期メンテ"]
+  F1 --> F12["保証満了案内"]
+
+  F --> F2["異常系（故障・不具合）"]
+  F2 --> F21["受付窓口（販売店/施工店/コールセンター等）"]
+  F2 --> F22["一次切り分け→エスカレーション"]
+
+  F --> F3["変更系"]
+  F3 --> F31["引っ越しによる撤去"]
+  F3 --> F32["リプレイス（機器更新）"]
+
+  F --> F4["CX（顧客体験）"]
+  F4 --> F41["施工前の不安・問い合わせ動線"]
+  F4 --> F42["進捗可視化（どこまで見せるか）"]
+
+  A --> G["6. 統制・品質・システム連携"]
+  G --> G1["統制・ガバナンス"]
+  G1 --> G11["標準（写真/チェック/必須項目）を誰が決裁"]
+  G1 --> G12["標準外（増額/工期延伸）の例外承認"]
+  G1 --> G13["SLA/監査（非認定業者が絡む場合）"]
+
+  G --> G2["品質・安全"]
+  G2 --> G21["重大インシデント（火災/漏電等）のエスカレーション"]
+  G2 --> G22["原因切り分けに必要な証跡（写真/計測/ログ）"]
+
+  G --> G3["システム連携・データ"]
+  G3 --> G31["マスタ整合（販売店/施工管理/施工会社/顧客/機器）"]
+  G3 --> G32["SoT定義（正のデータはどれか）"]
+  G3 --> G33["案件IDの一元化（管理No）"]
+  G3 --> G34["データ集約先（社内基盤との連携）"]
+
+  A --> H["横串：ステークホルダー差分（実務のブレの源泉）"]
+  H --> H1["施工管理会社の類型"]
+  H1 --> H11["住宅系グループ"]
+  H1 --> H12["販売店指定"]
+  H1 --> H13["地場系"]
+
+  H --> H2["施工会社の類型"]
+  H2 --> H21["認定施工（A/B）"]
+  H2 --> H22["非認定・協力会社"]
+
+  H --> H3["ITリテラシー/運用環境"]
+  H3 --> H31["スマホ/タブレット運用可"]
+  H3 --> H32["PC中心"]
+  H3 --> H33["FAX/電話中心"]
+</div></code></pre>
+<h3 id="%E6%8A%9C%E3%81%91%E6%BC%8F%E3%82%8C%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%93%E3%81%AE%E3%83%84%E3%83%AA%E3%83%BC%E3%81%AB%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8F%E3%81%A8%E4%BA%8B%E6%95%85%E3%81%8C%E6%B8%9B%E3%82%8B%E6%9E%9D">抜け漏れチェック（このツリーに“追加しておくと事故が減る枝”）</h3>
+<p>上記（貴資料の6分類）自体は筋が良いです。追加するなら、As-Isで「現場差分の原因になりやすいのに、ヒアリングで抜けやすい」以下を <strong>枝として明示</strong>するのが効果的です。</p>
+<ul>
+<li><strong>現調の代替形</strong>：現地訪問だけでなく「写真提出によるリモート現調」などが混在していないか</li>
+<li><strong>電力会社/管理組合など“社外承認者”の介在</strong>：許可取得のリードタイム、詰まりポイント</li>
+<li><strong>複数台・複数拠点</strong>：法人フリート、店舗駐車場、社宅などの“一括”案件</li>
+<li><strong>データ/個人情報の取り扱い</strong>：住所・図面・写真の保管場所、保持期間、権限（現状ルールの有無）</li>
+<li><strong>他社充電器工事の混在</strong>：同じ施工会社が他社案件も扱う場合のデータ・運用の切り分け</li>
+<li><strong>二重入力の発生箇所</strong>：販売店システム／施工管理側の自前台帳／FAX報告など「どこがSoTか不明」になりやすい点</li>
+</ul>
+<p>必要なら、このロジックツリーをそのまま「ヒアリングシートの章立て（質問群）」に変換して、抜け漏れ検知（例外頻度×影響）まで入れたテンプレに落とします。</p>
+
+</body>
+</html>

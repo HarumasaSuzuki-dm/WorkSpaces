@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TMC_充電器販売・施工PF支援_AsIs仮説フロー_パターンD.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="as-is%E6%A5%AD%E5%8B%99%E3%83%95%E3%83%AD%E3%83%BC%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3d%E6%B3%95%E4%BA%BA%E3%83%BB%E3%83%95%E3%83%AA%E3%83%BC%E3%83%88%E3%83%A2%E3%83%87%E3%83%AB">As-Is業務フロー：パターンD（法人・フリートモデル）</h1>
+<h2 id="%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3d%E6%B3%95%E4%BA%BA%E3%83%BB%E3%83%95%E3%83%AA%E3%83%BC%E3%83%88%E3%83%A2%E3%83%87%E3%83%ABb2b%E3%83%BB%E8%A4%87%E6%95%B0%E5%8F%B0%E3%83%BB%E8%A4%87%E6%95%B0%E6%8B%A0%E7%82%B9">【パターンD】法人・フリートモデル：B2B・複数台・複数拠点</h2>
+<p>このパターンは、企業が営業車や配送車として車両を導入するケースです。
+個人の買い物とは異なり、<strong>「契約（本社）」と「現場（支店）」が分離している点</strong>、および**「リスト形式での一括管理」**が最大の特徴です。</p>
+<ul>
+<li>
+<p><strong>基本定義</strong></p>
+<ul>
+<li><strong>顧客属性</strong>: 法人企業（社用車、配送車、店舗用車両）。</li>
+<li><strong>特徴</strong>: 1台ごとの契約ではなく、複数台・複数拠点の工事をまとめて発注・管理します。</li>
+<li><strong>意思決定</strong>: 「総務部（契約・支払）」と「ドライバー/支店（現場立ち会い）」が別人です。</li>
+</ul>
+</li>
+<li>
+<p><strong>業務フローの特徴と課題</strong></p>
+<ul>
+<li><strong>Excelバケツリレー</strong>: 顧客データが「申込書」ではなく「拠点リスト（Excel）」で流通するため、更新管理が煩雑化します。</li>
+<li><strong>意思決定と現場の乖離</strong>: 本社がGoサインを出しても、現場（支店）の事情で工事日が決まらない、というタイムラグが発生します。</li>
+<li><strong>月締め請求</strong>: 案件ごとの入金消込ではなく、月末に「完了した工事分」をまとめて請求書化する処理が必要です。</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-%E6%A5%AD%E5%8B%99%E3%83%95%E3%83%AD%E3%83%BC%E5%9B%B3%E3%82%B9%E3%82%A4%E3%83%A0%E3%83%AC%E3%83%BC%E3%83%B3%E5%BD%A2%E5%BC%8F">1. 業務フロー図（スイムレーン形式）</h2>
+<p><strong>凡例と見方：</strong></p>
+<ul>
+<li><strong>円柱</strong>: 利用システム（一括取込機能がない場合、手入力の温床となります）</li>
+<li><strong>書類</strong>: 帳票・データ（パターンDでは「リスト/台帳」が主役となります）</li>
+<li><strong>矢印上のテキスト</strong>: 伝達手段（メール添付が主、現場へは電話）</li>
+</ul>
+<pre><code class="language-mermaid"><div class="mermaid">flowchart TD
+    %% クラス定義
+    classDef system fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef doc fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef process fill:#ffffff,stroke:#333333,stroke-width:1px;
+    classDef warning fill:#ffccbc,stroke:#bf360c,stroke-width:2px;
+
+    %% --- スイムレーン定義 ---
+
+    subgraph CustomerHQ [顧客本社（総務・管財）]
+        direction TB
+        HQ1("車両導入計画・予算確保")
+        DocHQ1[["設置拠点リスト<br>(Excel)"]]:::doc
+        HQ2("一括発注・契約捺印")
+        HQ3("請求書受領・支払")
+    end
+
+    subgraph CustomerSite [顧客現場（支店・ドライバー）]
+        direction TB
+        Site1("現調立会い")
+        Site2("工事日程調整")
+        Site3("工事立会い・完了サイン")
+    end
+
+    subgraph CorpSales [メーカー/販社（法人営業）]
+        direction TB
+        S1["案件登録・リスト受領"]:::process
+        SysCorp[("法人営業支援<br>システム")]:::system
+        
+        S2["概算見積・契約調整"]:::process
+        DocS1[["基本契約書<br>単価合意書"]]:::doc
+        
+        S3["現調依頼（一括）"]:::process
+        DocS2[["現調依頼リスト<br>(Excel)"]]:::doc
+        
+        S4["本見積・一括発注処理"]:::process
+        DocS3[["一括工事注文書"]]:::doc
+        
+        S5["工事Goサイン"]:::process
+        
+        S6["月次売上集計"]:::process
+        DocS4[["一括請求書"]]:::doc
+    end
+
+    subgraph CMC [施工管理会社]
+        direction TB
+        M1["案件一括登録・分解"]:::process
+        SysCMC[("管理台帳(Excel)<br>or 基幹システム")]:::system
+        
+        M2["エリア別業者割当"]:::process
+        DocM1[["個別現調指示書"]]:::doc
+        
+        M3["見積集約・回答"]:::process
+        DocM2[["見積回答リスト<br>(Excel)"]]:::doc
+        
+        M4["工事指示"]:::process
+        
+        M5["完了報告集約"]:::process
+        DocM3[["完了報告リスト<br>(月次)"]]:::doc
+    end
+
+    subgraph Installer [施工会社（各エリア）]
+        direction TB
+        I1["指示受領・アポ取り"]:::process
+        I2["現地調査"]:::process
+        DocI1[["現調報告書"]]:::doc
+        
+        I3["工事実施"]:::process
+        DocI2[["完了報告書"]]:::doc
+    end
+
+    %% --- フロー接続 ---
+
+    %% 【フェーズ1：リスト提示・契約】
+    HQ1 --> DocHQ1
+    DocHQ1 -->|メール添付| S1
+    S1 -.- SysCorp
+    S1 --> S2
+    S2 --> DocS1
+    DocS1 --> HQ2
+
+    %% 【フェーズ2：一括現調依頼】
+    S2 --> S3
+    S3 --> DocS2
+    DocS2 -->|メール添付| M1
+    M1 -.- SysCMC
+    
+    %% ここでリストが個別の指示に分解される
+    M1 --> M2
+    M2 --> DocM1
+    DocM1 -->|FAX / メール| I1
+    
+    %% 現場との個別調整
+    I1 <-->|電話| Site1
+    I1 --> I2
+    I2 --> DocI1
+    DocI1 --> M3
+
+    %% 【フェーズ3：見積集約・発注】
+    M3 --> DocM2
+    DocM2 -->|メール添付| S4
+    S4 --> DocS3
+    DocS3 -->|メール| HQ2
+    HQ2 -->|発注書返送| S5
+    
+    %% 【フェーズ4：施工調整（課題）】
+    S5 -->|メール| M4
+    M4 -->|指示| Installer
+    
+    %% 現場調整の乖離リスク
+    Installer -.->|日程調整| Site2
+    Site2 -.->|決定| Installer
+    
+    Installer --> I3
+    I3 --> Site3
+    Site3 --> DocI2
+    DocI2 --> M5
+
+    %% 【フェーズ5：月締め請求】
+    M5 --> DocM3
+    DocM3 -->|メール添付| S6
+    S6 --> DocS4
+    DocS4 -->|郵送/PDF| HQ3
+
+</div></code></pre>
+
+</body>
+</html>

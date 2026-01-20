@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>フォルダ構成_命名規則提案_20260119_v1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E8%B3%87%E6%96%99%E7%AE%A1%E7%90%86%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3">プロジェクト資料管理ガイドライン</h1>
+<h2 id="1-%E6%9C%AC%E8%B3%87%E6%96%99%E3%81%AE%E7%9B%AE%E7%9A%84">1. 本資料の目的</h2>
+<p>本資料は、TMC 充電器販売・施工PF支援プロジェクトにおける<strong>資料管理の共通ルール</strong>を定義するものです。</p>
+<h2 id="2-%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E6%A7%8B%E6%88%90">2. フォルダ構成</h2>
+<h3 id="21-%E6%A7%8B%E6%88%90%E6%96%B9%E9%87%9D">2.1 構成方針</h3>
+<p>本プロジェクトでは、以下2つの軸でフォルダを構成します。</p>
+<table>
+<thead>
+<tr>
+<th>分類軸</th>
+<th>考え方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>成果物種別</strong></td>
+<td>プロジェクト管理、会議体、成果物、参考資料の4カテゴリに分類</td>
+</tr>
+<tr>
+<td><strong>関係者別</strong></td>
+<td>ヒアリング資料等は対象組織ごとにサブフォルダを設置</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E6%A7%8B%E6%88%90%E5%9B%B3">2.2 フォルダ構成図</h3>
+<pre class="hljs"><code><div>TMC_充電器販売施工PF支援/
+│
+├── 00_プロジェクト管理/
+│   ├── 計画書/
+│   ├── 課題管理/
+│   └── 週次報告/
+│
+├── 01_会議体/
+│   ├── 週次定例/
+│   ├── ステアリング/
+│   └── ヒアリング/
+│       ├── CNシステム開発部/
+│       ├── 国内商品部門/
+│       ├── 車両販売店/
+│       ├── 施工管理会社/
+│       ├── 施工会社/
+│       └── インフラセキュリティ部門/
+│
+├── 02_成果物/
+│   ├── 現状分析/
+│   ├── 業務設計/
+│   └── システム構想/
+│
+├── 03_参考資料/
+│   ├── TMC提供/
+│   └── CTC作成/
+│
+└── old/
+</div></code></pre>
+<h3 id="23-%E5%90%84%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%81%AE%E7%94%A8%E9%80%94">2.3 各フォルダの用途</h3>
+<table>
+<thead>
+<tr>
+<th>フォルダ</th>
+<th>格納する資料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>00_プロジェクト管理</strong></td>
+<td>プロジェクト計画書、WBS、課題管理表、週次報告書</td>
+</tr>
+<tr>
+<td><strong>01_会議体</strong></td>
+<td>各会議の議事録、配布資料、決定事項一覧</td>
+</tr>
+<tr>
+<td><strong>02_成果物</strong></td>
+<td>各フェーズの成果物（業務フロー図、要件定義書、設計書等）</td>
+</tr>
+<tr>
+<td><strong>03_参考資料</strong></td>
+<td>検討のインプットとなる参考情報、調査資料</td>
+</tr>
+<tr>
+<td><strong>old</strong></td>
+<td>旧版ファイルの退避先</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%91%BD%E5%90%8D%E8%A6%8F%E5%89%87">3. ファイル命名規則</h2>
+<h3 id="31-%E5%9F%BA%E6%9C%AC%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88">3.1 基本フォーマット</h3>
+<pre class="hljs"><code><div>資料名_v1_YYYYMMDD.拡張子
+</div></code></pre>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>資料名</td>
+<td>内容を端的に表す名称</td>
+<td>キックオフMTG議事録</td>
+</tr>
+<tr>
+<td>vX</td>
+<td>バージョン番号（初版はv1）</td>
+<td>v1, v2, v3</td>
+</tr>
+<tr>
+<td>YYYYMMDD</td>
+<td>作成日または会議開催日（8桁）</td>
+<td>20260113</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-%E5%91%BD%E5%90%8D%E4%BE%8B">3.2 命名例</h3>
+<table>
+<thead>
+<tr>
+<th>資料種別</th>
+<th>ファイル名例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>議事録</td>
+<td><code>キックオフMTG議事録_v1_20260113.docx</code></td>
+</tr>
+<tr>
+<td>ヒアリングシート</td>
+<td><code>ヒアリングシート_施工管理会社_v1_20260115.xlsx</code></td>
+</tr>
+<tr>
+<td>業務フロー図</td>
+<td><code>現状業務フロー図_v2_20260120.pptx</code></td>
+</tr>
+<tr>
+<td>週次報告</td>
+<td><code>週次報告_第2週_v1_20260122.pptx</code></td>
+</tr>
+<tr>
+<td>確定版</td>
+<td><code>機能要件定義書_v3_確定_20260320.pdf</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-%E5%91%BD%E5%90%8D%E6%99%82%E3%81%AE%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">3.3 命名時の注意事項</h3>
+<ul>
+<li>対象者・対象組織がある場合は、資料名の後に付記する</li>
+<li>資料名は<strong>簡潔かつ具体的</strong>に記載する（目安：20文字以内）</li>
+<li>記号は <strong>アンダースコア（_）</strong> のみ使用する（スペース、スラッシュは使用不可）</li>
+</ul>
+<h2 id="4-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%83%AB%E3%83%BC%E3%83%AB">4. バージョン管理ルール</h2>
+<h3 id="41-%E6%9B%B4%E6%96%B0%E6%99%82%E3%81%AE%E6%89%8B%E9%A0%86">4.1 更新時の手順</h3>
+<p>資料を更新する際は、以下の手順に従ってください。</p>
+<pre class="hljs"><code><div>Step 1：ファイル名のバージョン番号を上げる（v1 → v2）
+Step 2：旧版を old フォルダに移動
+</div></code></pre>
+<h3 id="42-%E7%A2%BA%E5%AE%9A%E7%89%88%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84">4.2 確定版の取り扱い</h3>
+<p>最終承認を得た資料は、以下の対応を行います。</p>
+<table>
+<thead>
+<tr>
+<th>対応</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PDF化</strong></td>
+<td>編集不可の形式で保存</td>
+</tr>
+<tr>
+<td><strong>ファイル名</strong></td>
+<td>末尾に <code>_確定</code> を付記（例：<code>_v3_確定.pdf</code>）</td>
+</tr>
+<tr>
+<td><strong>格納先</strong></td>
+<td>元のフォルダに格納（oldには移動しない）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-%E9%81%8B%E7%94%A8%E9%96%8B%E5%A7%8B%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6">5. 運用開始にあたって</h2>
+<h3 id="51-%E9%81%A9%E7%94%A8%E9%96%8B%E5%A7%8B%E6%97%A5">5.1 適用開始日</h3>
+<p>本ガイドラインは、<strong>TMC様ご承認後</strong>より適用を開始します。</p>
+<h3 id="52-%E3%81%94%E7%A2%BA%E8%AA%8D%E4%BA%8B%E9%A0%85">5.2 ご確認事項</h3>
+<p>以下の点についてご確認をお願いいたします。</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>確認事項</th>
+<th>回答欄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>フォルダ構成案の承認</td>
+<td>□ 承認 / □ 修正要</td>
+</tr>
+<tr>
+<td>2</td>
+<td>命名規則の承認</td>
+<td>□ 承認 / □ 修正要</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SharePointサイトの作成担当</td>
+<td>TMC様 / CTC</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+</body>
+</html>

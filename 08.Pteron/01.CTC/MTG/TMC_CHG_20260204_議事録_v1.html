@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TMC_CHG_20260204_議事録_v1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E8%AD%B0%E4%BA%8B%E9%8C%B2">議事録</h1>
+<h2 id="%E4%BC%9A%E8%AD%B0%E6%A6%82%E8%A6%81">会議概要</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>会議名</strong></td>
+<td>TMC 充電器販売・施工PF支援プロジェクト 週次定例</td>
+</tr>
+<tr>
+<td><strong>日時</strong></td>
+<td>2026年2月4日（水）</td>
+</tr>
+<tr>
+<td><strong>場所</strong></td>
+<td>オンライン（Teams）</td>
+</tr>
+<tr>
+<td><strong>出席者</strong></td>
+<td>【TMC】村松様、秦様（CNシステム開発部） / 【CTC】伊藤、鈴木、太田</td>
+</tr>
+<tr>
+<td><strong>記録者</strong></td>
+<td>鈴木（CTC）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%E8%AD%B0%E4%BA%8B%E5%86%85%E5%AE%B9">議事内容</h2>
+<h3 id="1-%E5%85%A8%E4%BD%93%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E9%80%B2%E6%8D%97%E7%A2%BA%E8%AA%8D">1. 全体スケジュール進捗確認</h3>
+<p><strong>【CTC鈴木からの報告】</strong></p>
+<ul>
+<li>全体としてはビハインドしている状況。ヒアリングが未実施のため、現状分析にも着手できていない</li>
+<li>先週の定例でCNシステム開発部から共有いただいた課題・資料をもとに、CTC側で以下のたたき台を作成済み：
+<ul>
+<li>現状業務フローズ（各フェーズのステップ、関係者、使用システム・ツール、入出力情報、情報の流れを一覧化）</li>
+<li>機能要件・非機能要件定義書（必須/非必須の機能を仮整理）</li>
+<li>先週の定例内容を反映したヒアリングシート</li>
+</ul>
+</li>
+<li>来週以降の予定として、各関係者へのヒアリング実施、フローズ・要件定義書のブラッシュアップ、システム比較検討の本格着手を進める方針</li>
+</ul>
+<p><strong>【TMC村松様からのフィードバック】</strong></p>
+<ul>
+<li>業務フローズのイメージは伝わる。具体的な粒度は資料を確認した上で判断したい</li>
+<li>施工管理会社ごとにシステム・ウェブフォームが複数ある場合、フローズ上に並列で記載されるイメージかを確認→その通りとの回答</li>
+<li><strong>要望</strong>：販売会社等にヒアリングする際、「こんなことができるようになります」という実現できる未来の抽象的なイメージ・ビジュアル的な資料があると話しやすい</li>
+</ul>
+<p><strong>【CTC伊藤の回答】</strong></p>
+<ul>
+<li>ビジュアル化した業務フロー資料は作成可能。後日チャットで共有する</li>
+<li>販売店向けには、入力・情報収集・情報共有がどう変わるか、わかりやすい未来図を用意してヒアリングに臨む</li>
+</ul>
+<hr>
+<h3 id="2-%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%BC%E3%83%88%E5%9B%9E%E7%AD%94%E7%8A%B6%E6%B3%81%E3%81%AE%E5%85%B1%E6%9C%89">2. ヒアリングシート回答状況の共有</h3>
+<h4 id="21-tmc%E5%81%B4%E3%81%A7%E3%81%AE%E4%BA%8B%E5%89%8D%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">2.1 TMC側での事前ヒアリングについて</h4>
+<p><strong>【TMC村松様からの前提説明】</strong></p>
+<ul>
+<li>CTCの要望は各関係者への直接ヒアリングだったが、TMC側で先行して社内関係部署に聞ける範囲でヒアリングを実施し、回答を準備した</li>
+<li>CTCには、回答内容を確認の上、さらに深掘りが必要な点や直接担当者と話すべき点があればコメントしてほしい</li>
+<li>関係者（販売店等）がヒアリングに対して身構えてしまう雰囲気があるため、どのようにほどいていくかも含めて相談したい</li>
+</ul>
+<p><strong>【TMC秦様からの報告】</strong></p>
+<ul>
+<li>ヒアリングシートを使って社内関係部署と会話を開始。現時点で回答できる部分を説明する</li>
+<li>車両販売店、施工管理会社、施工会社等にはまだヒアリングできていない</li>
+</ul>
+<h4 id="22-%E5%9B%BD%E5%86%85%E5%95%86%E5%93%81%E9%83%A8%E9%96%80%E3%81%AE%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E5%9B%9E%E7%AD%94">2.2 国内商品部門のヒアリング回答</h4>
+<ul>
+<li>国内商品部門の主眼は <strong>販売店業務の負担軽減</strong> にある（CNシステム開発部と必ずしも同じ困りごとではない）</li>
+<li>販売店の細かい業務フローがまだ把握しきれていないため、ヒアリングの中で困りごとを見極め、工数改善につながるシステム提案を目指す</li>
+<li>国内商品部門とのヒアリングハードルは比較的低い</li>
+</ul>
+<h4 id="23-%E5%90%84%E9%96%A2%E4%BF%82%E8%80%85%E3%81%B8%E3%81%AE%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E8%AA%BF%E6%95%B4%E7%8A%B6%E6%B3%81">2.3 各関係者へのヒアリング調整状況</h4>
+<p><strong>【車両販売店】</strong></p>
+<ul>
+<li>充電器販売に力を入れているところと入れていないところの濃淡がある</li>
+<li>販売会社との距離感もあり、アプローチ方法を国内商品部門と相談中</li>
+<li>いくつか候補は挙がっているが、具体的な進め方はまだ決まっていない</li>
+</ul>
+<p><strong>【施工管理会社（トヨタホーム）】</strong></p>
+<ul>
+<li>一番現実的にヒアリングできそうだったが、担当者がしばらく連絡がつかない状況</li>
+<li>木曜・金曜頃に連絡がつく見込み。今週中にコンタクトを取り、週明けに情報共有予定</li>
+</ul>
+<p><strong>【施工管理会社（トヨタホーム以外）】</strong></p>
+<ul>
+<li>トヨタホームだけでは解決しない。複数の施工管理会社へのヒアリングが必要</li>
+<li>施工管理会社とつながりを持つのは車両販売店であるため、販売店とのコミュニケーションを急ぎたい</li>
+</ul>
+<p><strong>【CTC伊藤からの提案】</strong></p>
+<ul>
+<li>ヒアリングのハードルを上げず、「皆様の業務フローをまずお聞きしたい」というスタンスで進めたい</li>
+<li>身構えられている場合は、CTCに振っていただければ、目的説明も含めてCTC側で対応する</li>
+</ul>
+<hr>
+<h3 id="3-%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%BC%E3%83%88%E5%86%85%E5%AE%B9%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3">3. ヒアリングシート内容に関するディスカッション</h3>
+<h4 id="31-%E9%96%8B%E7%99%BA%E8%B2%BB%E5%9B%9E%E5%8F%8E%E3%83%BB%E3%82%B4%E3%83%BC%E3%83%AB%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">3.1 開発費回収・ゴールイメージについて</h4>
+<p><strong>【TMC秦様からの報告】</strong></p>
+<ul>
+<li>社内ヒアリングの中で、販売店の工数がどれだけ減るかが成功の判断基準になるとの声がある</li>
+<li>開発費の回収方法（施工会社・販売店からの費用徴収）についても社内で検討中</li>
+<li>販売店や施工会社の工数低減につながらず、トヨタだけが得をするシステムであれば、費用を徴収しないという選択肢もあり得る</li>
+<li>※古橋（CTC）とも費用回収について会話を始めているところ</li>
+</ul>
+<h4 id="32-%E8%B2%A9%E5%A3%B2%E5%9F%BA%E7%9B%A4%E9%96%8B%E7%99%BA%E9%83%A8%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">3.2 販売基盤開発部との連携について</h4>
+<p><strong>【TMC秦様からの共有】</strong></p>
+<ul>
+<li>販売店とトヨタ自動車の基幹システム（ai21等）を開発しているのは社内の「販売基盤開発部」という部署</li>
+<li>既存システムの拡張として充電器関連機能を付与できないか、相談を予定しているが、まだ担当者との会話はできていない</li>
+<li>既存システム活用（リーンな開発）か、新規開発かの判断もまだできていない状況</li>
+<li>決定権者が販売基盤開発部か営業部門かも議論中</li>
+</ul>
+<h4 id="33-%E5%9B%BD%E5%86%85%E5%95%86%E5%93%81%E9%83%A8%E9%96%80%E3%81%8B%E3%82%89%E3%81%AE%E8%A6%81%E6%9C%9B%E3%83%BB%E3%83%AA%E3%82%B9%E3%82%AF%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88">3.3 国内商品部門からの要望・リスクポイント</h4>
+<p><strong>【TMC秦様からの報告】</strong></p>
+<ul>
+<li>国内商品部門からは「こんな機能があれば嬉しい」という要望をいくつか受領済み（詳細はファイルで後日共有）</li>
+<li>車両販売の既存フローと充電器販売が入ったことによる業務のアドオン・差分を見極めることが重要</li>
+<li>充電器は現地調査後に発注するため、車両の用品注文と発注タイミングが異なり、納車までに充電器設置が間に合わないリスクがある（最悪のケースでは車両バイバック＝お客様クレームの可能性）</li>
+<li>現在の課題だけでなく「起き得るリスク」を提示し、「こんなことができるようになります」という提案につなげることで、販売会社の導入意欲を引き出したい</li>
+<li>システムの使い勝手が悪い、費用が高いと現場に受け入れてもらえないため、バランスの見極めが必要</li>
+</ul>
+<hr>
+<h3 id="4-%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%83%BB%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E9%96%A2%E9%80%A3%E3%81%AE%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E5%9B%9E%E7%AD%94">4. インフラ・セキュリティ関連のヒアリング回答</h3>
+<p><strong>【TMC秦様からの報告】</strong></p>
+<ul>
+<li>セキュリティ部門の回答で、技術的な中身については開発部門が回答すべき部分が多い。まだ回答が出せていない箇所もある</li>
+</ul>
+<p><strong>【顧客情報の保管場所について】</strong></p>
+<ul>
+<li>保管先はクラウド・国内リージョンであれば問題ない</li>
+<li>海外リージョンのサーバーは個人情報保護法観点でリスクあり</li>
+</ul>
+<p><strong>【アクセス制限・暗号化について】</strong></p>
+<ul>
+<li>CTC鈴木から質問の意図を説明：先日共有いただいた補足資料のセキュリティ要件（ロールベースのアクセス制限、通信暗号化等）について、現段階では「必要かどうか」の確認レベルで良い</li>
+<li>TMC秦様回答：個人情報を扱う上でのポリシーとして、流出防止（アクセス制限）と覗き見防止（暗号化）は<strong>いずれも必要（イエス）</strong></li>
+<li>技術的な詳細（通信方式等）はシステム構築段階で詰めればよい</li>
+</ul>
+<p><strong>【クラウドサービスの選定について】</strong></p>
+<ul>
+<li>TMC社内にはクラウドサービスの利用可否リストがあるが、それをそのまま渡すのではなく、CTC側からの提案（どの会社のクラウドを使うか）に対してYes/Noで回答する形式になる</li>
+<li>この点はシステム構築のフェーズで会話していく</li>
+</ul>
+<p><strong>【CTC伊藤からの確認】</strong></p>
+<ul>
+<li>前回同様、CTC別チームの知見も活用しながら、トータルで確認していく方針</li>
+</ul>
+<hr>
+<h3 id="5-%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%87%B8%E5%BF%B5">5. スケジュールに関する懸念</h3>
+<p><strong>【CTC伊藤からのお願い】</strong></p>
+<ul>
+<li>ヒアリングの後ろ倒しにより、全体スケジュールに影響が出る可能性がある</li>
+<li>これ以上の遅延はプロジェクト後半のスケジュールにも影響するため、早期のヒアリング日程確定をお願いしたい</li>
+<li>ヒアリング日程調整で困りごとがあれば、CTC側に相談してほしい。CTCが直接説明・対応することも可能</li>
+</ul>
+<p><strong>【TMC村松様の回答】</strong></p>
+<ul>
+<li>調整を急ぐ</li>
+</ul>
+<hr>
+<h3 id="6-%E4%BC%9A%E8%AD%B0%E5%8B%95%E7%94%BB%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">6. 会議動画の取り扱いについて</h3>
+<p><strong>【TMC村松様からの連絡】</strong></p>
+<ul>
+<li>議事録用の会議動画をWeb上で共有できるようにしている</li>
+<li>社内のセキュリティポリシーとして、動画をダウンロードした場合は議事録作成後に削除すること</li>
+<li>Web上での閲覧は問題ない</li>
+</ul>
+<hr>
+<h2 id="%E6%B1%BA%E5%AE%9A%E4%BA%8B%E9%A0%85">決定事項</h2>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>決定事項</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>TMC側で先行ヒアリングした結果をCTCに共有し、CTC側で読み込み・追加質問を整理</td>
+<td>ヒアリングシートの回答ファイルを後日送付</td>
+</tr>
+<tr>
+<td>2</td>
+<td>トヨタホームへのヒアリングは、まずシステム担当者なしで実務担当者のみで実施</td>
+<td>システム連携の話が出れば追加ヒアリングの可能性あり</td>
+</tr>
+<tr>
+<td>3</td>
+<td>クラウドサービスの選定はCTCからの提案に対してTMCがYes/Noで回答する形式</td>
+<td>TMC社内の利用可否リストに基づく</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%E5%AE%BF%E9%A1%8C%E4%BA%8B%E9%A0%85next-action">宿題事項（Next Action）</h2>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>担当</th>
+<th>内容</th>
+<th>期限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>TMC</td>
+<td>トヨタホーム担当者へのコンタクト・ヒアリング日程調整</td>
+<td>今週中にコンタクト、週明けに情報共有</td>
+</tr>
+<tr>
+<td>2</td>
+<td>TMC</td>
+<td>車両販売店へのアプローチ方法を国内商品部門と継続検討</td>
+<td>次回MTGまで</td>
+</tr>
+<tr>
+<td>3</td>
+<td>TMC</td>
+<td>ヒアリングシート回答ファイル・工事計画書等の関連資料をCTCへ共有</td>
+<td>次回MTGまで</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CTC</td>
+<td>TMCから共有されるヒアリング回答の読み込み・追加質問の整理</td>
+<td>次回MTGまで</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CTC</td>
+<td>業務フローズのビジュアル化イメージ資料をチャットで共有</td>
+<td>次回MTGまで</td>
+</tr>
+<tr>
+<td>6</td>
+<td>TMC</td>
+<td>会議動画のWeb閲覧可否をCTC側で確認。見れない場合はTMCに連絡</td>
+<td>次回MTGまで</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="%E8%A3%9C%E8%B6%B3%E3%83%BB%E5%88%A4%E6%98%8E%E4%BA%8B%E9%A0%85%E3%81%BE%E3%81%A8%E3%82%81">補足・判明事項まとめ</h2>
+<h3 id="%E3%83%92%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E8%AA%BF%E6%95%B4%E3%81%AE%E7%8A%B6%E6%B3%81%E3%81%A8%E8%AA%B2%E9%A1%8C">ヒアリング調整の状況と課題</h3>
+<ul>
+<li>関係者（販売店等）がヒアリングに対して身構えてしまう傾向がある</li>
+<li>車両販売店は充電器販売への注力度に濃淡があり、TMCとの距離感もある</li>
+<li>国内商品部門は比較的ハードルが低く、会話可能な状態</li>
+<li>施工管理会社（トヨタホーム以外）へのアクセスは車両販売店経由が必要</li>
+</ul>
+<h3 id="%E9%96%8B%E7%99%BA%E8%B2%BB%E5%9B%9E%E5%8F%8E%E3%81%AE%E6%96%B9%E5%90%91%E6%80%A7">開発費回収の方向性</h3>
+<ul>
+<li>販売店・施工会社の工数低減につながらないシステムであれば、費用徴収しない選択肢もあり得る</li>
+<li>社内で検討中の段階</li>
+</ul>
+<h3 id="%E8%B2%A9%E5%A3%B2%E5%9F%BA%E7%9B%A4%E9%96%8B%E7%99%BA%E9%83%A8%E3%81%AE%E5%AD%98%E5%9C%A8">販売基盤開発部の存在</h3>
+<ul>
+<li>販売店とトヨタ自動車の基幹システム（ai21等）を開発・運用する部署</li>
+<li>既存システム拡張か新規開発かの判断材料を得るため、今後連携が必要</li>
+<li>決定権者（販売基盤開発部 or 営業部門）は議論中</li>
+</ul>
+<h3 id="%E5%85%85%E9%9B%BB%E5%99%A8%E8%B2%A9%E5%A3%B2%E7%89%B9%E6%9C%89%E3%81%AE%E3%83%AA%E3%82%B9%E3%82%AF">充電器販売特有のリスク</h3>
+<ul>
+<li>充電器は現地調査後に発注するため、車両の用品注文と発注タイミングが異なる</li>
+<li>納車までに充電器設置が間に合わないリスクがあり、最悪のケースでは車両バイバックの可能性</li>
+<li>現在の課題だけでなく、潜在リスクも含めた提案がシステム導入の訴求に重要</li>
+</ul>
+<hr>
+<h2 id="%E6%AC%A1%E5%9B%9E%E4%BC%9A%E8%AD%B0%E4%BA%88%E5%AE%9A">次回会議予定</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日時</td>
+<td>2026年2月12日（木） 9:00～10:00</td>
+</tr>
+<tr>
+<td>形式</td>
+<td>オンライン（Teams）</td>
+</tr>
+<tr>
+<td>議題</td>
+<td>トヨタホームヒアリング日程の確定、ヒアリング回答の読み込み結果共有、その他進捗共有</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>以上</p>
+
+</body>
+</html>

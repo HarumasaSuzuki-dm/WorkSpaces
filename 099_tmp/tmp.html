@@ -1,496 +1,908 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>物語ノート Design Prototype</title>
-    <!-- Google Fonts: 雰囲気のある明朝体 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            /* Design Rules - Color & Size */
-            --bg-color: #fcfbf9; /* 生成り色 */
-            --text-color: #464646; /* ダークグレー */
-            --accent-color: #8c8c8c;
-            --line-color: #dcdcdc;
-            --pastel-1: rgba(255, 235, 238, 0.6);
-            --pastel-2: rgba(227, 242, 253, 0.6);
-            --pastel-3: rgba(232, 245, 233, 0.6);
-            --pastel-4: rgba(255, 243, 224, 0.6);
-            
-            --font-main: 'Shippori Mincho', 'Zen Old Mincho', serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FC店舗育成 フェーズ遷移フロー</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f5f3ee;
+    color: #1a1a1a;
+    padding: 40px 24px;
+    line-height: 1.7;
+  }
 
-        body {
-            background-color: #e0e0e0; /* 机の上の色を想定 */
-            margin: 0;
-            padding: 40px 20px;
-            font-family: var(--font-main);
-            color: var(--text-color);
-            line-height: 2.0; /* ゆったりした行間 */
-            letter-spacing: 0.15em; /* 広めの字間 */
-            -webkit-font-smoothing: antialiased;
-        }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
-        /* ノート全体のコンテナ (A3見開きイメージ) */
-        .notebook-spread {
-            background-color: var(--bg-color);
-            width: 100%;
-            max-width: 1200px; /* A3見開き比率に近い幅 */
-            min-height: 800px;
-            margin: 0 auto 60px auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            position: relative;
-            /* 紙の質感をノイズで少し表現 */
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-        }
+  h1 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+  }
 
-        /* センターの綴じ目 */
-        .notebook-spread::before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 1px;
-            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.05) 10%, rgba(0,0,0,0.05) 90%, transparent);
-            z-index: 10;
-        }
+  .subtitle {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
 
-        .page {
-            padding: 60px 50px; /* マージン広め */
-            position: relative;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-        }
+  /* ===== Entry Point ===== */
+  .entry-box {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 20px 28px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .entry-box .entry-sub {
+    font-size: 12px;
+    font-weight: 400;
+    color: #aaa;
+    margin-top: 4px;
+  }
 
-        /* --- 共通要素 --- */
-        h1, h2, h3 {
-            font-weight: 500;
-            margin-bottom: 1.5em;
-            letter-spacing: 0.2em;
-        }
+  /* ===== Connector ===== */
+  .connector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    position: relative;
+  }
+  .connector::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #ccc;
+    position: absolute;
+  }
+  .connector .arrow-down {
+    width: 0; height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid #ccc;
+    position: absolute;
+    bottom: 0;
+  }
 
-        .handwritten-line {
-            border-bottom: 1px dashed var(--line-color);
-            display: inline-block;
-            width: 100%;
-            margin-top: 4px;
-        }
+  /* ===== Phase A ===== */
+  .phase-a-box {
+    background: #fff;
+    border: 2px solid #1a1a1a;
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 0;
+  }
+  .phase-a-box .phase-label {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+  }
+  .phase-a-box .phase-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .phase-a-box .phase-desc {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  .phase-a-box .detail-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .detail-tag {
+    font-size: 12px;
+    background: #f0ede7;
+    padding: 5px 12px;
+    border-radius: 6px;
+    color: #444;
+    font-weight: 500;
+  }
 
-        .input-group {
-            margin-bottom: 2rem;
-        }
-        
-        .label {
-            font-size: 0.8rem;
-            color: var(--accent-color);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
+  /* ===== Branch ===== */
+  .branch-section {
+    display: flex;
+    gap: 0;
+    margin-top: 0;
+    position: relative;
+  }
 
-        /* --- Page 1: Concept --- */
-        .concept-text {
-            text-align: center;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-        
-        .concept-text p {
-            margin-bottom: 2rem;
-        }
+  .branch-connector {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    position: relative;
+  }
+  .branch-connector::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+  }
 
-        .concept-voice {
-            margin-top: 4rem;
-            font-size: 0.9rem;
-            color: var(--accent-color);
-        }
+  /* Diamond */
+  .diamond-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+  }
+  .diamond {
+    width: 180px;
+    height: 80px;
+    background: #fff;
+    border: 2px solid #e67e22;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  .diamond .diamond-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #e67e22;
+    letter-spacing: 0.04em;
+  }
+  .diamond .diamond-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-align: center;
+  }
 
-        /* --- Page 2: Profile & Photo --- */
-        .profile-header {
-            display: flex;
-            justify-content: flex-end;
-            gap: 20px;
-            font-size: 0.85rem;
-            color: var(--accent-color);
-            margin-bottom: 30px;
-        }
+  /* Two column branch */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 0;
+  }
 
-        .polaroid-area {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
+  .branch-label-row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 56px;
+  }
+  
+  /* Horizontal branch lines */
+  .branch-lines {
+    position: relative;
+    height: 56px;
+    margin-bottom: 0;
+  }
+  .branch-lines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: #ccc;
+  }
+  .branch-lines::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: calc(25% + 14px);
+    right: calc(25% + 14px);
+    height: 2px;
+    background: #ccc;
+  }
 
-        .polaroid-frame {
-            background: #fff;
-            padding: 15px 15px 50px 15px;
-            box-shadow: 2px 4px 12px rgba(0,0,0,0.08);
-            transform: rotate(-2deg); /* 手作業感 */
-            width: 70%;
-            text-align: center;
-            color: #ccc;
-            border: 1px solid #eee;
-            position: relative;
-        }
+  .branch-left-line, .branch-right-line {
+    position: absolute;
+    top: 20px;
+    width: 2px;
+    height: 36px;
+    background: #ccc;
+  }
+  .branch-left-line { left: calc(25% + 14px); }
+  .branch-right-line { right: calc(25% + 14px); }
 
-        /* マステ風あしらい */
-        .polaroid-frame::before {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 25px;
-            background-color: rgba(230, 220, 200, 0.6);
-            border-left: 1px dashed rgba(255,255,255,0.8);
-            border-right: 1px dashed rgba(255,255,255,0.8);
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-        }
+  .branch-label {
+    position: absolute;
+    top: 26px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+  .branch-label.yes {
+    left: calc(25% + 30px);
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  .branch-label.no {
+    right: calc(25% + 30px);
+    background: #fce4ec;
+    color: #c62828;
+  }
 
-        .reason-box {
-            margin-top: 30px;
-        }
+  /* ===== GREEN PATH (Compliance) ===== */
+  .green-path {
+    position: relative;
+  }
+  .green-path .path-header {
+    background: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 10px 10px 0 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
 
-        /* --- Page 3-4: Mandala --- */
-        .mandala-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            aspect-ratio: 1;
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-        }
+  .phase-card {
+    background: #fff;
+    border: 2px solid #c8e6c9;
+    border-top: none;
+    padding: 18px 20px;
+    position: relative;
+  }
+  .phase-card:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+  .phase-card .p-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .phase-card .p-label .period {
+    font-weight: 400;
+    color: #888;
+    font-size: 11px;
+  }
+  .phase-card .p-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+  }
+  .phase-card .p-goal {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 3px solid #c8e6c9;
+  }
+  .phase-card .p-condition {
+    font-size: 11px;
+    background: #f1f8e9;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #33691e;
+    font-weight: 500;
+  }
+  .phase-card .p-担当 {
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+  }
 
-        .mandala-cell {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.85rem;
-            /* 有機的な形 */
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            transition: all 0.3s ease;
-            position: relative;
-        }
+  .phase-arrow {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    position: relative;
+    background: #fff;
+    border-left: 2px solid #c8e6c9;
+    border-right: 2px solid #c8e6c9;
+  }
+  .phase-arrow::before {
+    content: '▼';
+    color: #81c784;
+    font-size: 10px;
+    line-height: 28px;
+  }
 
-        .mandala-center {
-            background-color: var(--pastel-1);
-            font-weight: 600;
-            border-radius: 50%;
-            z-index: 2;
-        }
+  /* ===== RED PATH (Non-compliance) ===== */
+  .red-path {
+    position: relative;
+  }
+  .red-path .path-header {
+    background: #c62828;
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 10px 10px 0 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
 
-        .mandala-item {
-            background-color: rgba(255, 255, 255, 0.5);
-            border: 1px dashed #ddd;
-        }
+  .step-card {
+    background: #fff;
+    border: 2px solid #ffcdd2;
+    border-top: none;
+    padding: 18px 20px;
+    position: relative;
+  }
+  .step-card:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+  .step-card .s-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #c62828;
+    margin-bottom: 4px;
+  }
+  .step-card .s-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+  }
+  .step-card .s-trigger {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    border-left: 3px solid #ffcdd2;
+  }
+  .step-card .s-action {
+    font-size: 11px;
+    background: #fce4ec;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #880e4f;
+    font-weight: 500;
+  }
+  .step-card .s-担当 {
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+  }
+  .step-card .s-recovery {
+    font-size: 11px;
+    background: #e8f5e9;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: #2e7d32;
+    margin-top: 6px;
+    font-weight: 500;
+  }
 
-        /* 少しずつ形を変える */
-        .mandala-item:nth-child(2n) { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; background-color: var(--pastel-2); }
-        .mandala-item:nth-child(3n) { border-radius: 70% 30% 30% 70% / 50% 50% 50% 50%; background-color: var(--pastel-3); }
-        .mandala-item:nth-child(5) { border-radius: 50%; } /* Center */
-        .mandala-item:nth-child(7n) { border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%; background-color: var(--pastel-4); }
+  .step-arrow {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    position: relative;
+    background: #fff;
+    border-left: 2px solid #ffcdd2;
+    border-right: 2px solid #ffcdd2;
+  }
+  .step-arrow::before {
+    content: '▼';
+    color: #ef9a9a;
+    font-size: 10px;
+    line-height: 28px;
+  }
 
-        .vision-lines {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        /* --- Page 5: Trash Can --- */
-        .trash-section {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .trash-list {
-            list-style: none;
-            padding: 0;
-            flex-grow: 1;
-        }
-        
-        .trash-list li {
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-        }
-        
-        .checkbox-square {
-            width: 16px;
-            height: 16px;
-            border: 1px solid var(--accent-color);
-            margin-right: 15px;
-            display: inline-block;
-        }
+  /* ===== Cause split ===== */
+  .cause-split {
+    background: #fff3e0;
+    border: 1.5px solid #ffb74d;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 0 0 0 0;
+    font-size: 12px;
+  }
+  .cause-split .cause-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 8px;
+  }
+  .cause-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #555;
+    align-items: flex-start;
+  }
+  .cause-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .cause-icon.fix { background: #42a5f5; }
+  .cause-icon.support { background: #ff9800; }
+  .cause-icon.escalate { background: #ef5350; }
 
-        .trash-icon-area {
-            text-align: right;
-            padding: 20px;
-            opacity: 0.5;
-        }
+  /* ===== Store timeline ===== */
+  .store-timeline {
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 28px;
+    border: 1px solid #e0ddd5;
+  }
+  .store-timeline h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+  .store-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .store-name {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .store-bar-wrap {
+    position: relative;
+    height: 28px;
+    background: #f0ede7;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .store-bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+  }
+  .store-bar.phase-a { background: #90a4ae; }
+  .store-bar.phase-b { background: #66bb6a; }
 
-        /* --- Page Weekly --- */
-        .weekly-header {
-            font-family: 'Zen Old Mincho', serif;
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            border-bottom: 1px dotted var(--line-color);
-            padding-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
+  .timeline-labels {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .timeline-months {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #999;
+  }
 
-        .emotion-icons {
-            display: flex;
-            gap: 12px;
-        }
+  /* ===== Legend ===== */
+  .legend {
+    margin-top: 28px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #666;
+  }
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+  }
+  .legend-dot.green { background: #66bb6a; }
+  .legend-dot.red { background: #ef5350; }
+  .legend-dot.gray { background: #90a4ae; }
+  .legend-dot.orange { background: #ffb74d; }
 
-        .emotion-icon {
-            width: 24px;
-            height: 24px;
-            border: 1px solid #ddd;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            color: #aaa;
-            cursor: pointer;
-        }
-        
-        .emotion-icon.selected {
-            border-color: #888;
-            color: #555;
-            background-color: rgba(0,0,0,0.02);
-        }
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    body { padding: 20px 12px; }
+    .two-col {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    h1 { font-size: 18px; }
+    .branch-lines::after { display: none; }
+    .branch-left-line, .branch-right-line { display: none; }
+    .branch-label { display: none; }
+  }
 
-        .writing-space {
-            background-image: linear-gradient(transparent 95%, var(--line-color) 96%);
-            background-size: 100% 3rem; /* 行間 */
-            line-height: 3rem;
-            height: 200px;
-            width: 100%;
-            margin-bottom: 30px;
-        }
-        
-        .column-footer {
-            margin-top: auto;
-            background-color: rgba(0,0,0,0.02);
-            padding: 15px;
-            font-size: 0.8rem;
-            border-radius: 8px;
-        }
-        
-        /* SVG Icons placeholder */
-        .icon-svg {
-            width: 20px;
-            height: 20px;
-            stroke: var(--text-color);
-            fill: none;
-            stroke-width: 1.5;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
+  /* Section dividers */
+  .section-gap { height: 32px; }
 
-        /* Responsive for Mobile viewing of this prototype */
-        @media (max-width: 768px) {
-            .notebook-spread {
-                grid-template-columns: 1fr;
-                height: auto;
-            }
-            .notebook-spread::before {
-                display: none;
-            }
-            .page {
-                border-bottom: 1px solid #eee;
-                min-height: 600px;
-            }
-        }
-    </style>
+  /* Recovery arrow */
+  .recovery-arrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #2e7d32;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .recovery-arrow::before {
+    content: '↩';
+    font-size: 14px;
+  }
+
+  .note-box {
+    background: #fafaf7;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.8;
+  }
+  .note-box strong {
+    color: #444;
+  }
+</style>
 </head>
 <body>
 
-    <!-- 1. 表紙裏 & 導入 (Intro) -->
-    <div class="notebook-spread">
-        <!-- Page 1 (Left) -->
-        <div class="page">
-            <div class="concept-text">
-                <p>このノートは、</p>
-                <p>「上手に書くため」のものじゃない。</p>
-                <p>迷った時に戻る<br>“ホームポジション”</p>
-                <p>空白があってもいい。<br>書けない日があってもいい。</p>
-                <p>ただ、<br>「自分に対して正直」であるための<br>ノートです。</p>
-                
-                <div class="concept-voice">
-                    <p>なーすけ Voice</p>
-                </div>
-            </div>
+<div class="container">
+
+  <h1>FC店舗育成 ── フェーズ・ステップ遷移フロー</h1>
+  <p class="subtitle">Mustの遵守状況に応じて、店舗ごとに異なるルートを進む全体像</p>
+
+  <!-- Entry -->
+  <div class="entry-box">
+    フェーズA：Mustを守る（2〜3月）
+    <div class="entry-sub">なーすけさんが全店舗と週次30分の1on1で伴走。4つのMustの定着に集中する期間</div>
+  </div>
+
+  <!-- Connector -->
+  <div class="connector"><div class="arrow-down"></div></div>
+
+  <!-- Phase A Detail -->
+  <div class="phase-a-box">
+    <span class="phase-label">フェーズA ─ 全店舗共通</span>
+    <div class="phase-title">4つのMustを「できている」状態にする</div>
+    <div class="phase-desc">
+      セッションログ完全提出 ／ 24時間以内レスポンス ／ NPS実施 ／ オーナー現場対話<br>
+      毎週の1on1で「なぜできなかったか」を確認し、やり方を柔軟に調整する
+    </div>
+    <div class="detail-row">
+      <span class="detail-tag">担当：なーすけさん</span>
+      <span class="detail-tag">頻度：週次1on1（30分）</span>
+      <span class="detail-tag">記録：MUST運用シート</span>
+    </div>
+  </div>
+
+  <!-- Connector to judgment -->
+  <div class="connector"><div class="arrow-down"></div></div>
+
+  <!-- Diamond: judgment -->
+  <div class="diamond-wrap">
+    <div class="diamond">
+      <div class="diamond-label">毎週判定</div>
+      <div class="diamond-text">4つのMust<br>全て達成？</div>
+    </div>
+  </div>
+
+  <!-- Branch lines -->
+  <div class="branch-lines">
+    <div class="branch-left-line"></div>
+    <div class="branch-right-line"></div>
+    <span class="branch-label yes">✓ 達成</span>
+    <span class="branch-label no">✗ 未達</span>
+  </div>
+
+  <!-- Two columns -->
+  <div class="two-col">
+
+    <!-- ===== LEFT: GREEN PATH ===== -->
+    <div class="green-path">
+      <div class="path-header">守れている場合のルート</div>
+
+      <!-- Condition box -->
+      <div class="phase-card">
+        <div class="p-label">移行条件</div>
+        <div class="p-condition">4つのMust全てが「できている」状態が<strong>3週間連続</strong>で続いたらフェーズBへ</div>
+        <div style="margin-top: 10px; font-size: 12px; color: #555;">
+          <strong>「できている」の定義：</strong><br>
+          ・セッションログ → その週に1件以上提出<br>
+          ・24hレスポンス → 重要連絡に返事漏れなし（スタンプOK）<br>
+          ・NPS → その月の分が完了<br>
+          ・オーナー対話 → 記録が1on1前日までに記入済み
         </div>
+        <div class="p-担当">判定者：1on1担当者（今はなーすけさん → 4月以降ななこちゃんに移行）</div>
+      </div>
 
-        <!-- Page 2 (Right) -->
-        <div class="page">
-            <div class="profile-header">
-                <div>撮影日 <span style="margin-left:8px; border-bottom:1px dotted #999; width:80px; display:inline-block;"></span></div>
-                <div>体重 <span style="margin-left:8px; border-bottom:1px dotted #999; width:60px; display:inline-block;"></span> kg</div>
-            </div>
+      <div class="phase-arrow"></div>
 
-            <div class="polaroid-area">
-                <div class="polaroid-frame">
-                    <div style="height: 200px; background-color: #fcfbf9; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #ddd;">
-                        Photo Here
-                    </div>
-                    <div style="margin-top: 15px; font-family: 'Zen Old Mincho'; font-size: 0.9rem;">My Current Self</div>
-                </div>
-            </div>
-
-            <div class="reason-box">
-                <span class="label">大会に挑戦しようと思った理由</span>
-                <div class="handwritten-line"></div>
-                <div class="handwritten-line"></div>
-                <div class="handwritten-line"></div>
-            </div>
-
-            <div class="reason-box" style="margin-top: 20px;">
-                <span class="label">挑戦の過程でどんな自分でいたい？</span>
-                <div class="handwritten-line"></div>
-                <div class="handwritten-line"></div>
-            </div>
+      <!-- Phase B -->
+      <div class="phase-card">
+        <div class="p-label">フェーズB <span class="period">目安：4〜5月</span></div>
+        <div class="p-title">Mustをやって出てきた困りごとを一緒に解く</div>
+        <div class="p-goal">
+          <strong>ゴール：</strong>オーナーが「うちの店にとってMustをやる意味」を自分の言葉で話せる状態
         </div>
+        <div style="font-size: 12px; color: #555; margin-bottom: 8px;">
+          <strong>やること：</strong><br>
+          ・現場の「困った」を具体的にヒアリング<br>
+          ・Mustの「なぜやるか」をオーナー自身が体感で理解<br>
+          ・ななこちゃんが1on1に同席開始<br>
+          ・オーナー同士の情報交換の場をお試し実施
+        </div>
+        <div class="p-condition">店舗別テーマ例：本店＝フーテロちゃんの育成、柏＝離脱防止、大阪＝トレーナー差の見える化、上板橋＝Instagram運用</div>
+      </div>
+
+      <div class="phase-arrow"></div>
+
+      <!-- Phase C -->
+      <div class="phase-card">
+        <div class="p-label">フェーズC <span class="period">目安：6〜7月</span></div>
+        <div class="p-title">「あなたの店舗、これからどうしたい？」を話す</div>
+        <div class="p-goal">
+          <strong>ゴール：</strong>オーナーが自分たちで育成サイクルを回せる状態
+        </div>
+        <div style="font-size: 12px; color: #555; margin-bottom: 8px;">
+          <strong>やること：</strong><br>
+          ・オーナー自身がやりたいこと・目指す姿を言語化<br>
+          ・セッション品質の基準をガイドにまとめる<br>
+          ・Shapeの考え方の伝達ステップを文書化<br>
+          ・Mustが安定している店舗から順にこのテーマへ移行
+        </div>
+        <div class="p-condition">本部ビジョンをオーナーの声に重ねて共有（全体MTGで実施）</div>
+      </div>
+
+      <div class="phase-arrow"></div>
+
+      <!-- Phase D -->
+      <div class="phase-card" style="border-radius: 0 0 10px 10px;">
+        <div class="p-label">フェーズD <span class="period">目安：8月〜</span></div>
+        <div class="p-title">オーナーが自分で立てた目標を追う</div>
+        <div class="p-goal">
+          <strong>ゴール：</strong>ななこちゃんが1on1主担当。なーすけさんは月1で全体確認のみ
+        </div>
+        <div style="font-size: 12px; color: #555; margin-bottom: 8px;">
+          <strong>やること：</strong><br>
+          ・トレーナーがShapeの考え方を体で表現できるレベルに<br>
+          ・「お客様の挑戦の物語」を自分の言葉で語れる状態<br>
+          ・各店舗の育成の成果を振り返り、来年に活かす
+        </div>
+        <div class="p-担当">1on1主担当：ななこちゃん ／ なーすけさん：月1全体確認</div>
+      </div>
     </div>
 
-    <!-- 2. ビジョン & アクション (Vision) -->
-    <div class="notebook-spread">
-        <!-- Page 3 (Left) -->
-        <div class="page">
-            <h3>在り方目標</h3>
-            <p style="font-size: 0.8rem; color: #888;">軸になりすぎないように注意</p>
-            
-            <!-- Organic Mandala Chart -->
-            <div style="display: flex; align-items: center; height: 100%;">
-                <div class="mandala-container">
-                    <div class="mandala-cell mandala-item">遊び<br>楽しみ</div>
-                    <div class="mandala-cell mandala-item">美容<br>健康</div>
-                    <div class="mandala-cell mandala-item">家族</div>
-                    <div class="mandala-cell mandala-item">学び</div>
-                    <div class="mandala-cell mandala-center">理想の<br>自分</div>
-                    <div class="mandala-cell mandala-item">暮らし</div>
-                    <div class="mandala-cell mandala-item">お金</div>
-                    <div class="mandala-cell mandala-item">人格</div>
-                    <div class="mandala-cell mandala-item">仕事</div>
-                </div>
-            </div>
-        </div>
+    <!-- ===== RIGHT: RED PATH ===== -->
+    <div class="red-path">
+      <div class="path-header">守れていない場合のルート</div>
 
-        <!-- Page 4 (Right) -->
-        <div class="page">
-            <h3>叶えるアクション</h3>
-            
-            <div class="input-group">
-                <span class="label">行動目標（トレーニング回数、毎日の習慣など）</span>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-                    <div><span class="checkbox-square"></span> <span style="border-bottom:1px dotted #ccc; width: 80%;"></span></div>
-                    <div><span class="checkbox-square"></span> <span style="border-bottom:1px dotted #ccc; width: 80%;"></span></div>
-                    <div><span class="checkbox-square"></span> <span style="border-bottom:1px dotted #ccc; width: 80%;"></span></div>
-                    <div><span class="checkbox-square"></span> <span style="border-bottom:1px dotted #ccc; width: 80%;"></span></div>
-                    <div><span class="checkbox-square"></span> <span style="border-bottom:1px dotted #ccc; width: 80%;"></span></div>
-                    <div><span class="checkbox-square"></span> <span style="border-bottom:1px dotted #ccc; width: 80%;"></span></div>
-                </div>
-            </div>
-
-            <div style="margin-top: 40px;">
-                <h3>やらないことリスト</h3>
-                <div style="font-size: 0.8rem; color: #888; margin-bottom: 20px;">理想の自分を叶えるために、手放す勇気を。</div>
-                <ul class="trash-list">
-                    <li><span class="checkbox-square"></span> <div class="handwritten-line"></div></li>
-                    <li><span class="checkbox-square"></span> <div class="handwritten-line"></div></li>
-                    <li><span class="checkbox-square"></span> <div class="handwritten-line"></div></li>
-                </ul>
-                <div class="trash-icon-area">
-                    <!-- Simple Trash Icon SVG -->
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="3 6 5 6 21 6"></polyline>
-                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                        <line x1="10" y1="11" x2="10" y2="17"></line>
-                        <line x1="14" y1="11" x2="14" y2="17"></line>
-                    </svg>
-                    <div style="font-size:0.7rem; margin-top:5px;">手放す</div>
-                </div>
-            </div>
+      <!-- Cause split -->
+      <div class="step-card">
+        <div class="cause-split">
+          <div class="cause-title">まず原因を3つに分ける（1on1で毎回メモ）</div>
+          <div class="cause-item">
+            <span class="cause-icon fix">1</span>
+            <span><strong>やり方が悪い</strong>：フォームが使いにくい、締切が非現実的 → 本部が仕組みを直す → ステップ3に進まない</span>
+          </div>
+          <div class="cause-item">
+            <span class="cause-icon support">2</span>
+            <span><strong>手が足りない</strong>：トレーナー不足、シフトの問題 → 一緒に負荷を減らす → ステップ3に進まない</span>
+          </div>
+          <div class="cause-item">
+            <span class="cause-icon escalate">3</span>
+            <span><strong>やる気・優先度の問題</strong>：仕組みも人も整っているのに後回し → 連続カウント開始 → ステップ3へ</span>
+          </div>
+          <div style="margin-top: 8px; font-size: 11px; color: #888;">
+            ※ やり方を直してから<strong>2週間</strong>たっても変わらなければ「やる気の問題」として判断し直す
+          </div>
         </div>
+      </div>
+
+      <div class="step-arrow"></div>
+
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="s-label">ステップ1：事実の確認</div>
+        <div class="s-title">「先週のログ見ると、ここが未提出ですね」</div>
+        <div class="s-trigger">
+          <strong>いつ：</strong>今週できていないMustが1つでもある時<br>
+          <strong>何を：</strong>1on1でなぜできなかったか確認してメモに記録。責めない
+        </div>
+        <div class="s-action">担当：1on1の担当者</div>
+        <div class="s-recovery">✓ 改善すればフェーズAの通常運用に戻る</div>
+      </div>
+
+      <div class="step-arrow"></div>
+
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="s-label">ステップ2：サポート</div>
+        <div class="s-title">原因に合わせて手を打つ</div>
+        <div class="s-trigger">
+          <strong>いつ：</strong>原因が「やり方」か「手が足りない」とわかった時<br>
+          <strong>何を：</strong>やり方の調整・負担軽減の工夫をする
+        </div>
+        <div class="s-action">担当：1on1の担当者</div>
+        <div class="s-recovery">✓ 改善すれば通常運用に戻る（連続カウントに入れない）</div>
+      </div>
+
+      <div class="step-arrow"></div>
+
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="s-label">ステップ3：期限を決める</div>
+        <div class="s-title">「いつまでにやるか」を具体的に決める</div>
+        <div class="s-trigger">
+          <strong>いつ：</strong>同じMustが<strong>3週続けて</strong>できていない時<br>
+          <strong>何を：</strong>次の火曜日までの期限を設定 → チャットワークでも文面送付（記録）
+        </div>
+        <div class="s-action">担当：なーすけさん</div>
+        <div style="font-size: 12px; color: #555; margin-top: 8px;">
+          <strong>運用ルール：</strong><br>
+          ・伝え方：1on1で直接 ＋ チャットワークで記録<br>
+          ・やった連絡がない場合 → 木曜にリマインド → 金曜まで連絡なければ次の1on1で確認<br>
+          ・期限内にやれた場合 → 通常に戻す（連続カウントもリセット）<br>
+          ・期限内にやれなかった場合 → 翌週もう一度期限設定（2回目）→ 2回ともダメならステップ4へ
+        </div>
+      </div>
+
+      <div class="step-arrow"></div>
+
+      <!-- Step 4 -->
+      <div class="step-card" style="border-radius: 0 0 10px 10px;">
+        <div class="s-label">ステップ4：条件の見直し</div>
+        <div class="s-title">FC契約の条件について話し合う</div>
+        <div class="s-trigger">
+          <strong>いつ：</strong>ステップ3を<strong>2回</strong>やっても改善しない時<br>
+          <strong>何を：</strong>段階的に対応を検討
+        </div>
+        <div style="font-size: 12px; color: #555; margin-top: 8px;">
+          <strong>3段階で考える：</strong><br>
+          ① まず：Mustの中身を変えられないか<br>
+          ② 次に：本部のサポート体制を変える（例：事務局がログ入力を一時代行）<br>
+          ③ 最後に：ロイヤリティ条件や契約継続について話す
+        </div>
+        <div class="s-action">最終判断：なーすけさん ／ 事務局は事実整理と選択肢の準備</div>
+      </div>
     </div>
 
-    <!-- 3. 日々の記録 (Daily/Weekly) -->
-    <div class="notebook-spread">
-        <!-- Page Weekly (Left) -->
-        <div class="page">
-            <div class="weekly-header">
-                <span>Oct 12 <small style="font-size:0.6em; margin-left:5px;">Mon</small></span>
-                <div class="emotion-icons">
-                    <!-- Simple Emotion Icons -->
-                    <div class="emotion-icon" title="楽しい">☀</div>
-                    <div class="emotion-icon" title="曇り/普通">☁</div>
-                    <div class="emotion-icon" title="雨/悲しい">☂</div>
-                    <div class="emotion-icon" title="雷/怒り">⚡</div>
-                </div>
-            </div>
-            
-            <div class="input-group">
-                <span class="label">出来事や感じたこと・気づき</span>
-                <div class="writing-space">
-                    <!-- Lines are created by background-image -->
-                </div>
-            </div>
+  </div><!-- /two-col -->
 
-            <div class="input-group">
-                <span class="label">今週のベスト褒めポイント</span>
-                <div class="handwritten-line"></div>
-                <div class="handwritten-line"></div>
-            </div>
-        </div>
+  <!--担当の移行 -->
+  <div class="section-gap"></div>
 
-        <!-- Page Weekly (Right) -->
-        <div class="page">
-            <div class="weekly-header">
-                <span>Oct 13 <small style="font-size:0.6em; margin-left:5px;">Tue</small></span>
-                <div class="emotion-icons">
-                    <div class="emotion-icon">☀</div>
-                    <div class="emotion-icon selected">☁</div>
-                    <div class="emotion-icon">☂</div>
-                    <div class="emotion-icon">⚡</div>
-                </div>
-            </div>
-            
-            <div class="input-group">
-                <span class="label">出来事や感じたこと・気づき</span>
-                <div class="writing-space"></div>
-            </div>
-
-            <div class="column-footer">
-                <strong><span style="font-size:1.2em">💡</span> 今の自分に言ってあげたい言葉</strong>
-                <p style="margin: 5px 0 0 0; font-size: 0.85rem;">
-                    無理にポジティブにならなくていい。<br>
-                    感情をそのまま受け止めることが、<br>
-                    明日への一番の栄養になる。
-                </p>
-            </div>
-        </div>
+  <div class="store-timeline">
+    <h2>担当の移行プラン</h2>
+    <div style="font-size: 13px; color: #555; margin-bottom: 16px;">
+      ステップ1〜4の担当者が時期によって変わる
     </div>
+    <div class="store-row">
+      <div class="store-name" style="font-size: 12px; color: #888;">時期</div>
+      <div style="display: flex; justify-content: space-between; font-size: 10px; color: #999;">
+        <span>2月</span><span>3月</span><span>4月</span><span>5月〜</span>
+      </div>
+    </div>
+    <div class="store-row">
+      <div class="store-name">ステップ1〜2</div>
+      <div class="store-bar-wrap">
+        <div class="store-bar phase-a" style="left: 0; width: 50%;">なーすけさん</div>
+        <div class="store-bar phase-b" style="left: 50%; width: 50%;">ななこちゃんに引き継ぎ</div>
+      </div>
+    </div>
+    <div class="store-row">
+      <div class="store-name">ステップ3〜4</div>
+      <div class="store-bar-wrap">
+        <div class="store-bar phase-a" style="left: 0; width: 100%;">なーすけさんのまま（プレッシャーのかかる判断）</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Store timeline -->
+  <div class="section-gap"></div>
+
+  <div class="store-timeline">
+    <h2>店舗別 フェーズB移行見込み</h2>
+    <div style="font-size: 13px; color: #555; margin-bottom: 16px;">
+      フェーズBへの移行条件：4つのMust全て達成が3週間連続
+    </div>
+    <div class="store-row">
+      <div class="store-name" style="font-size: 12px; color: #888;">店舗</div>
+      <div style="display: flex; justify-content: space-between; font-size: 10px; color: #999;">
+        <span>2月</span><span>3月初</span><span>3月半ば</span><span>3月末</span><span>4月</span>
+      </div>
+    </div>
+    <div class="store-row">
+      <div class="store-name">本店</div>
+      <div class="store-bar-wrap">
+        <div class="store-bar phase-a" style="left: 0; width: 20%;">A</div>
+        <div class="store-bar phase-b" style="left: 20%; width: 80%;">フェーズB（2月末〜3月初め）</div>
+      </div>
+    </div>
+    <div class="store-row">
+      <div class="store-name">大阪天六</div>
+      <div class="store-bar-wrap">
+        <div class="store-bar phase-a" style="left: 0; width: 50%;">フェーズA</div>
+        <div class="store-bar phase-b" style="left: 50%; width: 50%;">フェーズB（3月半ば〜）</div>
+      </div>
+    </div>
+    <div class="store-row">
+      <div class="store-name">上板橋</div>
+      <div class="store-bar-wrap">
+        <div class="store-bar phase-a" style="left: 0; width: 60%;">フェーズA</div>
+        <div class="store-bar phase-b" style="left: 60%; width: 40%;">フェーズB（3月半ば〜後半）</div>
+      </div>
+    </div>
+    <div class="store-row">
+      <div class="store-name">柏</div>
+      <div class="store-bar-wrap">
+        <div class="store-bar phase-a" style="left: 0; width: 80%;">フェーズA</div>
+        <div class="store-bar phase-b" style="left: 80%; width: 20%;">B</div>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot gray"></div>フェーズA（Must定着期間）</div>
+      <div class="legend-item"><div class="legend-dot green"></div>フェーズB（困りごと解決期間）</div>
+    </div>
+  </div>
+
+  <!-- オーナーへの開示 -->
+  <div class="section-gap"></div>
+
+  <div class="store-timeline">
+    <h2>オーナーへの開示タイミング</h2>
+    <div style="font-size: 13px; color: #555; line-height: 2;">
+      <strong style="color: #1a1a1a;">2月（テスト期間）：</strong>ステップ1〜2だけ伝える。「1on1で状況を一緒に確認して、困っていることがあればサポートします」<br>
+      <strong style="color: #1a1a1a;">3月末 全体MTG：</strong>フロー全体を見せる。「テスト期間でわかったのは、原因のほとんどはやり方の問題でした。4月からはやり方を整えた上で見ていきます」<br>
+      <strong style="color: #1a1a1a;">4月以降：</strong>個別に「今ステップ○です」とは言わない。ステップ3に入る時は「期限を決めましょう」と自然に伝わる形
+    </div>
+  </div>
+
+  <div class="note-box" style="margin-top: 20px;">
+    <strong>判定のタイミング：</strong>毎週の1on1終了後、MUST運用シートを更新した時点で判定<br>
+    <strong>記録方法：</strong>ホームシートに各店舗の今のフェーズ（A / B / C / D）を1行で管理<br>
+    <strong>3週間の理由：</strong>2週間では習慣とは言えない。4週間では達成済み店舗のやる気が下がる。3週間がバランス最適
+  </div>
+
+</div>
 
 </body>
 </html>

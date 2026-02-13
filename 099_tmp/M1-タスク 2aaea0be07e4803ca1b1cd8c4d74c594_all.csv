@@ -1,0 +1,68 @@
+﻿名前,id,サブアイテム,ステータス,タスクアウトプット,担当者,日付,次のタスクにより保留中：,次のタスクを保留中：,親アイテム
+プログラムキックオフ,P.0.1,,未着手,,,2025年11月18日,,,
+プログラム週次定例,P.0.2,,未着手,,,2025年11月25日,,,
+プログラム完了報告,P.0.3,,未着手,,,2026年2月24日,,,
+現状課題リスト,2.1,"課題の一次整理 (https://www.notion.so/2acea0be07e481379835e27ef3e1b846?pvs=21), 課題収集・議事録作成 (https://www.notion.so/2acea0be07e48106981bca81c06a6805?pvs=21), STHインタビュー実施 (https://www.notion.so/STH-2acea0be07e48191aed6ec029159a57c?pvs=21), STHインタビュー準備（対象者選定・日程調整） (https://www.notion.so/STH-2acea0be07e4816b8792cf6d0f6a7688?pvs=21), インタビュー設計 (https://www.notion.so/2acea0be07e4818a9098d46314a315c9?pvs=21)",,,,,,,
+インタビュー設計,2.1.1,,要件定義済み,"インタビュー対象者リスト (https://www.notion.so/2acea0be07e48041b9dcc0c2705a521c?pvs=21), ヒアリングリスト (https://www.notion.so/2acea0be07e480de9902d47fc15f4da6?pvs=21)",,2025年11月19日,,,現状課題リスト (https://www.notion.so/2acea0be07e4816ea389d63e5d2bbdda?pvs=21)
+STHインタビュー準備（対象者選定・日程調整）,2.1.2,,未着手,,,2025年11月26日,,,現状課題リスト (https://www.notion.so/2acea0be07e4816ea389d63e5d2bbdda?pvs=21)
+STHインタビュー実施,2.1.3,,未着手,,,2025年12月3日,,,現状課題リスト (https://www.notion.so/2acea0be07e4816ea389d63e5d2bbdda?pvs=21)
+課題収集・議事録作成,2.1.4,,未着手,,,2025年12月10日,,,現状課題リスト (https://www.notion.so/2acea0be07e4816ea389d63e5d2bbdda?pvs=21)
+課題の一次整理,2.1.5,,未着手,,,2025年12月12日,,,現状課題リスト (https://www.notion.so/2acea0be07e4816ea389d63e5d2bbdda?pvs=21)
+成果物1: 構造マップ(M1),2.2,"マップ作成とレビュー (https://www.notion.so/2acea0be07e481bb9caaf101b19b7b82?pvs=21), Quick Win対象業務選定 (https://www.notion.so/Quick-Win-2acea0be07e48188a408e0ec7cfd7716?pvs=21), 期待値の言語化 (https://www.notion.so/2acea0be07e48104b2c1d43444b46b42?pvs=21), 課題の分類 (https://www.notion.so/2acea0be07e48149912fd5d4204b54cf?pvs=21)",,,,,,,
+課題の分類,2.2.1,,未着手,,,2025年12月16日,,,成果物1: 構造マップ(M1) (https://www.notion.so/1-M1-2acea0be07e481049139f5be4a0ffb51?pvs=21)
+期待値の言語化,2.2.2,,未着手,,,2025年12月18日,,,成果物1: 構造マップ(M1) (https://www.notion.so/1-M1-2acea0be07e481049139f5be4a0ffb51?pvs=21)
+Quick Win対象業務選定,2.2.3,,未着手,,,2025年12月25日,,,成果物1: 構造マップ(M1) (https://www.notion.so/1-M1-2acea0be07e481049139f5be4a0ffb51?pvs=21)
+マップ作成とレビュー,2.2.4,,未着手,,,2026年1月8日,,,成果物1: 構造マップ(M1) (https://www.notion.so/1-M1-2acea0be07e481049139f5be4a0ffb51?pvs=21)
+成果物2&3: 組織図・RACI(v1),2.3,"作成と承認 (https://www.notion.so/2acea0be07e4818c85cbe1bb05f667f3?pvs=21), RACI設計WS (https://www.notion.so/RACI-WS-2acea0be07e48187945fe24909b1d5b4?pvs=21), 組織図（たたき台）作成 (https://www.notion.so/2acea0be07e481dfbc53c9572ad5d466?pvs=21), 主要業務プロセスの可視化 (https://www.notion.so/2acea0be07e4815e8268e0d7883ae120?pvs=21)",,,,,,,
+主要業務プロセスの可視化,2.3.1,,未着手,,,2026年1月15日,,,成果物2&3: 組織図・RACI(v1) (https://www.notion.so/2-3-RACI-v1-2acea0be07e4811eaa36fedee806ac42?pvs=21)
+組織図（たたき台）作成,2.3.2,,未着手,,,2026年1月22日,,,成果物2&3: 組織図・RACI(v1) (https://www.notion.so/2-3-RACI-v1-2acea0be07e4811eaa36fedee806ac42?pvs=21)
+RACI設計WS,2.3.3,,未着手,,,2026年1月29日,,,成果物2&3: 組織図・RACI(v1) (https://www.notion.so/2-3-RACI-v1-2acea0be07e4811eaa36fedee806ac42?pvs=21)
+作成と承認,2.3.4,,未着手,,,2026年2月5日,,,成果物2&3: 組織図・RACI(v1) (https://www.notion.so/2-3-RACI-v1-2acea0be07e4811eaa36fedee806ac42?pvs=21)
+ブループリント,3.1,"サービス設計思想の合意 (https://www.notion.so/2acea0be07e4817b87accf02d10c5ba9?pvs=21), 候補企業ヒアリング (https://www.notion.so/2acea0be07e4812cb88edcf3d77a6f13?pvs=21), 他ヒアリング候補リストアップ (https://www.notion.so/2acea0be07e4812bb3dfea630174c38b?pvs=21), 第2回 設計WS（壁打ち） (https://www.notion.so/2-WS-2acea0be07e481b7928cdb2f38456050?pvs=21), 第1回 設計WS（壁打ち） (https://www.notion.so/1-WS-2acea0be07e48143be8aeaa435560e65?pvs=21)",要件定義済み,,,2025年11月19日 → 2025年12月12日,,,
+第1回 設計WS（壁打ち）,3.1.1,,未着手,,,2025年11月25日,,,ブループリント (https://www.notion.so/2acea0be07e4814080f1ec770c54923c?pvs=21)
+第2回 設計WS（壁打ち）,3.1.2,,未着手,,,2025年12月4日,,,ブループリント (https://www.notion.so/2acea0be07e4814080f1ec770c54923c?pvs=21)
+他ヒアリング候補リストアップ,3.1.2.a,,未着手,,,2025年11月19日,,,ブループリント (https://www.notion.so/2acea0be07e4814080f1ec770c54923c?pvs=21)
+候補企業ヒアリング,3.1.3,,未着手,,,2025年11月25日,,,ブループリント (https://www.notion.so/2acea0be07e4814080f1ec770c54923c?pvs=21)
+サービス設計思想の合意,3.1.4,,未着手,,,2025年12月11日,,,ブループリント (https://www.notion.so/2acea0be07e4814080f1ec770c54923c?pvs=21)
+成果物1&2: VEATM提案・研修マテリアル,3.2,"提案・承認獲得 (https://www.notion.so/2acea0be07e481b6a099fe66e4e0fbca?pvs=21), 実行体制アサイン (https://www.notion.so/2acea0be07e4817c933ae1fb5b81628f?pvs=21), マテリアル作成 (https://www.notion.so/2acea0be07e4819caa30d1072d4180b0?pvs=21), ROIロジックとGate確定 (https://www.notion.so/ROI-Gate-2acea0be07e48186b34dff3d627d145b?pvs=21), VEATM社ヒアリング (https://www.notion.so/VEATM-2acea0be07e481c3a73fce45b6b450e2?pvs=21), VEATM社へのアポイント調整 (https://www.notion.so/VEATM-2acea0be07e481008ec2c74c1b424206?pvs=21)",,,,,,,
+VEATM社へのアポイント調整,3.2.1,,要件定義済み,,,2025年11月19日,,,成果物1&2: VEATM提案・研修マテリアル (https://www.notion.so/1-2-VEATM-2acea0be07e48177b2aeda551c450a20?pvs=21)
+VEATM社ヒアリング,3.2.2,,要件定義済み,,,2025年11月27日,,,成果物1&2: VEATM提案・研修マテリアル (https://www.notion.so/1-2-VEATM-2acea0be07e48177b2aeda551c450a20?pvs=21)
+ROIロジックとGate確定,3.2.3,,未着手,,,2025年12月4日,,,成果物1&2: VEATM提案・研修マテリアル (https://www.notion.so/1-2-VEATM-2acea0be07e48177b2aeda551c450a20?pvs=21)
+マテリアル作成,3.2.4,,未着手,,,2025年12月11日,,,成果物1&2: VEATM提案・研修マテリアル (https://www.notion.so/1-2-VEATM-2acea0be07e48177b2aeda551c450a20?pvs=21)
+実行体制アサイン,3.2.5,,未着手,,,2025年12月18日,,,成果物1&2: VEATM提案・研修マテリアル (https://www.notion.so/1-2-VEATM-2acea0be07e48177b2aeda551c450a20?pvs=21)
+提案・承認獲得,3.2.6,,未着手,,,2025年12月25日,,,成果物1&2: VEATM提案・研修マテリアル (https://www.notion.so/1-2-VEATM-2acea0be07e48177b2aeda551c450a20?pvs=21)
+成果物3: 効果測定(M2),3.3,"W0: 導入設計キックオフ (https://www.notion.so/W0-2acea0be07e481f4abc4e0c0bb02b8d0?pvs=21), W1: 本編WS実施 (https://www.notion.so/W1-WS-2acea0be07e481e2bea3cb8ded7dcf44?pvs=21), W2-4: 1on1伴走 (https://www.notion.so/W2-4-1on1-2acea0be07e481ae9332f46741842ab7?pvs=21), W5: 振り返りと分析 (https://www.notion.so/W5-2acea0be07e481769fe2dc9e5b6af329?pvs=21), レポート作成・判定 (https://www.notion.so/2acea0be07e4819993f6ed141afd233d?pvs=21)",,,,,,,
+W0: 導入設計キックオフ,3.3.1,,未着手,,,2026年1月8日,,,成果物3: 効果測定(M2) (https://www.notion.so/3-M2-2acea0be07e4819785eec9f6e0ad4c1c?pvs=21)
+W1: 本編WS実施,3.3.2,,未着手,,,2026年1月15日,,,成果物3: 効果測定(M2) (https://www.notion.so/3-M2-2acea0be07e4819785eec9f6e0ad4c1c?pvs=21)
+W2-4: 1on1伴走,3.3.3,,未着手,,,2026年1月22日,,,成果物3: 効果測定(M2) (https://www.notion.so/3-M2-2acea0be07e4819785eec9f6e0ad4c1c?pvs=21)
+W5: 振り返りと分析,3.3.4,,未着手,,,2026年2月12日,,,成果物3: 効果測定(M2) (https://www.notion.so/3-M2-2acea0be07e4819785eec9f6e0ad4c1c?pvs=21)
+レポート作成・判定,3.3.5,,未着手,,,2026年2月19日,,,成果物3: 効果測定(M2) (https://www.notion.so/3-M2-2acea0be07e4819785eec9f6e0ad4c1c?pvs=21)
+【11/15～11/28】のタスクサマリー,P.1.1,,進行中,,,2025年11月8日 → 2025年11月28日,,,
+成果物1: 実質PL(v1),1.1,"レビューと承認 (https://www.notion.so/2adea0be07e481909f64ce914997f541?pvs=21), 「実質PL (v1)」試算 (https://www.notion.so/PL-v1-2adea0be07e481cdb67ee742189aab73?pvs=21), 「実質PL」ロジック設計 (https://www.notion.so/PL-2adea0be07e481779026f11c6186fa84?pvs=21), 現状PLデータ取得 (https://www.notion.so/PL-2adea0be07e4819fae68f36e74823ca2?pvs=21), 会計事務所との調整会議 (https://www.notion.so/2adea0be07e4810e9581fe6c2d74f5b2?pvs=21), 会計事務所へのアポイント調整 (https://www.notion.so/2adea0be07e481099fcef70eaef0c78c?pvs=21)",,,,,,,
+会計事務所へのアポイント調整,1.1.1,,未着手,,新harumasa suzuki,2025年11月19日,,,成果物1: 実質PL(v1) (https://www.notion.so/1-PL-v1-2adea0be07e4819c857ec4ff051429eb?pvs=21)
+会計事務所との調整会議,1.1.2,,未着手,,天池紫音,2025年11月26日,,,成果物1: 実質PL(v1) (https://www.notion.so/1-PL-v1-2adea0be07e4819c857ec4ff051429eb?pvs=21)
+現状PLデータ取得,1.1.3,,未着手,,天池紫音,2025年11月19日,,,成果物1: 実質PL(v1) (https://www.notion.so/1-PL-v1-2adea0be07e4819c857ec4ff051429eb?pvs=21)
+「実質PL」ロジック設計,1.1.4,,未着手,,"新harumasa suzuki, 天池紫音",2025年11月28日,,,成果物1: 実質PL(v1) (https://www.notion.so/1-PL-v1-2adea0be07e4819c857ec4ff051429eb?pvs=21)
+「実質PL (v1)」試算,1.1.5,,未着手,,,2025年12月2日,,,成果物1: 実質PL(v1) (https://www.notion.so/1-PL-v1-2adea0be07e4819c857ec4ff051429eb?pvs=21)
+レビューと承認,1.1.6,,未着手,,,2025年12月4日,,,成果物1: 実質PL(v1) (https://www.notion.so/1-PL-v1-2adea0be07e4819c857ec4ff051429eb?pvs=21)
+成果物2: コスト分析(M1),1.2,"コスト明細データ取得 (https://www.notion.so/2adea0be07e48145a9c2e207394946e4?pvs=21), レポート作成とレビュー (https://www.notion.so/2adea0be07e481faa4d5c65dcd583c60?pvs=21), 「削減仮説」策定 (https://www.notion.so/2adea0be07e4814eb2c3dbbad283a3e4?pvs=21), 「外注構造マップ」作成 (https://www.notion.so/2adea0be07e4810bad6dc52438720b4f?pvs=21), 全コスト明細の分類作業 (https://www.notion.so/2adea0be07e48153a65fffe37c18e567?pvs=21), コスト分類ルール設計 (https://www.notion.so/2adea0be07e4813e96d6f588599b4a23?pvs=21)",,,,,,,
+コスト明細データ取得,1.2.1,,未着手,,,2025年12月17日,,,成果物2: コスト分析(M1) (https://www.notion.so/2-M1-2adea0be07e4812eb46efafe9097f9e6?pvs=21)
+コスト分類ルール設計,1.2.2,,未着手,,,2025年12月17日,,,成果物2: コスト分析(M1) (https://www.notion.so/2-M1-2adea0be07e4812eb46efafe9097f9e6?pvs=21)
+全コスト明細の分類作業,1.2.3,,未着手,,,2025年12月22日,,,成果物2: コスト分析(M1) (https://www.notion.so/2-M1-2adea0be07e4812eb46efafe9097f9e6?pvs=21)
+「外注構造マップ」作成,1.2.4,,未着手,,,2026年1月7日,,,成果物2: コスト分析(M1) (https://www.notion.so/2-M1-2adea0be07e4812eb46efafe9097f9e6?pvs=21)
+「削減仮説」策定,1.2.5,,未着手,,,2026年1月14日,,,成果物2: コスト分析(M1) (https://www.notion.so/2-M1-2adea0be07e4812eb46efafe9097f9e6?pvs=21)
+レポート作成とレビュー,1.2.6,,未着手,,,2026年1月21日,,,成果物2: コスト分析(M1) (https://www.notion.so/2-M1-2adea0be07e4812eb46efafe9097f9e6?pvs=21)
+成果物3: KPIマップ(M2),1.3,"レビューと承認 (https://www.notion.so/2adea0be07e481e3806fe27bf5720317?pvs=21), 「経営判断マップ」作成（PL、 コスト、 KPIの統合） (https://www.notion.so/PL-KPI-2adea0be07e481269df0e2142555934f?pvs=21), 「主要レバー」の特定 (https://www.notion.so/2adea0be07e481cea8f3d213716b56f0?pvs=21), 「戦略KPIデータ取得・分析（LTV、 SFF貢献度等）」 (https://www.notion.so/KPI-LTV-SFF-2adea0be07e48139b1cbdbe1b07bc8ea?pvs=21), データ取得要件の定義と依頼（会計事務所・自社） (https://www.notion.so/2adea0be07e481398a33cb756c50db5e?pvs=21), [第2回] KPI定義WS 実施（KPI定義の確定） (https://www.notion.so/2-KPI-WS-KPI-2adea0be07e481d78e92fafa9011d313?pvs=21), [第2回] KPI定義WS 準備（論点・定義の精緻化） (https://www.notion.so/2-KPI-WS-2adea0be07e481b698adfecbab46227b?pvs=21), [第1回] KPI定義WS 実施（ジム・SFFのKPI定義） (https://www.notion.so/1-KPI-WS-SFF-KPI-2adea0be07e48155bacce2a8511db97e?pvs=21), [第1回] KPI定義WS 準備（論点・たたき台作成） (https://www.notion.so/1-KPI-WS-2adea0be07e481a9bf4eeb850c826fed?pvs=21)",,,,,,,
+[第1回] KPI定義WS 準備（論点・たたき台作成）,1.3.1,,未着手,,,2025年12月2日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+[第1回] KPI定義WS 実施（ジム・SFFのKPI定義）,1.3.2,,未着手,,,2025年12月2日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+[第2回] KPI定義WS 準備（論点・定義の精緻化）,1.3.3,,未着手,,,2025年12月9日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+[第2回] KPI定義WS 実施（KPI定義の確定）,1.3.4,,未着手,,,2025年12月9日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+データ取得要件の定義と依頼（会計事務所・自社）,1.3.5,,未着手,,,2025年12月16日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+「戦略KPIデータ取得・分析（LTV、 SFF貢献度等）」,1.3.6,,未着手,,,2025年12月23日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+「主要レバー」の特定,1.3.7,,未着手,,,2026年1月16日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+「経営判断マップ」作成（PL、 コスト、 KPIの統合）,1.3.8,,未着手,,,2026年1月23日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+レビューと承認,1.3.9,,未着手,,,2026年1月28日,,,成果物3: KPIマップ(M2) (https://www.notion.so/3-KPI-M2-2adea0be07e48192a638d8f489494161?pvs=21)
+成果物4: データ取得体制ロードマップ (M2以降),1.4,"ロードマップレビューと合意 (https://www.notion.so/2adea0be07e481379ed3eb0e42321e5b?pvs=21), CRM導入要件へのインプット作成 (https://www.notion.so/CRM-2adea0be07e48156bcecebd84a4f8cb6?pvs=21), 取得不能データ（KPIギャップ）の特定 (https://www.notion.so/KPI-2adea0be07e481cba711e1bd2e6aa1c1?pvs=21)",,,,,,,
+取得不能データ（KPIギャップ）の特定,1.4.1,,未着手,,,,,,成果物4: データ取得体制ロードマップ (M2以降) (https://www.notion.so/4-M2-2adea0be07e481238b5de17f0644313f?pvs=21)
+CRM導入要件へのインプット作成,1.4.2,,未着手,,,,,,成果物4: データ取得体制ロードマップ (M2以降) (https://www.notion.so/4-M2-2adea0be07e481238b5de17f0644313f?pvs=21)
+ロードマップレビューと合意,1.4.3,,未着手,,,,,,成果物4: データ取得体制ロードマップ (M2以降) (https://www.notion.so/4-M2-2adea0be07e481238b5de17f0644313f?pvs=21)

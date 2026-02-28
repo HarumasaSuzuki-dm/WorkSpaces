@@ -1,0 +1,55 @@
+{
+  "week_start": "2026-02-20",
+  "main_message_ts": "1771579148.479789",
+  "gyms": [
+    {
+      "name": "エニタイム恵比寿",
+      "url": "https://www.anytimefitness.co.jp/ebisu/",
+      "emoji": "one",
+      "display_emoji": "1️⃣"
+    },
+    {
+      "name": "エニタイム渋谷",
+      "url": "https://www.anytimefitness.co.jp/shibuya/",
+      "emoji": "two",
+      "display_emoji": "2️⃣"
+    },
+    {
+      "name": "エニタイム新宿",
+      "url": "https://www.anytimefitness.co.jp/shinjuku/",
+      "emoji": "three",
+      "display_emoji": "3️⃣"
+    }
+  ],
+  "day_messages": {
+    "2026-02-26": {
+      "ts": "1771579148.911859",
+      "display": "木曜（2/26）"
+    },
+    "2026-02-27": {
+      "ts": "1771579150.650969",
+      "display": "金曜（2/27）"
+    },
+    "2026-02-28": {
+      "ts": "1771579152.870789",
+      "display": "土曜（2/28）"
+    },
+    "2026-03-01": {
+      "ts": "1771579156.063669",
+      "display": "日曜（3/1）"
+    },
+    "2026-03-02": {
+      "ts": "1771579158.117699",
+      "display": "月曜（3/2）"
+    },
+    "2026-03-03": {
+      "ts": "1771579160.172539",
+      "display": "火曜（3/3）"
+    },
+    "2026-03-04": {
+      "ts": "1771579162.129689",
+      "display": "水曜（3/4）"
+    }
+  },
+  "confirmed_sessions": []
+}

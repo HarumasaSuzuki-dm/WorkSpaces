@@ -1,3 +1,4 @@
+## 参考資料
 - [ ] 採用について
   - [ ] オンライン秘書
     - [ ] 
@@ -64,8 +65,8 @@
 - [x] Slakにチャンネル作成｜
   - [x] しおんさん：おしりちゃん・大川さんの給与情報をもらう
 - [x] コアメンバーのチャンネルで採用動きます。という感じのめっせーじをさくせい
-- [ ] SFF関係のグッズ関係の大枠整理
-  - [ ] https://mail.google.com/chat/u/0/#chat/space/AAQAR8FD-rk
+- [x] SFF関係のグッズ関係の大枠整理
+  - [x] https://mail.google.com/chat/u/0/#chat/space/AAQAR8FD-rk
 - [ ] 物語ノートに入れる小さいカードの作成について
   - [ ] Canvaで作成
   - [ ] イエローテールさんにたいしてデータを送って、同梱してもらう
@@ -77,65 +78,9 @@
 - [ ] 物件早期撤去のため、スケジュールの引き直し
 - [ ] 財務申請RHさんに
 - [ ] システムに関してHPもリプレイスの視野に入れる
-- [ ] リーダー会議を踏まえて、金額が妥当かチェックする
-
-
-
-
-売り上げ
-385万8千円
-
-返納費
-11ヶ月
-278万円
-
-粗利益
-72.9％
-
--600万円ほど
-
-380万円
-360万円
--960万円ほど
-
-
-
-以下のスプレッドシート（エクセル）をステディさんに依頼する用のメッセージを考えたいです。
-
-- すでにシートはステディさん用のシートを作成しており、特定のフォルダに入れているので、記入してもらうだけでOK
-- メッセージの中にスプレッドシートのリンクを貼り付けるようのプレイスフォルダーをメッセージ内に入れる
-
-
-
-SFF2026_企業メッセージ映像事前準備シート
-SFF2026_企業ストーリー取材_事前確認シート
-
-
-やりたいアイディアはある。
-意思決定基準
-
-- セールスフォース
-- 審査アプリ
-- 支払いの有無のチェック方法について、システム側でできるのか？（3/30~4/14までの間）
-- Shaperの募集フォームの有無
-
-演出さん
-
-
-
-候補
-アプローチ済
-返信あり
-MTG設定済
-MTG完了
-見送り
-
-
-【Meeting】合同会社Tomari小川様、鈴木晴勝
-2月 27日 (金曜日) · 午前10:00～11:00
-タイムゾーン: Asia/Tokyo
-Google Meet の参加に必要な情報
-ビデオ通話のリンク: https://meet.google.com/hpg-gzpx-sqz
+- [ ] VCの調査
+  - [ ] https://found-er.com/plan/
+  - [ ] https://www.genspark.ai/agents?id=7074dcc4-f5fa-41f1-8ac9-08dc5f8e8c9d
 
 
 契約書の確認
@@ -143,3 +88,107 @@ Google Meet の参加に必要な情報
 
 - 入力フォームを作成して、フレアネストさんに連携
   - → 去年の内容を確認する
+
+
+## 報告
+- [] アンケートの作成＋書類移動のお願い
+  - https://drive.google.com/drive/folders/14MxUKoYHas6eS10EDf0FMBQ6j8OQbvWC
+  - Notionに追加はまだできてないのでする：https://www.notion.so/Notion-Google-Canva-2cc163ffb491806f91d2d743e1f9cfa0
+  - https://www.notion.so/WantToBe-275163ffb491814bb527d84dd7d607b8?source=copy_link
+- [] パンフレットのデザイン者の修正
+  - https://docs.google.com/spreadsheets/d/19LfnI9gHUMgqaMRLbIoFQwAeNgR34uiTjuw6W28cwsI/edit?gid=628125734#gid=628125734
+  - https://docs.google.com/spreadsheets/d/1KBjQ_nDVB2vDadAFo8_uUomiJtEnzqg_R97g1yLJy5c/edit?gid=1409352535#gid=1409352535
+  - https://www.notion.so/SFF2026-316163ffb4918024a65eff2bc75fc929
+  - 動画撮る前に去年のパンフレットの確認をすべき
+- オフィスについて
+  - https://docs.google.com/spreadsheets/d/1Zxz9qtDJWXxouC94uUzrw_IPROzYgDxwLVZ8g9e-wqI/edit?gid=224084913#gid=224084913
+- 補助金について
+  - https://docs.google.com/spreadsheets/d/1ccji3FlNW6M5W2HYyXSTpBvaOog43QshlQB-_5_kOsQ/edit?gid=351444882#gid=351444882
+
+
+## FC独立について
+- [ ] システム以外の契約書作成
+  - [ ] 弁護士さんへのレビューを行う
+- [ ] 
+
+## 協賛関係
+- [x] 株式会社 NASK 専用ページ, 株式会社OneTies Japan様連絡
+  - [x] https://www.notion.so/NASK-314163ffb491800d9f99c06e4f9d8d14
+  - [x] https://www.notion.so/OneTies-Japan-316163ffb4918094b74ee3d624aa84bb
+- [ ] 合同会社tomari様
+  - [ ] 日程調節
+- [ ] コシコーヒー店イベント考える
+- [ ] ななこちゃん協賛依頼
+  - [ ] https://docs.google.com/spreadsheets/d/1P8zAOlhvJ0EXA_XohUump6_nzWlHKW4sGVa7zXm9mug/edit?gid=1202877176#gid=1202877176
+
+## MYS オフライン
+- [ ] かおりさんにレビューしてもらいたいことの連絡
+- [ ] 2026/03/23に「すり合わせMTGを実施する」の日程調節
+  - [ ] 振り返り×FBの突き合わせ、「型／裁量／思想」仮仕分け
+- [ ] 
+## MYS オンライン
+
+## SFF関係
+### バッチ
+
+### パンフレット
+- [ ] パンフレットのデザイン者の修正を伝えて承認をとる
+- [ ] パンフレットデザイナー探す
+
+### メダル
+- [ ] 金メダル、銀銅メダル：棚卸しし、実数をチェック
+- [ ] 参加賞について以下の決定し、承認をもらう
+  - [ ] 個数
+  - [ ] デザイン
+
+### Toななこちゃん｜物販について
+- [ ] https://docs.google.com/spreadsheets/d/1d8Aca23SZNtsAjwfSf2LH7vn7A1yhLEWf-SWvMScbRY/edit?gid=1810220686#gid=1810220686
+- [ ] 
+
+## オフィス移転について
+- [ ] 候補となる地域一覧ピックアップ
+  - [ ] https://www.genspark.ai/agents?id=994cd4ef-1c9a-482a-9238-80af43f79e50
+  - [ ] https://docs.google.com/spreadsheets/d/1QBUUIORv6TDZ4yv9ZMYqWwU1H5MD03Ix/edit?gid=592625067#gid=592625067
+  - [ ] 
+
+## 物語ノートの黄色いカード
+- [ ] https://drive.google.com/drive/u/0/folders/1Iao5729ItpJBWi-LOEFKa3F6Fh0EXgjb
+
+
+
+## 席の配置
+
+
+## 急ぎの内容
+- [ ] 明日の会議に向けての資料準備
+  - [ ] https://shape-fit.slack.com/archives/C0AERHEJ814/p1772401989199629?thread_ts=1772401829.693819&cid=C0AERHEJ814
+- [ ] 
+
+
+- [ ] Shaper募集内容・人数・服装や配布品等検討
+- [ ] WantToBe選手アンケート作成
+- [ ] カラーリングの申し込みするラインを聞く
+- [ ] 観客を9人呼ぶための施策
+- [ ] 観客席割完成
+- [ ] 関西：企業ストーリー取材日（TOP）
+- [ ] 関東：企業ストーリー取材日（TOP）
+- [ ] 支払いチェック
+- [ ] 審査アプリの有無の確認（フレアネスト宛）
+- [ ] 審査員のグループ作成してグループに招待・詳細をご案内する
+- [ ] 支払いチェック
+- [ ] 選手事前オンラインMTGの内容をざっくり考える
+- [ ] 大会のKPIについて考える
+- [ ] データ入稿
+- [ ] 物語ノート　メッセージカードのデザイン作成
+- [ ] 物語ノート　メッセージカードの内容決め
+- [ ] 物語ノートのカード
+- [ ] カラーリングの部屋が借りれるか確認
+
+- 和田さんに
+  - Tシャツ
+  - バッチ
+  - メダル
+  - パンフレット
+
+
+- [ ] CJMのフレームワークを入れられるようにしたい

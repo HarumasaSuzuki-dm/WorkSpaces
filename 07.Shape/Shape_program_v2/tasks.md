@@ -45,34 +45,17 @@
 
 ## 20250225
 
-- [ ] MYS
-  - [ ] 2人目の候補者に対して日程調節
-- [ ] 協賛関係
-- [x] 参加賞のメダルのデザインを少し変える
-- [x] SFFのメールのやりとりについてのマニュアル
-- [x] クラウドワークスでデータ入力してもらえる人を募集
-  - [ ] 実際にタスクできる人に対して。
 - [ ] 歴史を聞くタイミングの聞きたいフォーマット
-- [x] コシコーヒー店のリターン修正
-  - [x] https://www.notion.so/SFF2026-313163ffb49180419ee7c712a5c7fa02
-- [x] 村田屋さん、OneTiesさん用の契約書作成
-- [ ] 的場さんに取材は鈴木がやる旨を伝える
 - [ ] 会社稟議ワークフロー
   - [ ] https://claude.ai/chat/41f17218-6209-412a-85e3-e1c84a933dde
 - [ ] 席の金額
   - [ ] 選手がどう思うのか？
   - [ ] カメラの前は数席開けておかないといけない
-- [x] Slakにチャンネル作成｜
-  - [x] しおんさん：おしりちゃん・大川さんの給与情報をもらう
-- [x] コアメンバーのチャンネルで採用動きます。という感じのめっせーじをさくせい
-- [x] SFF関係のグッズ関係の大枠整理
-  - [x] https://mail.google.com/chat/u/0/#chat/space/AAQAR8FD-rk
 - [ ] 物語ノートに入れる小さいカードの作成について
   - [ ] Canvaで作成
   - [ ] イエローテールさんにたいしてデータを送って、同梱してもらう
   - [ ] もしくは印刷して、こちらで入れてイエローテールさんに入れる
 - [ ] 動画編集者の業務委託者募集要項
-- [x] チャットワークの参加
 - [ ] ななこちゃん；グッズのアイディア→スケジュールに落とすためのロードマップ作成
 - [ ] ステディさんの企業ストーリーについて社内用のスケジュール→おしりちゃん連携
 - [ ] 物件早期撤去のため、スケジュールの引き直し
@@ -91,19 +74,7 @@
 
 
 ## 報告
-- [] アンケートの作成＋書類移動のお願い
-  - https://drive.google.com/drive/folders/14MxUKoYHas6eS10EDf0FMBQ6j8OQbvWC
-  - Notionに追加はまだできてないのでする：https://www.notion.so/Notion-Google-Canva-2cc163ffb491806f91d2d743e1f9cfa0
-  - https://www.notion.so/WantToBe-275163ffb491814bb527d84dd7d607b8?source=copy_link
-- [] パンフレットのデザイン者の修正
-  - https://docs.google.com/spreadsheets/d/19LfnI9gHUMgqaMRLbIoFQwAeNgR34uiTjuw6W28cwsI/edit?gid=628125734#gid=628125734
-  - https://docs.google.com/spreadsheets/d/1KBjQ_nDVB2vDadAFo8_uUomiJtEnzqg_R97g1yLJy5c/edit?gid=1409352535#gid=1409352535
-  - https://www.notion.so/SFF2026-316163ffb4918024a65eff2bc75fc929
-  - 動画撮る前に去年のパンフレットの確認をすべき
-- オフィスについて
-  - https://docs.google.com/spreadsheets/d/1Zxz9qtDJWXxouC94uUzrw_IPROzYgDxwLVZ8g9e-wqI/edit?gid=224084913#gid=224084913
-- 補助金について
-  - https://docs.google.com/spreadsheets/d/1ccji3FlNW6M5W2HYyXSTpBvaOog43QshlQB-_5_kOsQ/edit?gid=351444882#gid=351444882
+
 
 
 ## FC独立について
@@ -112,9 +83,6 @@
 - [ ] 
 
 ## 協賛関係
-- [x] 株式会社 NASK 専用ページ, 株式会社OneTies Japan様連絡
-  - [x] https://www.notion.so/NASK-314163ffb491800d9f99c06e4f9d8d14
-  - [x] https://www.notion.so/OneTies-Japan-316163ffb4918094b74ee3d624aa84bb
 - [ ] 合同会社tomari様
   - [ ] 日程調節
 - [ ] コシコーヒー店イベント考える
@@ -132,7 +100,6 @@
 ### バッチ
 
 ### パンフレット
-- [x] パンフレットのデザイン者の修正を伝えて承認をとる
 - [x] パンフレットデザイナー探す
 
 ### メダル
@@ -163,14 +130,6 @@
 
 
 ## 急ぎの内容
-- [x] 明日の会議に向けての資料準備
-  - [x] https://shape-fit.slack.com/archives/C0AERHEJ814/p1772401989199629?thread_ts=1772401829.693819&cid=C0AERHEJ814
-- [ ] なーすけさんとの会議設定
-  - [ ] 1 on 1 
-  - [ ] 今期テーマ
-- [x] コシコーヒー店イベント考える
-  - [ ] https://www.notion.so/SFF2026-317163ffb49180c3bccfde0ec2ae6452
-- [ ] システム以外の契約書作成
 
 - [ ] [Shaper募集内容・人数・服装や配布品等検討](https://www.notion.so/Shaper-316163ffb491808695f2e5b44081a2fd?source=copy_link)
 - [ ] WantToBe選手アンケート作成
@@ -226,61 +185,8 @@
 - https://docs.google.com/spreadsheets/d/1UZ9WXo17CRjbvR4gPZlQACu54fEk2R0fV0TMNmPiJLc/edit?gid=1039477348#gid=1039477348
 
 
-## MTGにて確認すること
-- [ ] 関西：ブースの組み立て、関東：ブースの組み立て
-  - [ ] 進行中
-  - [ ] https://www.notion.so/275163ffb49181c2ad7ce9471997a319?source=copy_link
-  - [ ] https://www.notion.so/275163ffb4918172a4d8da515e79639f?source=copy_link
-- [ ] 物販申請書　書類作成（企業が入力する書類）
-  - [ ] https://www.notion.so/275163ffb49181e58e3cd288d0459b06?source=copy_link
-  - [ ] おそらくすでに作成済み
-- [ ] WantToBe選手MTG日程とアンケート メールの文章作成
-  - [ ] https://www.notion.so/WantToBe-MTG-275163ffb49181da8732c43f5693c3d6?source=copy_link
-
-### 以下のものは削除しても良いのでは？
-- [ ] ステージデザイン作成開始
-- [ ] 審査員の方へご依頼
-- [ ] 演出MTG
-- [ ] 音響機材の手配のご依頼
-- [ ] 会場打ち合わせ
-- [ ] そのほかスタンプラリー関係
 
 
-はじめまして。ポートフォリオを拝見し、ぜひご相談させてください。
-
-フィットネス競技イベント「SFF（Shape Fit Festival）」のパンフレット制作をご依頼したいと考えております。
-
----
-
-■ 想定している構成・仕様
-
-・仕上がりサイズ：B5
-・形式：見開き／中綴じ（全8ページ）
-・構成イメージ：
-　P1〜2　SFFの想い
-　P3　　 1日の楽しみ方
-　P4　　 スケジュール
-　P5〜6　選手リスト
-　P7　　 ブースマップ
-　P8　　 企業ロゴ（協賛ロゴ）
-
----
-
-ご相談したい点が3点ございます。
-
-① 構成・素材のご提供について
-上記の構成イメージをお伝えしたうえで、どのような素材や情報をご用意すればスムーズに進められますでしょうか？
-
-② 可変箇所の編集対応について
-「P4：スケジュール」「P8：協賛企業ロゴ」など、毎年内容が変わる箇所については、納品後に自分たちで更新・差し替えができる形での納品は可能でしょうか？
-
-③ 納品形式について
-Canva形式での納品は対応可能でしょうか？編集のしやすさを考え、できればCanvaでのお渡しを希望しております。（もしAiやPDFのみの場合もお知らせいただけますと幸いです）
-
----
-
-以上3点、ご確認いただけますでしょうか。
-ご対応可能であれば、改めて詳細をお伝えしてご依頼に進めればと思っております。どうぞよろしくお願いいたします！
 
 
 ホログラムシール
@@ -292,3 +198,18 @@ Canva形式での納品は対応可能でしょうか？編集のしやすさを
 LINEの誘導コード
 登録してもらったら
 
+- [ ] 入賞者・来場者への物品協賛一覧
+  - [ ] 応募フォームの作成依頼
+
+- [ ] Phase 1 までの成果物ののフォーマット
+  - [ ] https://www.notion.so/MYS-31e163ffb49180a790b3c5f46de5bec4
+
+
+## 3/13に話す内容
+- 関西：ブースの組み立て
+  - https://www.notion.so/275163ffb4918172a4d8da515e79639f
+- 関東：ブースの組み立て
+  - https://www.notion.so/275163ffb49181c2ad7ce9471997a319
+- ブースマップのデザイン・仕様用途検討
+  - https://www.notion.so/275163ffb49181fb9464ed0e593bfdbc
+  - これはまだやる必要がある

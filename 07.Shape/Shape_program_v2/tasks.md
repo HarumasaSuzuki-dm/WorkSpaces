@@ -204,12 +204,12 @@ LINEの誘導コード
 - [ ] Phase 1 までの成果物ののフォーマット
   - [ ] https://www.notion.so/MYS-31e163ffb49180a790b3c5f46de5bec4
 
-
-## 3/13に話す内容
-- 関西：ブースの組み立て
-  - https://www.notion.so/275163ffb4918172a4d8da515e79639f
-- 関東：ブースの組み立て
-  - https://www.notion.so/275163ffb49181c2ad7ce9471997a319
-- ブースマップのデザイン・仕様用途検討
-  - https://www.notion.so/275163ffb49181fb9464ed0e593bfdbc
-  - これはまだやる必要がある
+## れんらくすること
+- 稟議フロー
+  - https://shape-fit.slack.com/archives/C0ALP4WUE1Y/p1773560842174139
+- ベリッセさんに連絡する内容
+  - https://claude.ai/chat/56dfcb7f-9b56-4475-8feb-d7ed53d6c297
+  - https://docs.google.com/spreadsheets/d/1OWRbTWWcXtq_VIQw8yvDeqdqQMjb93oX/edit?gid=509346122#gid=509346122
+- オンラインフォーマットについて
+  - https://docs.google.com/spreadsheets/d/17iheoBHaus-CWToZKEfU7Wb6S6XqsjRErDFKAdSPeN0/edit?gid=162394733#gid=162394733
+- 

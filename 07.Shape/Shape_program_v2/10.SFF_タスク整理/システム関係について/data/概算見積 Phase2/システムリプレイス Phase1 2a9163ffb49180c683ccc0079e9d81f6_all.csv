@@ -1,0 +1,77 @@
+﻿名前,サブアイテム,ステータス,担当者,日付,次のタスクにより保留中：,次のタスクを保留中：,親アイテム
+全体設計,"既存システム仕様書作成 (https://www.notion.so/2a9163ffb491801ab5ceff4879ceab3d?pvs=21), 画面遷移図 (https://www.notion.so/2a9163ffb49180fbb180ee1ae861ad94?pvs=21), DXLINE設計 (https://www.notion.so/DXLINE-2a9163ffb491805abccbd3588820d410?pvs=21), データモデル作成(〜エントリー (https://www.notion.so/2a9163ffb4918081a8b6ffb5af1a9c90?pvs=21), データモデル作成(購入〜 (https://www.notion.so/2be163ffb49180da9319f378a2a39869?pvs=21), 全体アーキテクチャ (https://www.notion.so/2a9163ffb49180889618f5ccb56c954d?pvs=21), インフラ設計 (https://www.notion.so/2a9163ffb49180aaa9c5d454e7ff9079?pvs=21), 認証認可設計 (https://www.notion.so/2a9163ffb49180379128daeddbe75982?pvs=21), 運用設計 (https://www.notion.so/2aa163ffb4918023b6a6ed2f02886161?pvs=21)",完了,,2025年10月27日 → 2025年12月12日,,,
+SFF HP制作,"要件定義 (https://www.notion.so/2aa163ffb49180109889de546d77cb9c?pvs=21), コンセプト定義 (https://www.notion.so/2aa163ffb491805b9257f88b2dd43d0c?pvs=21), リファレンス (https://www.notion.so/2aa163ffb491801dac41d199072705e2?pvs=21), トンマナ作成 (https://www.notion.so/2aa163ffb4918017b7bed837e17f2189?pvs=21), WF作成 (https://www.notion.so/WF-2aa163ffb491803d9265f990be515972?pvs=21), SPデザイン (https://www.notion.so/SP-2aa163ffb491801dbd84c0441dd3a19c?pvs=21), PCデザイン (https://www.notion.so/PC-2aa163ffb491802aba74e3ae4da44bc3?pvs=21), コーディング (https://www.notion.so/2aa163ffb49180909a98eeb1f239018a?pvs=21), 募集用の動画作例アップ (https://www.notion.so/2cb163ffb4918018893bcdc7a89a886e?pvs=21), GA導入 (https://www.notion.so/GA-2aa163ffb49180139b32fcfb03ac65ea?pvs=21), SF連携 (https://www.notion.so/SF-2aa163ffb49180ff9bdef5b1dad86190?pvs=21), テスト (https://www.notion.so/2aa163ffb49180228b73d6448d024119?pvs=21), リリース関連 (https://www.notion.so/2aa163ffb4918005b3f4c379c4a9fae6?pvs=21)",完了,"平澤陽生, 天池紫音",2025年10月27日 → 2026年2月1日,,,
+テスト,"テスト設計 (https://www.notion.so/2aa163ffb49180129371f06066039eb6?pvs=21), テスト実施 (https://www.notion.so/2aa163ffb49180a091adeb76da67a91d?pvs=21), 改修 (https://www.notion.so/2aa163ffb49180eaa1c0df45f446b00b?pvs=21)",未着手,髙宮城征真,2026年1月16日 → 2026年2月20日,,リリース関連 (https://www.notion.so/2a9163ffb491807099ccdae64658019b?pvs=21),
+リリース関連,,未着手,,2026年2月23日 → 2026年2月25日,テスト (https://www.notion.so/2a9163ffb4918013afe8e5d33fa37a92?pvs=21),,
+既存システム仕様書作成,,完了,MiuraAsahi,2025年10月27日 → 2025年11月19日,,,全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+画面遷移図,,進行中,"平澤陽生, 神保彩",2025年11月13日 → 2025年12月12日,,,全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+DXLINE設計,,完了,髙宮城征真,2025年11月17日 → 2025年11月19日,,データモデル作成(〜エントリー (https://www.notion.so/2a9163ffb4918081a8b6ffb5af1a9c90?pvs=21),全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+データモデル作成(〜エントリー,,完了,"髙宮城征真, MiuraAsahi",2025年11月20日 → 2025年12月2日,DXLINE設計 (https://www.notion.so/DXLINE-2a9163ffb491805abccbd3588820d410?pvs=21),,全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+全体アーキテクチャ,,未着手,"髙宮城征真, 平澤陽生",2025年11月24日 → 2025年11月26日,,インフラ設計 (https://www.notion.so/2a9163ffb49180aaa9c5d454e7ff9079?pvs=21),全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+インフラ設計,,未着手,MiuraAsahi,2025年11月27日 → 2025年11月28日,全体アーキテクチャ (https://www.notion.so/2a9163ffb49180889618f5ccb56c954d?pvs=21),認証認可設計 (https://www.notion.so/2a9163ffb49180379128daeddbe75982?pvs=21),全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+認証認可設計,,完了,MiuraAsahi,2025年12月1日 → 2025年12月2日,インフラ設計 (https://www.notion.so/2a9163ffb49180aaa9c5d454e7ff9079?pvs=21),,全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+応募,動画アップロード機能 (https://www.notion.so/2ca163ffb4918047a163e6e3493fe916?pvs=21),完了,,2025年12月15日 → 2026年1月23日,,,
+抽選,"運用設計 (https://www.notion.so/2aa163ffb4918096b4cef45398986631?pvs=21), 実装 (https://www.notion.so/2aa163ffb49180f787eeca351c88b0b0?pvs=21), 断面テスト (https://www.notion.so/2aa163ffb4918056bf05f3a9491f834f?pvs=21)",未着手,,2026年1月5日 → 2026年1月9日,,,
+ログイン・アカウント作成,"FE画面実装 (https://www.notion.so/FE-2a9163ffb49180969c15ee49f535f063?pvs=21), インフラ実装 (https://www.notion.so/2aa163ffb49180909931eb2e7c615d3b?pvs=21), BFF実装 (https://www.notion.so/BFF-2a9163ffb49180c48c94f9a845e097c5?pvs=21)",進行中,,2025年12月13日 → 2026年2月10日,,,
+出場費支払い,,未着手,,2026年3月1日 → 2026年3月31日,データモデル作成(購入〜 (https://www.notion.so/2be163ffb49180da9319f378a2a39869?pvs=21),,
+FE画面実装,,未着手,平澤陽生,2025年12月13日 → 2025年12月14日,,,ログイン・アカウント作成 (https://www.notion.so/2a9163ffb4918057ac67cd014b930d50?pvs=21)
+BFF実装,,未着手,MiuraAsahi,2025年12月13日 → 2025年12月14日,,,ログイン・アカウント作成 (https://www.notion.so/2a9163ffb4918057ac67cd014b930d50?pvs=21)
+要件定義,,完了,,2025年10月27日 → 2025年11月12日,,,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+コンセプト定義,,完了,,2025年10月27日 → 2025年11月12日,,,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+リファレンス,,完了,,2025年10月27日 → 2025年11月12日,,,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+トンマナ作成,,完了,,2025年11月12日 → 2025年11月14日,,,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+WF作成,,完了,,2025年11月12日 → 2025年11月18日,,,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+SPデザイン,,進行中,平澤陽生,2025年11月12日 → 2025年12月2日,,コーディング (https://www.notion.so/2aa163ffb49180909a98eeb1f239018a?pvs=21),SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+PCデザイン,,未着手,,2025年11月25日 → 2025年12月10日,,コーディング (https://www.notion.so/2aa163ffb49180909a98eeb1f239018a?pvs=21),SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+コーディング,無題 (https://www.notion.so/2aa163ffb4918076ac51fca65ab860c4?pvs=21),未着手,,2025年12月11日 → 2025年12月26日,"PCデザイン (https://www.notion.so/PC-2aa163ffb491802aba74e3ae4da44bc3?pvs=21), SPデザイン (https://www.notion.so/SP-2aa163ffb491801dbd84c0441dd3a19c?pvs=21)","SF連携 (https://www.notion.so/SF-2aa163ffb49180ff9bdef5b1dad86190?pvs=21), GA導入 (https://www.notion.so/GA-2aa163ffb49180139b32fcfb03ac65ea?pvs=21)",SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+SF連携,,未着手,,2026年1月5日 → 2026年1月19日,コーディング (https://www.notion.so/2aa163ffb49180909a98eeb1f239018a?pvs=21),テスト (https://www.notion.so/2aa163ffb49180228b73d6448d024119?pvs=21),SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+テスト,,未着手,,2026年1月20日 → 2026年1月23日,SF連携 (https://www.notion.so/SF-2aa163ffb49180ff9bdef5b1dad86190?pvs=21),リリース関連 (https://www.notion.so/2aa163ffb4918005b3f4c379c4a9fae6?pvs=21),SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+リリース関連,,未着手,,2026年1月26日 → 2026年2月1日,テスト (https://www.notion.so/2aa163ffb49180228b73d6448d024119?pvs=21),,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+,,未着手,,,,,コーディング (https://www.notion.so/2aa163ffb49180909a98eeb1f239018a?pvs=21)
+GA導入,,未着手,,2025年12月29日 → 2026年1月2日,コーディング (https://www.notion.so/2aa163ffb49180909a98eeb1f239018a?pvs=21),,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+インフラ実装,,未着手,MiuraAsahi,2025年12月13日 → 2025年12月14日,,,ログイン・アカウント作成 (https://www.notion.so/2a9163ffb4918057ac67cd014b930d50?pvs=21)
+運用設計,,未着手,髙宮城征真,2026年1月5日,,実装 (https://www.notion.so/2aa163ffb49180f787eeca351c88b0b0?pvs=21),抽選 (https://www.notion.so/2a9163ffb49180d081fcee01354d8a17?pvs=21)
+実装,,未着手,髙宮城征真,2026年1月6日 → 2026年1月8日,運用設計 (https://www.notion.so/2aa163ffb4918096b4cef45398986631?pvs=21),断面テスト (https://www.notion.so/2aa163ffb4918056bf05f3a9491f834f?pvs=21),抽選 (https://www.notion.so/2a9163ffb49180d081fcee01354d8a17?pvs=21)
+断面テスト,,未着手,髙宮城征真,2026年1月9日,実装 (https://www.notion.so/2aa163ffb49180f787eeca351c88b0b0?pvs=21),,抽選 (https://www.notion.so/2a9163ffb49180d081fcee01354d8a17?pvs=21)
+テスト設計,,未着手,,2026年1月19日 → 2026年2月4日,,,テスト (https://www.notion.so/2a9163ffb4918013afe8e5d33fa37a92?pvs=21)
+テスト実施,,未着手,,2026年2月5日 → 2026年2月23日,,,テスト (https://www.notion.so/2a9163ffb4918013afe8e5d33fa37a92?pvs=21)
+改修,,未着手,,2026年2月10日 → 2026年2月23日,,,テスト (https://www.notion.so/2a9163ffb4918013afe8e5d33fa37a92?pvs=21)
+運用設計,"運用設計書作成 (https://www.notion.so/2b6163ffb4918057b5dada7bfcbaa8a8?pvs=21), システム概要ドキュメント作成 (https://www.notion.so/2b7163ffb4918043a7a6c5371818597a?pvs=21), 簡易版ユースケース作成 (https://www.notion.so/2b7163ffb4918004aaebe945f34289f1?pvs=21), 役割／体制定義 (https://www.notion.so/2b7163ffb491801b9341f681fa73cefe?pvs=21), 簡易版手順書作成 (https://www.notion.so/2b7163ffb491804d99f9f672f5fe70e6?pvs=21)",未着手,"髙宮城征真, 神保彩, 天池紫音",2025年11月24日 → 2025年12月12日,,,全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+運用設計書作成,,未着手,髙宮城征真,2025年11月25日 → 2025年11月26日,,,運用設計 (https://www.notion.so/2aa163ffb4918023b6a6ed2f02886161?pvs=21)
+システム概要ドキュメント作成,,未着手,,2025年11月27日 → 2025年11月28日,,,運用設計 (https://www.notion.so/2aa163ffb4918023b6a6ed2f02886161?pvs=21)
+役割／体制定義,,未着手,,2025年12月8日 → 2025年12月10日,,,運用設計 (https://www.notion.so/2aa163ffb4918023b6a6ed2f02886161?pvs=21)
+簡易版手順書作成,,未着手,,2025年12月11日 → 2025年12月12日,,,運用設計 (https://www.notion.so/2aa163ffb4918023b6a6ed2f02886161?pvs=21)
+簡易版ユースケース作成,,未着手,,2025年12月1日 → 2025年12月5日,,,運用設計 (https://www.notion.so/2aa163ffb4918023b6a6ed2f02886161?pvs=21)
+Salesforce導入,"キックオフMTG (https://www.notion.so/MTG-2bc163ffb491803387f1e5191f023c02?pvs=21), キャッチアップ (https://www.notion.so/2bc163ffb49180328e9cce2e9e06a45b?pvs=21), Salesforce, DX LINE契約相談 (https://www.notion.so/Salesforce-DX-LINE-2bc163ffb49180bdb452c72a35ee4669?pvs=21), 要件整理 (https://www.notion.so/2bc163ffb491808ab194fb41906046d6?pvs=21), Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491800ea4edd5cd40b18b7e?pvs=21), DX LINE導入 (https://www.notion.so/DX-LINE-2bc163ffb4918042bebcde79a498d7de?pvs=21), Saleforce構築開始 (https://www.notion.so/Saleforce-2bc163ffb4918099b8c4d559485536a2?pvs=21), DX LINE構築開始 (https://www.notion.so/DX-LINE-2bc163ffb49180f0ad51f835fe5dd019?pvs=21), Salesforceテスト (https://www.notion.so/Salesforce-2bc163ffb491804d9226c0dfba72d9e4?pvs=21), DX LINEテスト (https://www.notion.so/DX-LINE-2bc163ffb49180bdba34d6c26c5f6353?pvs=21), Salesforceリリース (https://www.notion.so/Salesforce-2bc163ffb49180bbb4a7df6aecc1e9a0?pvs=21), DX LINEリリース (https://www.notion.so/DX-LINE-2bc163ffb491809bb132e771958ddd76?pvs=21)",進行中,,2025年12月2日 → 2026年2月9日,,,
+キックオフMTG,,未着手,,2025年12月2日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+キャッチアップ,,未着手,,2025年12月2日 → 2025年12月4日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+"Salesforce, DX LINE契約相談",,未着手,,2025年12月3日 → 2025年12月12日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+要件整理,,未着手,,2025年12月3日 → 2025年12月19日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+Salesforce導入,,未着手,,2025年12月9日 → 2025年12月12日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+DX LINE導入,,未着手,,2025年12月9日 → 2025年12月12日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+Saleforce構築開始,"アカウント設定 (https://www.notion.so/2bd163ffb4918003b1e8d75324cddf4e?pvs=21), オブジェクト構築 (https://www.notion.so/2bd163ffb491806faf10ddeeb7f1e413?pvs=21), 管理画面作成 (https://www.notion.so/2bd163ffb49180dcae8dde8a9d9c8745?pvs=21)",未着手,,2025年12月15日 → 2026年1月9日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+DX LINE構築開始,構築作業 (https://www.notion.so/2bd163ffb49180af9928c56e4e26e235?pvs=21),未着手,,2025年12月15日 → 2026年1月9日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+Salesforceテスト,,未着手,,2026年1月12日 → 2026年1月23日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+DX LINEテスト,,未着手,,2026年1月12日 → 2026年1月23日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+Salesforceリリース,,未着手,,2026年1月26日 → 2026年1月30日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+DX LINEリリース,,未着手,,2026年1月26日 → 2026年1月30日,,,Salesforce導入 (https://www.notion.so/Salesforce-2bc163ffb491805bb051de77c999a2e9?pvs=21)
+構築作業,,未着手,,2025年12月15日 → 2025年12月26日,,,DX LINE構築開始 (https://www.notion.so/DX-LINE-2bc163ffb49180f0ad51f835fe5dd019?pvs=21)
+アカウント設定,,未着手,,2025年12月15日 → 2025年12月19日,,,Saleforce構築開始 (https://www.notion.so/Saleforce-2bc163ffb4918099b8c4d559485536a2?pvs=21)
+オブジェクト構築,,未着手,,2025年12月22日 → 2025年12月26日,,,Saleforce構築開始 (https://www.notion.so/Saleforce-2bc163ffb4918099b8c4d559485536a2?pvs=21)
+管理画面作成,,未着手,,2025年12月29日 → 2026年1月9日,,,Saleforce構築開始 (https://www.notion.so/Saleforce-2bc163ffb4918099b8c4d559485536a2?pvs=21)
+データモデル作成(購入〜,,進行中,"髙宮城征真, MiuraAsahi",2025年12月4日 → 2025年12月14日,,出場費支払い (https://www.notion.so/2a9163ffb49180db97b7e207ffc77b92?pvs=21),全体設計 (https://www.notion.so/2a9163ffb491807088b9e3305b7203b0?pvs=21)
+Phase2タスク,アカウント削除導線 (https://www.notion.so/2c5163ffb4918048ad65ddc5e62c53f9?pvs=21),未着手,,,,,
+アカウント削除導線,,未着手,,2026年9月1日 → 2026年9月5日,,,Phase2タスク (https://www.notion.so/Phase2-2c5163ffb491800b89f7cc6ba074a365?pvs=21)
+Salesforce繋ぎこみ,,完了,,2026年1月17日 → 2026年2月7日,,,
+支払い後マイページ,,未着手,,2026年3月20日 → 2026年3月31日,,,
+動画アップロード機能,,未着手,,2026年1月19日 → 2026年1月23日,,,応募 (https://www.notion.so/2a9163ffb49180949137dc0efc3bd653?pvs=21)
+募集用の動画作例アップ,,未着手,,2026年1月19日 → 2026年1月23日,,,SFF HP制作 (https://www.notion.so/SFF-HP-2a9163ffb49180e6a3b7eba402c88757?pvs=21)
+Auth0,,未着手,,2026年1月26日 → 2026年1月30日,,,
+インフラ,,未着手,,2026年1月26日 → 2026年2月15日,,,
+応募後マイページ,,未着手,,2026年2月13日,,,
+出場費表示,,完了,,2026年2月14日 → 2026年2月15日,,,
+監視,,未着手,,2026年2月16日 → 2026年2月17日,,,
+決済実装方針確定,,未着手,,2026年3月17日,,,
+〜出場費支払い前 バッファー,,未着手,,2026年2月18日 → 2026年2月28日,,,
+応募内容変更,,未着手,,2026年2月18日 → 2026年2月22日,,,
+出場費支払いFE,,未着手,,2026年2月14日 → 2026年3月31日,,,

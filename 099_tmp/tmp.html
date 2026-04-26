@@ -1,908 +1,647 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FC店舗育成 フェーズ遷移フロー</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  
-  body {
-    font-family: 'Noto Sans JP', sans-serif;
-    background: #f5f3ee;
-    color: #1a1a1a;
-    padding: 40px 24px;
-    line-height: 1.7;
-  }
+<div data-qa="flexpane_body" class="p-flexpane__body p-threads_flexpane_container p-flexpane__body--light">
+  <div class="p-file_drag_drop__container p-threads_flexpane p-threads_flexpane--context_bar_showing">
+    <div class="p-threads_flexpane__content">
+      <div class="p-threads_flexpane__message_area">
+        <div class="p-threads_view__top_banners"></div>
+        <div style="overflow: visible; height: 0px; width: 0px;">
+          <div role="none" class="flex_one no_min_height">
+            <div role="presentation" id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread">
+              <div role="presentation" class="c-virtual_list c-virtual_list--scrollbar c-scrollbar"
+                id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread" style="width: 354px; height: 841px;">
+                <div data-qa="slack_kit_scrollbar" role="presentation" class="c-scrollbar__hider">
+                  <div role="presentation" class="c-scrollbar__child" style="width: 354px;">
+                    <div data-qa="slack_kit_list" class="c-virtual_list__scroll_container" role="list"
+                      aria-label="ops_salesforce_ケース通知用 のスレッド (共有チャンネル, 8 件の返信)"
+                      style="position: relative; height: 2662.5px;">
+                      <div aria-setsize="-1" class="c-virtual_list__item" tabindex="0" role="listitem"
+                        id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread_1775569101.634209"
+                        data-qa="virtual-list-item" data-item-key="1775569101.634209" style="top: 0px;">
+                        <div role="presentation"
+                          class="c-message_kit__background c-message_kit__message c-message_kit__thread_message c-message_kit__thread_message--root"
+                          data-qa="message_container" data-qa-unprocessed="false" data-qa-placeholder="false"
+                          data-msg-ts="1775569101.634209" data-msg-channel-id="C0AKT0QBN8Y">
+                          <div role="document" aria-roledescription="message" class="c-message_kit__hover"
+                            data-qa-hover="true">
+                            <div class="c-message_kit__actions c-message_kit__actions--inside"
+                              style="position: relative;">
+                              <div class="c-message_kit__gutter">
+                                <div role="presentation" class="c-message_kit__gutter__left"
+                                  data-stringify-ignore="true"><span class="p-member_profile_hover_card"
+                                    role="presentation"><a target="_blank" rel="noopener noreferrer" tabindex="-1"
+                                      aria-hidden="true" aria-label="Salesforce for Slack のプロフィールを表示"
+                                      class="c-link c-message_kit__avatar c-avatar c-avatar--interactive"
+                                      href="/team/U0AKXJJ4Z2T" style="height: 36px; width: 36px;"><span
+                                        class="c-base_icon__width_only_container"
+                                        style="height: 36px; width: 36px;"><img
+                                          src="https://ca.slack-edge.com/T0A16JW65BJ-U0AKXJJ4Z2T-3dffec4e2e02-48"
+                                          srcset="https://ca.slack-edge.com/T0A16JW65BJ-U0AKXJJ4Z2T-3dffec4e2e02-72 2x"
+                                          class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                          style="width: 36px;"></span></a></span></div>
+                                <div role="presentation" class="c-message_kit__gutter__right" data-qa="message_content">
+                                  <span class="c-message__sender c-message_kit__sender" data-qa="message_sender"
+                                    data-stringify-type="replace" data-stringify-text="Salesforce for Slack"><span
+                                      class="p-member_profile_hover_card" role="presentation"><button
+                                        data-message-sender="U0AKXJJ4Z2T" data-qa="message_sender_name"
+                                        class="c-link--button c-message__sender_button" type="button"
+                                        tabindex="0">Salesforce for Slack</button></span><span
+                                      class="margin_left_25"><span data-qa="message_sender_app_badge"
+                                        class="c-app_badge"
+                                        data-stringify-suffix=" ">アプリ</span></span></span>&nbsp;&nbsp;<a
+                                    aria-label="4月7日 22:38:21 " data-stringify-type="replace"
+                                    data-stringify-text="[22:38]" data-stringify-requires-siblings="true"
+                                    data-ts="1775569101.634209" data-sk="tooltip_parent" class="c-link c-timestamp"
+                                    href="https://shape-fit.slack.com/archives/C0AKT0QBN8Y/p1775569101634209"><span
+                                      class="c-timestamp__label" data-qa="timestamp_label">火曜日 22:38</span></a><span
+                                    hidden="" data-sk="tooltip"></span><br>
+                                  <div class="c-message_kit__blocks c-message_kit__blocks--rich_text">
+                                    <div class="c-message__message_blocks c-message__message_blocks--rich_text"
+                                      data-qa="message-text">
+                                      <div class="p-block_kit_renderer" data-qa="block-kit-renderer">
+                                        <div
+                                          class="p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first">
+                                          <div class="p-rich_text_block" dir="auto">
+                                            <div class="p-rich_text_section">//&lt;!ちゃんねる&gt;<br aria-hidden="true"><b
+                                                data-stringify-type="bold">ケースが起票されました。</b><br
+                                                aria-hidden="true">ケース番号：00001076<br aria-hidden="true">件名：</div>
+                                            <pre class="c-mrkdwn__pre"
+                                              data-stringify-type="pre"><div class="p-rich_text_block--no-overflow">entry</div></pre>
+                                            <div class="p-rich_text_section">本文：</div>
+                                            <pre class="c-mrkdwn__pre" data-stringify-type="pre"><div class="p-rich_text_block--no-overflow">SFF大会運営事務局様
+出場日程に関するご相談（双子での出場について）
 
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+お世話になっております。  
+この度、貴大会にエントリーさせていただきました郡司愛と申します。
 
-  h1 {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    margin-bottom: 6px;
-    color: #1a1a1a;
-  }
+このたび抽選の結果、双子であるもう一名（郡司明／エントリー番号：AC989EE3-0）とともに出場が決定し、大変嬉しく思っております。  
+しかしながら、現在それぞれの出場日が別日程となっており、ご相談させていただきたくご連絡いたしました。
 
-  .subtitle {
-    font-size: 13px;
-    color: #777;
-    margin-bottom: 40px;
-    font-weight: 400;
-  }
+私たちは今回、「双子で同じ舞台に立つ」という目標を掲げ、日々トレーニングに励んでおります。  
+その姿を同一ステージで表現することに、大きな意味と価値を感じております。
 
-  /* ===== Entry Point ===== */
-  .entry-box {
-    background: #1a1a1a;
-    color: #fff;
-    padding: 20px 28px;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 0;
-    position: relative;
-  }
-  .entry-box .entry-sub {
-    font-size: 12px;
-    font-weight: 400;
-    color: #aaa;
-    margin-top: 4px;
-  }
+つきましては、もし可能であれば、同一日程での出場にご調整いただくことは難しいでしょうか。  
+なお、どちらの日程にも柔軟に対応可能ですので、運営の皆様のご都合に合わせてご検討いただけますと幸いです。
 
-  /* ===== Connector ===== */
-  .connector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    position: relative;
-  }
-  .connector::before {
-    content: '';
-    width: 2px;
-    height: 100%;
-    background: #ccc;
-    position: absolute;
-  }
-  .connector .arrow-down {
-    width: 0; height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 8px solid #ccc;
-    position: absolute;
-    bottom: 0;
-  }
+大会運営のご都合や公平性の観点から、調整が難しい場合があることも十分承知しております。  
+その際は現在のスケジュールに従い、全力で大会に臨む所存です。
 
-  /* ===== Phase A ===== */
-  .phase-a-box {
-    background: #fff;
-    border: 2px solid #1a1a1a;
-    border-radius: 14px;
-    padding: 24px 28px;
-    margin-bottom: 0;
-  }
-  .phase-a-box .phase-label {
-    display: inline-block;
-    background: #1a1a1a;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 3px 12px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    letter-spacing: 0.05em;
-  }
-  .phase-a-box .phase-title {
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-  .phase-a-box .phase-desc {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 12px;
-  }
-  .phase-a-box .detail-row {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .detail-tag {
-    font-size: 12px;
-    background: #f0ede7;
-    padding: 5px 12px;
-    border-radius: 6px;
-    color: #444;
-    font-weight: 500;
-  }
+お忙しいところ恐れ入りますが、ご検討のほど何卒よろしくお願い申し上げます。
 
-  /* ===== Branch ===== */
-  .branch-section {
-    display: flex;
-    gap: 0;
-    margin-top: 0;
-    position: relative;
-  }
 
-  .branch-connector {
-    display: flex;
-    justify-content: center;
-    height: 48px;
-    position: relative;
-  }
-  .branch-connector::before {
-    content: '';
-    width: 2px;
-    height: 100%;
-    background: #ccc;
-    position: absolute;
-    left: 50%;
-  }
-
-  /* Diamond */
-  .diamond-wrap {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    position: relative;
-  }
-  .diamond {
-    width: 180px;
-    height: 80px;
-    background: #fff;
-    border: 2px solid #e67e22;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-  }
-  .diamond .diamond-label {
-    font-size: 11px;
-    font-weight: 700;
-    color: #e67e22;
-    letter-spacing: 0.04em;
-  }
-  .diamond .diamond-text {
-    font-size: 13px;
-    font-weight: 600;
-    color: #1a1a1a;
-    text-align: center;
-  }
-
-  /* Two column branch */
-  .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-    margin-top: 0;
-  }
-
-  .branch-label-row {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 56px;
-  }
-  
-  /* Horizontal branch lines */
-  .branch-lines {
-    position: relative;
-    height: 56px;
-    margin-bottom: 0;
-  }
-  .branch-lines::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 20px;
-    background: #ccc;
-  }
-  .branch-lines::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: calc(25% + 14px);
-    right: calc(25% + 14px);
-    height: 2px;
-    background: #ccc;
-  }
-
-  .branch-left-line, .branch-right-line {
-    position: absolute;
-    top: 20px;
-    width: 2px;
-    height: 36px;
-    background: #ccc;
-  }
-  .branch-left-line { left: calc(25% + 14px); }
-  .branch-right-line { right: calc(25% + 14px); }
-
-  .branch-label {
-    position: absolute;
-    top: 26px;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 2px 10px;
-    border-radius: 10px;
-  }
-  .branch-label.yes {
-    left: calc(25% + 30px);
-    background: #e8f5e9;
-    color: #2e7d32;
-  }
-  .branch-label.no {
-    right: calc(25% + 30px);
-    background: #fce4ec;
-    color: #c62828;
-  }
-
-  /* ===== GREEN PATH (Compliance) ===== */
-  .green-path {
-    position: relative;
-  }
-  .green-path .path-header {
-    background: #2e7d32;
-    color: #fff;
-    text-align: center;
-    padding: 8px 16px;
-    border-radius: 10px 10px 0 0;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-  }
-
-  .phase-card {
-    background: #fff;
-    border: 2px solid #c8e6c9;
-    border-top: none;
-    padding: 18px 20px;
-    position: relative;
-  }
-  .phase-card:last-child {
-    border-radius: 0 0 10px 10px;
-  }
-  .phase-card .p-label {
-    font-size: 11px;
-    font-weight: 700;
-    color: #2e7d32;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .phase-card .p-label .period {
-    font-weight: 400;
-    color: #888;
-    font-size: 11px;
-  }
-  .phase-card .p-title {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #1a1a1a;
-  }
-  .phase-card .p-goal {
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 8px;
-    padding-left: 10px;
-    border-left: 3px solid #c8e6c9;
-  }
-  .phase-card .p-condition {
-    font-size: 11px;
-    background: #f1f8e9;
-    padding: 6px 10px;
-    border-radius: 6px;
-    color: #33691e;
-    font-weight: 500;
-  }
-  .phase-card .p-担当 {
-    font-size: 11px;
-    color: #888;
-    margin-top: 6px;
-  }
-
-  .phase-arrow {
-    display: flex;
-    justify-content: center;
-    height: 28px;
-    position: relative;
-    background: #fff;
-    border-left: 2px solid #c8e6c9;
-    border-right: 2px solid #c8e6c9;
-  }
-  .phase-arrow::before {
-    content: '▼';
-    color: #81c784;
-    font-size: 10px;
-    line-height: 28px;
-  }
-
-  /* ===== RED PATH (Non-compliance) ===== */
-  .red-path {
-    position: relative;
-  }
-  .red-path .path-header {
-    background: #c62828;
-    color: #fff;
-    text-align: center;
-    padding: 8px 16px;
-    border-radius: 10px 10px 0 0;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-  }
-
-  .step-card {
-    background: #fff;
-    border: 2px solid #ffcdd2;
-    border-top: none;
-    padding: 18px 20px;
-    position: relative;
-  }
-  .step-card:last-child {
-    border-radius: 0 0 10px 10px;
-  }
-  .step-card .s-label {
-    font-size: 11px;
-    font-weight: 700;
-    color: #c62828;
-    margin-bottom: 4px;
-  }
-  .step-card .s-title {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #1a1a1a;
-  }
-  .step-card .s-trigger {
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 6px;
-    padding-left: 10px;
-    border-left: 3px solid #ffcdd2;
-  }
-  .step-card .s-action {
-    font-size: 11px;
-    background: #fce4ec;
-    padding: 6px 10px;
-    border-radius: 6px;
-    color: #880e4f;
-    font-weight: 500;
-  }
-  .step-card .s-担当 {
-    font-size: 11px;
-    color: #888;
-    margin-top: 6px;
-  }
-  .step-card .s-recovery {
-    font-size: 11px;
-    background: #e8f5e9;
-    padding: 5px 10px;
-    border-radius: 6px;
-    color: #2e7d32;
-    margin-top: 6px;
-    font-weight: 500;
-  }
-
-  .step-arrow {
-    display: flex;
-    justify-content: center;
-    height: 28px;
-    position: relative;
-    background: #fff;
-    border-left: 2px solid #ffcdd2;
-    border-right: 2px solid #ffcdd2;
-  }
-  .step-arrow::before {
-    content: '▼';
-    color: #ef9a9a;
-    font-size: 10px;
-    line-height: 28px;
-  }
-
-  /* ===== Cause split ===== */
-  .cause-split {
-    background: #fff3e0;
-    border: 1.5px solid #ffb74d;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin: 0 0 0 0;
-    font-size: 12px;
-  }
-  .cause-split .cause-title {
-    font-size: 12px;
-    font-weight: 700;
-    color: #e65100;
-    margin-bottom: 8px;
-  }
-  .cause-item {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 6px;
-    font-size: 12px;
-    color: #555;
-    align-items: flex-start;
-  }
-  .cause-icon {
-    flex-shrink: 0;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    font-weight: 700;
-    color: #fff;
-  }
-  .cause-icon.fix { background: #42a5f5; }
-  .cause-icon.support { background: #ff9800; }
-  .cause-icon.escalate { background: #ef5350; }
-
-  /* ===== Store timeline ===== */
-  .store-timeline {
-    margin-top: 40px;
-    background: #fff;
-    border-radius: 14px;
-    padding: 24px 28px;
-    border: 1px solid #e0ddd5;
-  }
-  .store-timeline h2 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 16px;
-    color: #1a1a1a;
-  }
-  .store-row {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 12px;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .store-name {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  .store-bar-wrap {
-    position: relative;
-    height: 28px;
-    background: #f0ede7;
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  .store-bar {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    padding: 0 8px;
-    font-size: 10px;
-    font-weight: 600;
-    color: #fff;
-    white-space: nowrap;
-  }
-  .store-bar.phase-a { background: #90a4ae; }
-  .store-bar.phase-b { background: #66bb6a; }
-
-  .timeline-labels {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 12px;
-    margin-top: 4px;
-  }
-  .timeline-months {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    color: #999;
-  }
-
-  /* ===== Legend ===== */
-  .legend {
-    margin-top: 28px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    color: #666;
-  }
-  .legend-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 3px;
-  }
-  .legend-dot.green { background: #66bb6a; }
-  .legend-dot.red { background: #ef5350; }
-  .legend-dot.gray { background: #90a4ae; }
-  .legend-dot.orange { background: #ffb74d; }
-
-  /* ===== Responsive ===== */
-  @media (max-width: 768px) {
-    body { padding: 20px 12px; }
-    .two-col {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-    h1 { font-size: 18px; }
-    .branch-lines::after { display: none; }
-    .branch-left-line, .branch-right-line { display: none; }
-    .branch-label { display: none; }
-  }
-
-  /* Section dividers */
-  .section-gap { height: 32px; }
-
-  /* Recovery arrow */
-  .recovery-arrow {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    color: #2e7d32;
-    margin-top: 8px;
-    font-weight: 600;
-  }
-  .recovery-arrow::before {
-    content: '↩';
-    font-size: 14px;
-  }
-
-  .note-box {
-    background: #fafaf7;
-    border: 1px dashed #ccc;
-    border-radius: 8px;
-    padding: 14px 18px;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #666;
-    line-height: 1.8;
-  }
-  .note-box strong {
-    color: #444;
-  }
-</style>
-</head>
-<body>
-
-<div class="container">
-
-  <h1>FC店舗育成 ── フェーズ・ステップ遷移フロー</h1>
-  <p class="subtitle">Mustの遵守状況に応じて、店舗ごとに異なるルートを進む全体像</p>
-
-  <!-- Entry -->
-  <div class="entry-box">
-    フェーズA：Mustを守る（2〜3月）
-    <div class="entry-sub">なーすけさんが全店舗と週次30分の1on1で伴走。4つのMustの定着に集中する期間</div>
-  </div>
-
-  <!-- Connector -->
-  <div class="connector"><div class="arrow-down"></div></div>
-
-  <!-- Phase A Detail -->
-  <div class="phase-a-box">
-    <span class="phase-label">フェーズA ─ 全店舗共通</span>
-    <div class="phase-title">4つのMustを「できている」状態にする</div>
-    <div class="phase-desc">
-      セッションログ完全提出 ／ 24時間以内レスポンス ／ NPS実施 ／ オーナー現場対話<br>
-      毎週の1on1で「なぜできなかったか」を確認し、やり方を柔軟に調整する
-    </div>
-    <div class="detail-row">
-      <span class="detail-tag">担当：なーすけさん</span>
-      <span class="detail-tag">頻度：週次1on1（30分）</span>
-      <span class="detail-tag">記録：MUST運用シート</span>
-    </div>
-  </div>
-
-  <!-- Connector to judgment -->
-  <div class="connector"><div class="arrow-down"></div></div>
-
-  <!-- Diamond: judgment -->
-  <div class="diamond-wrap">
-    <div class="diamond">
-      <div class="diamond-label">毎週判定</div>
-      <div class="diamond-text">4つのMust<br>全て達成？</div>
-    </div>
-  </div>
-
-  <!-- Branch lines -->
-  <div class="branch-lines">
-    <div class="branch-left-line"></div>
-    <div class="branch-right-line"></div>
-    <span class="branch-label yes">✓ 達成</span>
-    <span class="branch-label no">✗ 未達</span>
-  </div>
-
-  <!-- Two columns -->
-  <div class="two-col">
-
-    <!-- ===== LEFT: GREEN PATH ===== -->
-    <div class="green-path">
-      <div class="path-header">守れている場合のルート</div>
-
-      <!-- Condition box -->
-      <div class="phase-card">
-        <div class="p-label">移行条件</div>
-        <div class="p-condition">4つのMust全てが「できている」状態が<strong>3週間連続</strong>で続いたらフェーズBへ</div>
-        <div style="margin-top: 10px; font-size: 12px; color: #555;">
-          <strong>「できている」の定義：</strong><br>
-          ・セッションログ → その週に1件以上提出<br>
-          ・24hレスポンス → 重要連絡に返事漏れなし（スタンプOK）<br>
-          ・NPS → その月の分が完了<br>
-          ・オーナー対話 → 記録が1on1前日までに記入済み
-        </div>
-        <div class="p-担当">判定者：1on1担当者（今はなーすけさん → 4月以降ななこちゃんに移行）</div>
-      </div>
-
-      <div class="phase-arrow"></div>
-
-      <!-- Phase B -->
-      <div class="phase-card">
-        <div class="p-label">フェーズB <span class="period">目安：4〜5月</span></div>
-        <div class="p-title">Mustをやって出てきた困りごとを一緒に解く</div>
-        <div class="p-goal">
-          <strong>ゴール：</strong>オーナーが「うちの店にとってMustをやる意味」を自分の言葉で話せる状態
-        </div>
-        <div style="font-size: 12px; color: #555; margin-bottom: 8px;">
-          <strong>やること：</strong><br>
-          ・現場の「困った」を具体的にヒアリング<br>
-          ・Mustの「なぜやるか」をオーナー自身が体感で理解<br>
-          ・ななこちゃんが1on1に同席開始<br>
-          ・オーナー同士の情報交換の場をお試し実施
-        </div>
-        <div class="p-condition">店舗別テーマ例：本店＝フーテロちゃんの育成、柏＝離脱防止、大阪＝トレーナー差の見える化、上板橋＝Instagram運用</div>
-      </div>
-
-      <div class="phase-arrow"></div>
-
-      <!-- Phase C -->
-      <div class="phase-card">
-        <div class="p-label">フェーズC <span class="period">目安：6〜7月</span></div>
-        <div class="p-title">「あなたの店舗、これからどうしたい？」を話す</div>
-        <div class="p-goal">
-          <strong>ゴール：</strong>オーナーが自分たちで育成サイクルを回せる状態
-        </div>
-        <div style="font-size: 12px; color: #555; margin-bottom: 8px;">
-          <strong>やること：</strong><br>
-          ・オーナー自身がやりたいこと・目指す姿を言語化<br>
-          ・セッション品質の基準をガイドにまとめる<br>
-          ・Shapeの考え方の伝達ステップを文書化<br>
-          ・Mustが安定している店舗から順にこのテーマへ移行
-        </div>
-        <div class="p-condition">本部ビジョンをオーナーの声に重ねて共有（全体MTGで実施）</div>
-      </div>
-
-      <div class="phase-arrow"></div>
-
-      <!-- Phase D -->
-      <div class="phase-card" style="border-radius: 0 0 10px 10px;">
-        <div class="p-label">フェーズD <span class="period">目安：8月〜</span></div>
-        <div class="p-title">オーナーが自分で立てた目標を追う</div>
-        <div class="p-goal">
-          <strong>ゴール：</strong>ななこちゃんが1on1主担当。なーすけさんは月1で全体確認のみ
-        </div>
-        <div style="font-size: 12px; color: #555; margin-bottom: 8px;">
-          <strong>やること：</strong><br>
-          ・トレーナーがShapeの考え方を体で表現できるレベルに<br>
-          ・「お客様の挑戦の物語」を自分の言葉で語れる状態<br>
-          ・各店舗の育成の成果を振り返り、来年に活かす
-        </div>
-        <div class="p-担当">1on1主担当：ななこちゃん ／ なーすけさん：月1全体確認</div>
-      </div>
-    </div>
-
-    <!-- ===== RIGHT: RED PATH ===== -->
-    <div class="red-path">
-      <div class="path-header">守れていない場合のルート</div>
-
-      <!-- Cause split -->
-      <div class="step-card">
-        <div class="cause-split">
-          <div class="cause-title">まず原因を3つに分ける（1on1で毎回メモ）</div>
-          <div class="cause-item">
-            <span class="cause-icon fix">1</span>
-            <span><strong>やり方が悪い</strong>：フォームが使いにくい、締切が非現実的 → 本部が仕組みを直す → ステップ3に進まない</span>
-          </div>
-          <div class="cause-item">
-            <span class="cause-icon support">2</span>
-            <span><strong>手が足りない</strong>：トレーナー不足、シフトの問題 → 一緒に負荷を減らす → ステップ3に進まない</span>
-          </div>
-          <div class="cause-item">
-            <span class="cause-icon escalate">3</span>
-            <span><strong>やる気・優先度の問題</strong>：仕組みも人も整っているのに後回し → 連続カウント開始 → ステップ3へ</span>
-          </div>
-          <div style="margin-top: 8px; font-size: 11px; color: #888;">
-            ※ やり方を直してから<strong>2週間</strong>たっても変わらなければ「やる気の問題」として判断し直す
+氏名：郡司愛</div></pre>
+                                            <div class="p-rich_text_section"><span aria-label="&nbsp;"
+                                                class="c-mrkdwn__br" data-stringify-type="paragraph-break"></span><span
+                                                aria-label="&nbsp;" class="c-mrkdwn__br"
+                                                data-stringify-type="paragraph-break"></span><a target="_blank"
+                                                class="c-link"
+                                                data-stringify-link="https://shapefit.lightning.force.com/lightning/r/Case/500Nn00001RBa9uIAD/view"
+                                                url="https://shapefit.lightning.force.com/lightning/r/Case/500Nn00001RBa9uIAD/view"
+                                                data-sk="tooltip_parent"
+                                                href="https://shapefit.lightning.force.com/lightning/r/Case/500Nn00001RBa9uIAD/view"
+                                                rel="noopener noreferrer">ケースURL</a><span hidden=""
+                                                data-sk="tooltip"></span></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div aria-setsize="-1" class="c-virtual_list__item" tabindex="-1" role="listitem"
+                        id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread_separator" data-qa="virtual-list-item"
+                        data-item-key="separator" style="top: 962px;">
+                        <div class="p-thread_separator_row_generic">
+                          <div class="p-threads_flexpane__separator"><span class="p-threads_flexpane__separator_count">8
+                              件の返信</span>
+                            <hr class="p-threads_flexpane__separator_line">
+                          </div>
+                        </div>
+                      </div>
+                      <div aria-setsize="-1" class="c-virtual_list__item" tabindex="-1" role="listitem"
+                        id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread_1775617998.138689"
+                        data-qa="virtual-list-item" data-item-key="1775617998.138689" style="top: 986px;">
+                        <div role="presentation"
+                          class="c-message_kit__background c-message_kit__message c-message_kit__thread_message"
+                          data-qa="message_container" data-qa-unprocessed="false" data-qa-placeholder="false"
+                          data-msg-ts="1775617998.138689" data-msg-channel-id="C0AKT0QBN8Y">
+                          <div role="document" aria-roledescription="message" class="c-message_kit__hover"
+                            data-qa-hover="true">
+                            <div class="c-message_kit__actions c-message_kit__actions--default"
+                              style="position: relative;">
+                              <div class="c-message_kit__gutter">
+                                <div role="presentation" class="c-message_kit__gutter__left"
+                                  data-stringify-ignore="true"><span class="p-member_profile_hover_card"
+                                    role="presentation"><button
+                                      class="c-button-unstyled c-message_kit__avatar c-avatar c-avatar--interactive"
+                                      aria-hidden="true" aria-label="鈴木 晴勝 / Harumasa Suzuki のプロフィールを表示" tabindex="-1"
+                                      type="button" style="height: 36px; width: 36px;"><span
+                                        class="c-base_icon__width_only_container"
+                                        style="height: 36px; width: 36px;"><img
+                                          src="https://ca.slack-edge.com/T0A16JW65BJ-U0AF4U61XM4-03c30c6a472e-48"
+                                          srcset="https://ca.slack-edge.com/T0A16JW65BJ-U0AF4U61XM4-03c30c6a472e-72 2x"
+                                          class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                          style="width: 36px;"></span></button></span><span hidden=""
+                                    data-sk="popover-trigger"></span></div>
+                                <div role="presentation" class="c-message_kit__gutter__right" data-qa="message_content">
+                                  <span class="c-message__sender c-message_kit__sender" data-qa="message_sender"
+                                    data-stringify-type="replace" data-stringify-text="鈴木 晴勝 / Harumasa Suzuki"><span
+                                      class="p-member_profile_hover_card" role="presentation"><button
+                                        data-message-sender="U0AF4U61XM4" data-qa="message_sender_name"
+                                        class="c-link--button c-message__sender_button" type="button" tabindex="0">鈴木 晴勝
+                                        / Harumasa Suzuki</button></span><span hidden=""
+                                      data-sk="popover-trigger"></span></span>&nbsp;&nbsp;<a aria-label="昨日 12:13:18 "
+                                    data-stringify-type="replace" data-stringify-text="[12:13]"
+                                    data-stringify-requires-siblings="true" data-ts="1775617998.138689"
+                                    data-sk="tooltip_parent" class="c-link c-timestamp"
+                                    href="https://shape-fit.slack.com/archives/C0AKT0QBN8Y/p1775617998138689?thread_ts=1775569101.634209&amp;cid=C0AKT0QBN8Y"><span
+                                      class="c-timestamp__label" data-qa="timestamp_label">昨日 12:13</span></a><span
+                                    hidden="" data-sk="tooltip"></span><br>
+                                  <div class="c-message_kit__blocks c-message_kit__blocks--rich_text">
+                                    <div class="c-message__message_blocks c-message__message_blocks--rich_text"
+                                      data-qa="message-text">
+                                      <div class="p-block_kit_renderer" data-qa="block-kit-renderer">
+                                        <div
+                                          class="p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first">
+                                          <div class="p-rich_text_block" dir="auto">
+                                            <div class="p-rich_text_section"><span class="" role="presentation"><a
+                                                  target="_blank"
+                                                  class="c-link c-member_slug c-member_slug--light c-member_slug--link"
+                                                  data-member-id="U08URP8FQTE"
+                                                  data-member-label="@髙宮城 征真 / Shoma Takamiyagi"
+                                                  data-stringify-type="mention" data-stringify-id="U08URP8FQTE"
+                                                  data-stringify-label="@髙宮城 征真 / Shoma Takamiyagi" tabindex="0"
+                                                  href="https://shape-fit.slack.com/team/U08URP8FQTE"
+                                                  rel="noopener noreferrer">@髙宮城 征真 / Shoma Takamiyagi</a></span><span
+                                                hidden="" data-sk="popover-trigger"></span><span aria-label="&nbsp;"
+                                                class="c-mrkdwn__br"
+                                                data-stringify-type="paragraph-break"></span>しょーみー！こちらって対応できるかな？<span
+                                                class="c-emoji c-emoji__medium c-emoji--inline" data-qa="emoji"
+                                                data-sk="tooltip_parent"><img
+                                                  src="https://a.slack-edge.com/production-standard-emoji-assets/15.0/apple-medium/1f4a6@2x.png"
+                                                  aria-label="あせあせ 絵文字" alt=":あせあせ:" data-stringify-type="emoji"
+                                                  data-stringify-emoji=":sweat_drops:"></span><span hidden=""
+                                                data-sk="tooltip"></span><span aria-label="&nbsp;" class="c-mrkdwn__br"
+                                                data-stringify-type="paragraph-break"></span>選手の変更できるかなーって<span
+                                                class="c-emoji c-emoji__medium c-emoji--inline" data-qa="emoji"
+                                                data-sk="tooltip_parent"><img
+                                                  src="https://a.slack-edge.com/production-standard-emoji-assets/15.0/apple-medium/1f4a6@2x.png"
+                                                  aria-label="あせあせ 絵文字" alt=":あせあせ:" data-stringify-type="emoji"
+                                                  data-stringify-emoji=":sweat_drops:"></span><span hidden=""
+                                                data-sk="tooltip"></span></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div aria-setsize="-1" class="c-virtual_list__item" tabindex="-1" role="listitem"
+                        id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread_1775652400.566749"
+                        data-qa="virtual-list-item" data-item-key="1775652400.566749" style="top: 1120px;">
+                        <div role="presentation"
+                          class="c-message_kit__background c-message_kit__message c-message_kit__thread_message"
+                          data-qa="message_container" data-qa-unprocessed="false" data-qa-placeholder="false"
+                          data-msg-ts="1775652400.566749" data-msg-channel-id="C0AKT0QBN8Y">
+                          <div role="document" aria-roledescription="message" class="c-message_kit__hover"
+                            data-qa-hover="true">
+                            <div class="c-message_kit__actions c-message_kit__actions--default"
+                              style="position: relative;">
+                              <div class="c-message_kit__gutter">
+                                <div role="presentation" class="c-message_kit__gutter__left"
+                                  data-stringify-ignore="true"><span class="p-member_profile_hover_card"
+                                    role="presentation"><button
+                                      class="c-button-unstyled c-message_kit__avatar c-avatar c-avatar--interactive"
+                                      aria-hidden="true" aria-label="髙宮城 征真 / Shoma Takamiyagi のプロフィールを表示" tabindex="-1"
+                                      type="button" style="height: 36px; width: 36px;"><span
+                                        class="c-base_icon__width_only_container"
+                                        style="height: 36px; width: 36px;"><img
+                                          src="https://ca.slack-edge.com/T08UGH59A91-U08URP8FQTE-e578507f85d7-48"
+                                          srcset="https://ca.slack-edge.com/T08UGH59A91-U08URP8FQTE-e578507f85d7-72 2x"
+                                          class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                          style="width: 36px;"></span><i
+                                        class="c-team_icon c-avatar__icon c-avatar__team_icon" role="img"
+                                        aria-hidden="true" aria-label="FLARENEST" data-qa="team-icon"
+                                        data-sk="tooltip_parent"
+                                        style="height: 16px; width: 16px; min-width: 16px; font-size: 9px; line-height: 16px; white-space: nowrap; background-image: url(&quot;https://avatars.slack-edge.com/2025-05-30/8969805145510_8eab272cad4ba9f4d238_34.png&quot;);"></i><span
+                                        hidden="" data-sk="tooltip"></span></button></span><span hidden=""
+                                    data-sk="popover-trigger"></span></div>
+                                <div role="presentation" class="c-message_kit__gutter__right" data-qa="message_content">
+                                  <span class="c-message__sender c-message_kit__sender" data-qa="message_sender"
+                                    data-stringify-type="replace" data-stringify-text="髙宮城 征真 / Shoma Takamiyagi"><span
+                                      class="p-member_profile_hover_card" role="presentation"><button
+                                        data-message-sender="U08URP8FQTE" data-qa="message_sender_name"
+                                        class="c-link--button c-message__sender_button" type="button" tabindex="0">髙宮城
+                                        征真 / Shoma Takamiyagi</button></span><span hidden=""
+                                      data-sk="popover-trigger"></span></span>&nbsp;&nbsp;<a aria-label="昨日 21:46:40 "
+                                    data-stringify-type="replace" data-stringify-text="[21:46]"
+                                    data-stringify-requires-siblings="true" data-ts="1775652400.566749"
+                                    data-sk="tooltip_parent" class="c-link c-timestamp"
+                                    href="https://shape-fit.slack.com/archives/C0AKT0QBN8Y/p1775652400566749?thread_ts=1775569101.634209&amp;cid=C0AKT0QBN8Y"><span
+                                      class="c-timestamp__label" data-qa="timestamp_label">昨日 21:46</span></a><span
+                                    hidden="" data-sk="tooltip"></span><br>
+                                  <div class="c-message_kit__blocks c-message_kit__blocks--rich_text">
+                                    <div class="c-message__message_blocks c-message__message_blocks--rich_text"
+                                      data-qa="message-text">
+                                      <div class="p-block_kit_renderer" data-qa="block-kit-renderer">
+                                        <div
+                                          class="p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first">
+                                          <div class="p-rich_text_block" dir="auto">
+                                            <div class="p-rich_text_section"><span class="" role="presentation"><a
+                                                  target="_blank"
+                                                  class="c-link c-member_slug c-member_slug--light c-member_slug--link c-member_slug--mention"
+                                                  data-member-id="U0AF4U61XM4"
+                                                  data-member-label="@鈴木 晴勝 / Harumasa Suzuki"
+                                                  data-stringify-type="mention" data-stringify-id="U0AF4U61XM4"
+                                                  data-stringify-label="@鈴木 晴勝 / Harumasa Suzuki" tabindex="0"
+                                                  href="https://shape-fit.slack.com/team/U0AF4U61XM4"
+                                                  rel="noopener noreferrer">@鈴木 晴勝 / Harumasa Suzuki</a></span><span
+                                                hidden="" data-sk="popover-trigger"></span><br
+                                                aria-hidden="true">対応可能です！<span aria-label="&nbsp;" class="c-mrkdwn__br"
+                                                data-stringify-type="paragraph-break"></span>郡司愛さん<br
+                                                aria-hidden="true">関東Day1 Women's One Shape<span aria-label="&nbsp;"
+                                                class="c-mrkdwn__br"
+                                                data-stringify-type="paragraph-break"></span>郡司明さん<br
+                                                aria-hidden="true">関東Day2 Women's One Shape<span aria-label="&nbsp;"
+                                                class="c-mrkdwn__br"
+                                                data-stringify-type="paragraph-break"></span>となってます！<br
+                                                aria-hidden="true">関東Day1が20名/20名満枠、関東Day2が8名/11名枠<br
+                                                aria-hidden="true">なので郡司愛さんを関東Day2にスライドするのが良いと思いますがいかがですか！</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div aria-setsize="-1" class="c-virtual_list__item" tabindex="-1" role="listitem"
+                        id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread_1775657751.559709"
+                        data-qa="virtual-list-item" data-item-key="1775657751.559709" style="top: 1460px;">
+                        <div role="presentation"
+                          class="c-message_kit__background c-message_kit__message c-message_kit__thread_message"
+                          data-qa="message_container" data-qa-unprocessed="false" data-qa-placeholder="false"
+                          data-msg-ts="1775657751.559709" data-msg-channel-id="C0AKT0QBN8Y">
+                          <div role="document" aria-roledescription="message" class="c-message_kit__hover"
+                            data-qa-hover="true">
+                            <div class="c-message_kit__actions c-message_kit__actions--default"
+                              style="position: relative;">
+                              <div class="c-message_kit__gutter">
+                                <div role="presentation" class="c-message_kit__gutter__left"
+                                  data-stringify-ignore="true"><span class="p-member_profile_hover_card"
+                                    role="presentation"><button
+                                      class="c-button-unstyled c-message_kit__avatar c-avatar c-avatar--interactive"
+                                      aria-hidden="true" aria-label="平澤 陽生 / Hirasawa Haruki のプロフィールを表示" tabindex="-1"
+                                      type="button" style="height: 36px; width: 36px;"><span
+                                        class="c-base_icon__width_only_container"
+                                        style="height: 36px; width: 36px;"><img
+                                          src="https://ca.slack-edge.com/T08UGH59A91-U08UGH5A2JX-7bf7e6069ded-48"
+                                          srcset="https://ca.slack-edge.com/T08UGH59A91-U08UGH5A2JX-7bf7e6069ded-72 2x"
+                                          class="c-base_icon c-base_icon--image" aria-hidden="true" role="img" alt=""
+                                          style="width: 36px;"></span><i
+                                        class="c-team_icon c-avatar__icon c-avatar__team_icon" role="img"
+                                        aria-hidden="true" aria-label="FLARENEST" data-qa="team-icon"
+                                        data-sk="tooltip_parent"
+                                        style="height: 16px; width: 16px; min-width: 16px; font-size: 9px; line-height: 16px; white-space: nowrap; background-image: url(&quot;https://avatars.slack-edge.com/2025-05-30/8969805145510_8eab272cad4ba9f4d238_34.png&quot;);"></i><span
+                                        hidden="" data-sk="tooltip"></span></button></span><span hidden=""
+                                    data-sk="popover-trigger"></span></div>
+                                <div role="presentation" class="c-message_kit__gutter__right" data-qa="message_content">
+                                  <span class="c-message__sender c-message_kit__sender" data-qa="message_sender"
+                                    data-stringify-type="replace" data-stringify-text="平澤 陽生 / Hirasawa Haruki"><span
+                                      class="p-member_profile_hover_card" role="presentation"><button
+                                        data-message-sender="U08UGH5A2JX" data-qa="message_sender_name"
+                                        class="c-link--button c-message__sender_button" type="button" tabindex="0">平澤 陽生
+                                        / Hirasawa Haruki</button></span><span hidden=""
+                                      data-sk="popover-trigger"></span></span>&nbsp;&nbsp;<a aria-label="昨日 23:15:51 "
+                                    data-stringify-type="replace" data-stringify-text="[23:15]"
+                                    data-stringify-requires-siblings="true" data-ts="1775657751.559709"
+                                    data-sk="tooltip_parent" class="c-link c-timestamp"
+                                    href="https://shape-fit.slack.com/archives/C0AKT0QBN8Y/p1775657751559709?thread_ts=1775569101.634209&amp;cid=C0AKT0QBN8Y"><span
+                                      class="c-timestamp__label" data-qa="timestamp_label">昨日 23:15</span></a><span
+                                    hidden="" data-sk="tooltip"></span><br>
+                                  <div class="c-message_kit__blocks c-message_kit__blocks--rich_text">
+                                    <div class="c-message__message_blocks c-message__message_blocks--rich_text"
+                                      data-qa="message-text">
+                                      <div class="p-block_kit_renderer" data-qa="block-kit-renderer">
+                                        <div
+                                          class="p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first">
+                                          <div class="p-rich_text_block" dir="auto">
+                                            <div class="p-rich_text_section">なんとかずらしたい<span
+                                                class="c-emoji c-emoji__medium c-emoji--inline" data-qa="emoji"
+                                                data-sk="tooltip_parent"><img
+                                                  src="https://a.slack-edge.com/production-standard-emoji-assets/15.0/apple-medium/1f622@2x.png"
+                                                  aria-label="うぇーん 絵文字" alt=":うぇーん:" data-stringify-type="emoji"
+                                                  data-stringify-emoji=":cry:"></span><span hidden=""
+                                                data-sk="tooltip"></span></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div aria-setsize="-1" class="c-virtual_list__item" tabindex="-1" role="listitem"
+                        id="C0AKT0QBN8Y-1775569101.634209-thread-list-Thread_input" data-qa="virtual-list-item"
+                        data-item-key="input" style="top: 2420px;">
+                        <div
+                          class="p-threads_footer__input_container p-threads_footer__input_container--sticky_composer"
+                          data-qa="reply_container">
+                          <div>
+                            <div class="p-context_bar_v2 p-context_bar_v2--teal p-context_bar_v2--campfire-default"
+                              data-qa="context_bar">
+                              <div class="p-context_bar_v2__icon">
+                                <div class="p-connection_info_icon" data-qa="shared_channel_connection_info_icon"><i
+                                    class="c-team_icon p-connection_info_icon__icon" role="img" aria-hidden="false"
+                                    aria-label="FLARENEST" data-qa="team-icon"
+                                    style="height: 16px; width: 16px; min-width: 16px; font-size: 9px; line-height: 16px; white-space: nowrap; background-image: url(&quot;https://avatars.slack-edge.com/2025-05-30/8969805145510_8eab272cad4ba9f4d238_34.png&quot;);"></i><i
+                                    class="c-team_icon p-connection_info_icon__icon c-team_icon--default" role="img"
+                                    aria-hidden="false" aria-label="Ayaのワークスペース" data-qa="team-icon"
+                                    style="height: 16px; width: 16px; min-width: 16px; font-size: 9px; line-height: 16px; white-space: nowrap;">A</i>
+                                </div>
+                              </div>
+                              <div class="p-context_bar_v2__content p-context_bar_v2__content--default"
+                                data-qa="context_bar_text_shared"><span data-qa="shared_channel_connection_info_text"
+                                  id="context_bar_text-bebcf8ba">
+                                  <div class="p-autoclog__hook"><span class="p-connection_info_text"
+                                      data-qa="shared_channel_connection_info_text"><button data-qa="context_bar_link"
+                                        class="c-link--button bold" type="button" tabindex="0">3 人の外部の人</button>が <span
+                                        data-team-id="T08UGH59A91">FLARENEST</span> と <span
+                                        data-team-id="T0AFK29MNE9">Ayaのワークスペース</span> から参加しています</span></div>
+                                </span></div>
+                              <div class="p-context_bar_v2__filler"></div>
+                            </div>
+                          </div>
+                          <div
+                            class="p-threads_footer__input p-message_input_unstyled p-message_input_unstyled--attachments-visible"
+                            role="group" aria-label="作成ツール">
+                            <div
+                              class="p-message_input__input_container_unstyled c-wysiwyg_container c-wysiwyg_container--theme_light c-wysiwyg_container--with_footer c-wysiwyg_container--theme_light_bordered c-wysiwyg_container--double_decker c-basic_container c-basic_container--size_medium"
+                              style="--max-lines: 16;">
+                              <div class="c-basic_container__body">
+                                <div role="toolbar" aria-orientation="horizontal" aria-label="書式設定"
+                                  class="c-wysiwyg_container__formatting"
+                                  data-qa="wysiwyg-container_formatting-enabled">
+                                  <div class="p-texty_sticky_formatting_bar">
+                                    <div style="overflow: visible; width: 0px;">
+                                      <div
+                                        class="p-composer__body p-composer__body--visible p-composer__body--unstyled">
+                                        <button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="bold-composer-button" role="button" tabindex="0" aria-label="太文字"
+                                          data-format="bold" aria-disabled="false" aria-pressed="false"
+                                          data-sk="tooltip_parent" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" data-chj="true" data-qa="bold" aria-hidden="true"
+                                            class="">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M4 2.75A.75.75 0 0 1 4.75 2h6.343a3.91 3.91 0 0 1 3.88 3.449A2 2 0 0 1 15 5.84l.001.067a3.9 3.9 0 0 1-1.551 3.118A4.627 4.627 0 0 1 11.875 18H4.75a.75.75 0 0 1-.75-.75V9.5a.8.8 0 0 1 .032-.218A.8.8 0 0 1 4 9.065zm2.5 5.565h3.593a2.157 2.157 0 1 0 0-4.315H6.5zm4.25 1.935H6.5v5.5h4.25a2.75 2.75 0 1 0 0-5.5"
+                                              clip-rule="evenodd"></path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="italic-composer-button" role="button" tabindex="-1" aria-label="斜体"
+                                          data-format="italic" aria-disabled="false" aria-pressed="false"
+                                          data-sk="tooltip_parent" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" data-chj="true" data-qa="italic" aria-hidden="true"
+                                            class="">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M7 2.75A.75.75 0 0 1 7.75 2h7.5a.75.75 0 0 1 0 1.5H12.3l-2.6 13h2.55a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5H7.7l2.6-13H7.75A.75.75 0 0 1 7 2.75"
+                                              clip-rule="evenodd"></path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="underline-composer-button" role="button" tabindex="-1"
+                                          aria-label="アンダーライン" data-format="underline" aria-disabled="false"
+                                          aria-pressed="false" data-sk="tooltip_parent" type="button"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                            data-qa="underline" aria-hidden="true" class="">
+                                            <path fill="currentColor"
+                                              d="M17.25 17.12a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5zM14.5 1.63a.75.75 0 0 1 .75.75v8a5.25 5.25 0 1 1-10.5 0v-8a.75.75 0 0 1 1.5 0v8a3.75 3.75 0 0 0 7.5 0v-8a.75.75 0 0 1 .75-.75">
+                                            </path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="strike-composer-button" role="button" tabindex="-1"
+                                          aria-label="取り消し線" data-format="strike" aria-disabled="false"
+                                          aria-pressed="false" data-sk="tooltip_parent" type="button"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                            data-qa="strikethrough" aria-hidden="true" class="">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M11.721 3.84c-.91-.334-2.028-.36-3.035-.114-1.51.407-2.379 1.861-2.164 3.15C6.718 8.051 7.939 9.5 11.5 9.5l.027.001h5.723a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5h3.66c-.76-.649-1.216-1.468-1.368-2.377-.347-2.084 1.033-4.253 3.265-4.848l.007-.002.007-.002c1.252-.307 2.68-.292 3.915.16 1.252.457 2.337 1.381 2.738 2.874a.75.75 0 0 1-1.448.39c-.25-.925-.91-1.528-1.805-1.856m2.968 9.114a.75.75 0 1 0-1.378.59c.273.64.186 1.205-.13 1.674-.333.492-.958.925-1.82 1.137-.989.243-1.991.165-3.029-.124-.93-.26-1.613-.935-1.858-1.845a.75.75 0 0 0-1.448.39c.388 1.441 1.483 2.503 2.903 2.9 1.213.338 2.486.456 3.79.135 1.14-.28 2.12-.889 2.704-1.753.6-.888.743-1.992.266-3.104"
+                                              clip-rule="evenodd"></path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span><span
+                                          class="p-composer__separator"></span><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="link-composer-button" role="button" tabindex="-1" aria-label="リンク"
+                                          data-format="link" aria-disabled="false" aria-pressed="false"
+                                          data-sk="tooltip_parent" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" data-chj="true" data-qa="link" aria-hidden="true"
+                                            class="">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M12.306 3.756a2.75 2.75 0 0 1 3.889 0l.05.05a2.75 2.75 0 0 1 0 3.889l-3.18 3.18a2.75 2.75 0 0 1-3.98-.095l-.03-.034a.75.75 0 0 0-1.11 1.009l.03.034a4.25 4.25 0 0 0 6.15.146l3.18-3.18a4.25 4.25 0 0 0 0-6.01l-.05-.05a4.25 4.25 0 0 0-6.01 0L9.47 4.47a.75.75 0 1 0 1.06 1.06zm-4.611 12.49a2.75 2.75 0 0 1-3.89 0l-.05-.051a2.75 2.75 0 0 1 0-3.89l3.18-3.179a2.75 2.75 0 0 1 3.98.095l.03.034a.75.75 0 1 0 1.11-1.01l-.03-.033a4.25 4.25 0 0 0-6.15-.146l-3.18 3.18a4.25 4.25 0 0 0 0 6.01l.05.05a4.25 4.25 0 0 0 6.01 0l1.775-1.775a.75.75 0 0 0-1.06-1.06z"
+                                              clip-rule="evenodd"></path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="ordered-list-composer-button" role="button" tabindex="-1"
+                                          aria-label="順序付きリスト" data-format="ordered-list" aria-disabled="false"
+                                          aria-pressed="false" data-sk="tooltip_parent" type="button"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                            data-qa="numbered-list" aria-hidden="true" class="">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M3.792 2.094A.5.5 0 0 1 4 2.5V6h1a.5.5 0 1 1 0 1H2a.5.5 0 1 1 0-1h1V3.194l-.842.28a.5.5 0 0 1-.316-.948l1.5-.5a.5.5 0 0 1 .45.068M7.75 3.5a.75.75 0 0 0 0 1.5h10a.75.75 0 0 0 0-1.5zM7 10.75a.75.75 0 0 1 .75-.75h10a.75.75 0 0 1 0 1.5h-10a.75.75 0 0 1-.75-.75m0 6.5a.75.75 0 0 1 .75-.75h10a.75.75 0 0 1 0 1.5h-10a.75.75 0 0 1-.75-.75m-4.293-3.36a1 1 0 0 1 .793-.39c.49 0 .75.38.75.75 0 .064-.033.194-.173.409a5 5 0 0 1-.594.711c-.256.267-.552.548-.87.848l-.088.084a42 42 0 0 0-.879.845A.5.5 0 0 0 2 18h3a.5.5 0 0 0 0-1H3.242l.058-.055c.316-.298.629-.595.904-.882a6 6 0 0 0 .711-.859c.18-.277.335-.604.335-.954 0-.787-.582-1.75-1.75-1.75a2 2 0 0 0-1.81 1.147.5.5 0 1 0 .905.427 1 1 0 0 1 .112-.184"
+                                              clip-rule="evenodd"></path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="bullet-list-composer-button" role="button" tabindex="-1"
+                                          aria-label="箇条書き" data-format="bullet-list" aria-disabled="false"
+                                          aria-pressed="false" data-sk="tooltip_parent" type="button"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                            data-qa="bulleted-list" aria-hidden="true" class="">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M4 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 0a.75.75 0 0 1 .75-.75h10a.75.75 0 0 1 0 1.5h-10A.75.75 0 0 1 7 3m.75 6.25a.75.75 0 0 0 0 1.5h10a.75.75 0 0 0 0-1.5zm0 7a.75.75 0 0 0 0 1.5h10a.75.75 0 0 0 0-1.5zM3 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                                              clip-rule="evenodd"></path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span><span
+                                          class="p-composer__separator"></span><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small p-composer__button p-composer__button--composer_ia p-composer__selection_button p-composer__button--sticky p-composer__button--no_pointer_events c-icon_button--default"
+                                          data-qa="overflow-composer-button" role="button" tabindex="-1"
+                                          aria-label="その他のオプション" data-format="overflow" aria-disabled="false"
+                                          aria-pressed="false" data-sk="tooltip_parent" type="button"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                            data-qa="ellipsis-horizontal-filled" aria-hidden="true" class="">
+                                            <path fill="currentColor"
+                                              d="M14.5 10a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0m-6.25 0a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0M2 10a1.75 1.75 0 1 1 3.5 0A1.75 1.75 0 0 1 2 10">
+                                            </path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="c-texty_input_unstyled__container c-texty_input_unstyled__container--size_medium c-texty_input_unstyled__container--multi_line c-texty_input_unstyled__container--no_actions"
+                                  data-buttons="1">
+                                  <div data-qa="message_input" data-message-input="true" data-channel-id="C0AKT0QBN8Y"
+                                    data-thread-ts="1775569101.634209" data-thread-key="C0AKT0QBN8Y-1775569101.634209"
+                                    data-view-context="Thread" class="c-texty_input_unstyled ql-container"
+                                    style="--min-lines: 1; --max-lines: 16;">
+                                    <div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" dir="auto"
+                                      role="textbox" tabindex="0" data-qa="texty_input" data-team-id="T0A16JW65BJ"
+                                      data-feat="composer" aria-label="ops_salesforce_ケース通知用 のスレッドに返信する"
+                                      aria-describedby="context_bar_text-bebcf8ba" aria-multiline="true"
+                                      spellcheck="true">
+                                      <p><br></p>
+                                    </div>
+                                    <div class="ql-clipboard" contenteditable="true" tabindex="-1" aria-hidden="true">
+                                    </div>
+                                    <div class="ql-placeholder" aria-hidden="true" tabindex="-1"><span>返信する…</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="p-threads_footer__input_container__broadcast_controls"
+                                  data-qa="threads_footer_broadcast_controls"><label
+                                    for="p-thread_footer__broadcast_checkbox--C0AKT0QBN8Y-1775569101.634209--Thread"
+                                    class="c-label p-threads_footer__input_container__broadcast_controls__label c-label--inline c-label--pointer c-label--with_formatted_text"
+                                    data-qa-label="true" data-qa-label-type="inline"><span class="c-label__text"
+                                      data-qa-label-text="true"><span class="c-truncate c-truncate--break_words"
+                                        style="--lines: 1; word-break: break-all;">以下にも投稿する :<span
+                                          class="bold c-inline_channel_entity c-base_inline_entity c-base_inline_entity--has_avatar"
+                                          data-qa="inline_channel_entity" data-channel-id="C0AKT0QBN8Y"><span><span
+                                              class="c-base_inline_entity__avatar c-inline_channel_icon c-inline_channel_icon--space"
+                                              data-inline-channel-type-icon="channel"><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                                data-qa="channel" aria-hidden="true" class="is-inline">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                  d="M9.74 3.878a.75.75 0 1 0-1.48-.255L7.68 7H3.75a.75.75 0 0 0 0 1.5h3.67L6.472 14H2.75a.75.75 0 0 0 0 1.5h3.463l-.452 2.623a.75.75 0 0 0 1.478.255l.496-2.878h3.228l-.452 2.623a.75.75 0 0 0 1.478.255l.496-2.878h3.765a.75.75 0 0 0 0-1.5h-3.506l.948-5.5h3.558a.75.75 0 0 0 0-1.5h-3.3l.54-3.122a.75.75 0 0 0-1.48-.255L12.43 7H9.2zM11.221 14l.948-5.5H8.942L7.994 14z"
+                                                  clip-rule="evenodd"></path>
+                                              </svg></span><span class="c-base_inline_entity__primary_content"><span
+                                                class="c-inline_channel_entity__content"><span
+                                                  class="c-channel_entity__name"
+                                                  data-qa="inline_channel_entity__name">ops_salesforce_ケース通知用</span></span></span></span></span></span></span><span
+                                      class="c-label__children" data-qa-label-children="true"><input
+                                        id="p-thread_footer__broadcast_checkbox--C0AKT0QBN8Y-1775569101.634209--Thread"
+                                        data-qa="threads_footer_broadcast_checkbox" data-sk="tooltip_parent"
+                                        type="checkbox" class="c-input_checkbox"><span hidden=""
+                                        data-sk="tooltip"></span></span></label></div>
+                                <div role="toolbar" aria-orientation="horizontal" aria-label="コンポーザーのアクション"
+                                  class="c-wysiwyg_container__footer c-wysiwyg_container__footer--with_formatting">
+                                  <div class="c-wysiwyg_container__prefix" data-qa="wysiwyg-container_prefix">
+                                    <div data-qa="shortcuts_menu_trigger_container"
+                                      class="p-shortcuts_menu_trigger_button_container--composer_ia p-shortcuts_menu_trigger_button_container_unstyled p-shortcuts_menu_trigger_button_container_unstyled--composer_ia">
+                                      <button
+                                        class="c-button-unstyled c-icon_button c-icon_button--size_small c-wysiwyg_container__button c-wysiwyg_container__button--shortcuts p-shortcuts_menu_trigger_button--composer_ia c-icon_button--default"
+                                        data-qa="shortcuts_menu_trigger__Thread" aria-label="添付" aria-haspopup="menu"
+                                        data-sk="tooltip_parent" type="button" tabindex="0"><svg
+                                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                          data-qa="plus" aria-hidden="true" class="">
+                                          <path fill="currentColor" fill-rule="evenodd"
+                                            d="M10.75 3.25a.75.75 0 0 0-1.5 0v6H3.251L3.25 10v-.75a.75.75 0 0 0 0 1.5V10v.75h6v6a.75.75 0 0 0 1.5 0v-6h6a.75.75 0 0 0 0-1.5h-6z"
+                                            clip-rule="evenodd"></path>
+                                        </svg></button><span hidden="" data-sk="tooltip"></span><span hidden=""
+                                        data-sk="popover-trigger"></span><input type="file" class="p-hidden_file_input"
+                                        multiple="" aria-hidden="true" data-qa="file_upload" tabindex="-1"></div>
+                                  </div>
+                                  <div class="c-wysiwyg_container__toolbar_buttons"
+                                    data-qa="wysiwyg-container_toolbar-buttons">
+                                    <div class="c-texty_buttons"><button
+                                        class="c-button-unstyled c-icon_button c-icon_button--size_small c-wysiwyg_container__button c-wysiwyg_container__button--composer c-wysiwyg_container__button--composer_active c-icon_button--default"
+                                        data-qa="texty_composer_button" aria-disabled="false" tabindex="-1"
+                                        aria-label="書式設定を表示する" aria-pressed="true" data-sk="tooltip_parent"
+                                        type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                          data-chj="true" data-qa="formatting" aria-hidden="true" class=""
+                                          style="--s: 18px;">
+                                          <path fill="currentColor" fill-rule="evenodd"
+                                            d="M6.941 3.952c-.459-1.378-2.414-1.363-2.853.022l-4.053 12.8a.75.75 0 0 0 1.43.452l1.101-3.476h6.06l1.163 3.487a.75.75 0 1 0 1.423-.474zm1.185 8.298L5.518 4.427 3.041 12.25zm6.198-5.537a4.74 4.74 0 0 1 3.037-.081A3.74 3.74 0 0 1 20 10.208V17a.75.75 0 0 1-1.5 0v-.745a8 8 0 0 1-2.847 1.355 3 3 0 0 1-3.15-1.143C10.848 14.192 12.473 11 15.287 11H18.5v-.792c0-.984-.641-1.853-1.581-2.143a3.24 3.24 0 0 0-2.077.056l-.242.089a2.22 2.22 0 0 0-1.34 1.382l-.048.145a.75.75 0 0 1-1.423-.474l.048-.145a3.72 3.72 0 0 1 2.244-2.315zM18.5 12.5h-3.213c-1.587 0-2.504 1.801-1.57 3.085.357.491.98.717 1.572.57a6.5 6.5 0 0 0 2.47-1.223l.741-.593z"
+                                            clip-rule="evenodd"></path>
+                                        </svg></button><span hidden="" data-sk="tooltip"></span><button
+                                        class="c-button-unstyled c-icon_button c-icon_button--size_small c-wysiwyg_container__button c-wysiwyg_container__button--emoji skin-tone- c-icon_button--default"
+                                        data-qa="emoji_toolbar_button" tabindex="-1" aria-label="絵文字"
+                                        aria-disabled="false" data-sk="tooltip_parent" type="button">
+                                        <div class="is-first"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" data-chj="true" data-qa="emoji" aria-hidden="true"
+                                            class="" style="--s: 18px;">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M2.5 10a7.5 7.5 0 1 1 15 0 7.5 7.5 0 0 1-15 0M10 1a9 9 0 1 0 0 18 9 9 0 0 0 0-18M7.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M14 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-6.385 3.766a.75.75 0 1 0-1.425.468C6.796 14.08 8.428 15 10.027 15s3.23-.92 3.838-2.766a.75.75 0 1 0-1.425-.468c-.38 1.155-1.38 1.734-2.413 1.734s-2.032-.58-2.412-1.734"
+                                              clip-rule="evenodd"></path>
+                                          </svg></div>
+                                        <div class="is-second"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" data-chj="true" data-qa="emoji-filled"
+                                            aria-hidden="true" class="" style="--s: 18px;">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                              d="M2.5 10a7.5 7.5 0 1 1 15 0 7.5 7.5 0 0 1-15 0M10 1a9 9 0 1 0 0 18 9 9 0 0 0 0-18M7.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M14 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-.523 4.597c-.616 1.576-2.046 2.364-3.477 2.364-1.43 0-2.86-.788-3.477-2.364-.22-.56.258-1.097.86-1.097h5.234c.602 0 1.08.537.86 1.097"
+                                              clip-rule="evenodd"></path>
+                                          </svg></div>
+                                      </button><span hidden="" data-sk="tooltip"></span><span hidden=""
+                                        data-sk="popover-trigger"></span><button
+                                        class="c-button-unstyled c-icon_button c-icon_button--size_small c-wysiwyg_container__button c-icon_button--default"
+                                        data-qa="texty_mention_button" tabindex="-1" aria-label="メンバーをメンションする"
+                                        data-sk="tooltip_parent" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 20 20" data-chj="true" data-qa="mentions" aria-hidden="true"
+                                          class="" style="--s: 18px;">
+                                          <path fill="currentColor" fill-rule="evenodd"
+                                            d="M2.5 10a7.5 7.5 0 1 1 15 0v.645c0 1.024-.83 1.855-1.855 1.855a1.145 1.145 0 0 1-1.145-1.145V6.75a.75.75 0 0 0-1.494-.098 4.5 4.5 0 1 0 .465 6.212A2.64 2.64 0 0 0 15.646 14 3.355 3.355 0 0 0 19 10.645V10a9 9 0 1 0-3.815 7.357.75.75 0 1 0-.865-1.225A7.5 7.5 0 0 1 2.5 10m7.5 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                                            clip-rule="evenodd"></path>
+                                        </svg></button><span hidden="" data-sk="tooltip"></span>
+                                      <div class="c-texty_buttons__overflow_container"><button
+                                          class="c-button-unstyled c-icon_button c-icon_button--size_small c-wysiwyg_container__button c-icon_button--default"
+                                          data-qa="slash_commands_overflow_button" tabindex="-1" aria-label="その他のオプション"
+                                          aria-haspopup="menu" data-sk="tooltip_parent" type="button"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                            data-qa="ellipsis-horizontal-filled" aria-hidden="true" class="">
+                                            <path fill="currentColor"
+                                              d="M14.5 10a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0m-6.25 0a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0M2 10a1.75 1.75 0 1 1 3.5 0A1.75 1.75 0 0 1 2 10">
+                                            </path>
+                                          </svg></button><span hidden="" data-sk="tooltip"></span></div>
+                                    </div>
+                                  </div>
+                                  <div class="c-wysiwyg_container__suffix" data-qa="wysiwyg-container_suffix"><span
+                                      class="c-wysiwyg_container__send_button--with_options c-wysiwyg_container__send_button--with_options_disabled"><button
+                                        class="c-button-unstyled c-icon_button c-icon_button--size_x-small c-wysiwyg_container__button c-wysiwyg_container__button--send c-wysiwyg_container__button--disabled c-button--disabled c-icon_button--default"
+                                        data-qa="texty_send_button" tabindex="-1" aria-disabled="true"
+                                        aria-label="今すぐ送信する" data-sk="tooltip_parent" type="button"><svg
+                                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" data-chj="true"
+                                          data-qa="send-filled" aria-hidden="true" class="">
+                                          <path fill="currentColor"
+                                            d="M1.5 2.106c0-.462.498-.754.901-.528l15.7 7.714a.73.73 0 0 1 .006 1.307L2.501 18.46l-.07.017a.754.754 0 0 1-.931-.733v-4.572c0-1.22.971-2.246 2.213-2.268l6.547-.17c.27-.01.75-.243.75-.797 0-.553-.5-.795-.75-.795l-6.547-.171C2.47 8.95 1.5 7.924 1.5 6.704z">
+                                          </path>
+                                        </svg></button><span hidden="" data-sk="tooltip"></span><button
+                                        class="c-button-unstyled c-icon_button c-icon_button--size_x-small c-wysiwyg_container__button c-wysiwyg_container__button--send_options c-wysiwyg_container__button--disabled c-button--disabled c-icon_button--default"
+                                        data-qa="texty_send_options_button" tabindex="-1" aria-disabled="true"
+                                        aria-label="後日送信するように送信日時を設定する" aria-haspopup="menu" data-sk="tooltip_parent"
+                                        type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                          data-chj="true" data-qa="caret-down" aria-hidden="true" class="">
+                                          <path fill="currentColor" fill-rule="evenodd"
+                                            d="M5.72 7.47a.75.75 0 0 1 1.06 0L10 10.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-3.75 3.75a.75.75 0 0 1-1.06 0L5.72 8.53a.75.75 0 0 1 0-1.06"
+                                            clip-rule="evenodd"></path>
+                                        </svg></button><span hidden="" data-sk="tooltip"></span><span hidden=""
+                                        data-sk="popover-trigger"></span></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div><span hidden="" data-sk="popover-trigger"></span>
+                          <div class="p-thread_footer_typing_indicator"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-virtual_list__sibling_container"></div>
+                  </div>
+                </div>
+                <div role="presentation" class="c-scrollbar__track">
+                  <div role="presentation" class="c-scrollbar__bar" tabindex="-1"
+                    style="height: 265.645px; transform: translateY(0px);"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="step-arrow"></div>
-
-      <!-- Step 1 -->
-      <div class="step-card">
-        <div class="s-label">ステップ1：事実の確認</div>
-        <div class="s-title">「先週のログ見ると、ここが未提出ですね」</div>
-        <div class="s-trigger">
-          <strong>いつ：</strong>今週できていないMustが1つでもある時<br>
-          <strong>何を：</strong>1on1でなぜできなかったか確認してメモに記録。責めない
-        </div>
-        <div class="s-action">担当：1on1の担当者</div>
-        <div class="s-recovery">✓ 改善すればフェーズAの通常運用に戻る</div>
-      </div>
-
-      <div class="step-arrow"></div>
-
-      <!-- Step 2 -->
-      <div class="step-card">
-        <div class="s-label">ステップ2：サポート</div>
-        <div class="s-title">原因に合わせて手を打つ</div>
-        <div class="s-trigger">
-          <strong>いつ：</strong>原因が「やり方」か「手が足りない」とわかった時<br>
-          <strong>何を：</strong>やり方の調整・負担軽減の工夫をする
-        </div>
-        <div class="s-action">担当：1on1の担当者</div>
-        <div class="s-recovery">✓ 改善すれば通常運用に戻る（連続カウントに入れない）</div>
-      </div>
-
-      <div class="step-arrow"></div>
-
-      <!-- Step 3 -->
-      <div class="step-card">
-        <div class="s-label">ステップ3：期限を決める</div>
-        <div class="s-title">「いつまでにやるか」を具体的に決める</div>
-        <div class="s-trigger">
-          <strong>いつ：</strong>同じMustが<strong>3週続けて</strong>できていない時<br>
-          <strong>何を：</strong>次の火曜日までの期限を設定 → チャットワークでも文面送付（記録）
-        </div>
-        <div class="s-action">担当：なーすけさん</div>
-        <div style="font-size: 12px; color: #555; margin-top: 8px;">
-          <strong>運用ルール：</strong><br>
-          ・伝え方：1on1で直接 ＋ チャットワークで記録<br>
-          ・やった連絡がない場合 → 木曜にリマインド → 金曜まで連絡なければ次の1on1で確認<br>
-          ・期限内にやれた場合 → 通常に戻す（連続カウントもリセット）<br>
-          ・期限内にやれなかった場合 → 翌週もう一度期限設定（2回目）→ 2回ともダメならステップ4へ
-        </div>
-      </div>
-
-      <div class="step-arrow"></div>
-
-      <!-- Step 4 -->
-      <div class="step-card" style="border-radius: 0 0 10px 10px;">
-        <div class="s-label">ステップ4：条件の見直し</div>
-        <div class="s-title">FC契約の条件について話し合う</div>
-        <div class="s-trigger">
-          <strong>いつ：</strong>ステップ3を<strong>2回</strong>やっても改善しない時<br>
-          <strong>何を：</strong>段階的に対応を検討
-        </div>
-        <div style="font-size: 12px; color: #555; margin-top: 8px;">
-          <strong>3段階で考える：</strong><br>
-          ① まず：Mustの中身を変えられないか<br>
-          ② 次に：本部のサポート体制を変える（例：事務局がログ入力を一時代行）<br>
-          ③ 最後に：ロイヤリティ条件や契約継続について話す
-        </div>
-        <div class="s-action">最終判断：なーすけさん ／ 事務局は事実整理と選択肢の準備</div>
-      </div>
-    </div>
-
-  </div><!-- /two-col -->
-
-  <!--担当の移行 -->
-  <div class="section-gap"></div>
-
-  <div class="store-timeline">
-    <h2>担当の移行プラン</h2>
-    <div style="font-size: 13px; color: #555; margin-bottom: 16px;">
-      ステップ1〜4の担当者が時期によって変わる
-    </div>
-    <div class="store-row">
-      <div class="store-name" style="font-size: 12px; color: #888;">時期</div>
-      <div style="display: flex; justify-content: space-between; font-size: 10px; color: #999;">
-        <span>2月</span><span>3月</span><span>4月</span><span>5月〜</span>
-      </div>
-    </div>
-    <div class="store-row">
-      <div class="store-name">ステップ1〜2</div>
-      <div class="store-bar-wrap">
-        <div class="store-bar phase-a" style="left: 0; width: 50%;">なーすけさん</div>
-        <div class="store-bar phase-b" style="left: 50%; width: 50%;">ななこちゃんに引き継ぎ</div>
-      </div>
-    </div>
-    <div class="store-row">
-      <div class="store-name">ステップ3〜4</div>
-      <div class="store-bar-wrap">
-        <div class="store-bar phase-a" style="left: 0; width: 100%;">なーすけさんのまま（プレッシャーのかかる判断）</div>
+        <div class="p-threads_view__bottom_banners"></div>
       </div>
     </div>
   </div>
-
-  <!-- Store timeline -->
-  <div class="section-gap"></div>
-
-  <div class="store-timeline">
-    <h2>店舗別 フェーズB移行見込み</h2>
-    <div style="font-size: 13px; color: #555; margin-bottom: 16px;">
-      フェーズBへの移行条件：4つのMust全て達成が3週間連続
-    </div>
-    <div class="store-row">
-      <div class="store-name" style="font-size: 12px; color: #888;">店舗</div>
-      <div style="display: flex; justify-content: space-between; font-size: 10px; color: #999;">
-        <span>2月</span><span>3月初</span><span>3月半ば</span><span>3月末</span><span>4月</span>
-      </div>
-    </div>
-    <div class="store-row">
-      <div class="store-name">本店</div>
-      <div class="store-bar-wrap">
-        <div class="store-bar phase-a" style="left: 0; width: 20%;">A</div>
-        <div class="store-bar phase-b" style="left: 20%; width: 80%;">フェーズB（2月末〜3月初め）</div>
-      </div>
-    </div>
-    <div class="store-row">
-      <div class="store-name">大阪天六</div>
-      <div class="store-bar-wrap">
-        <div class="store-bar phase-a" style="left: 0; width: 50%;">フェーズA</div>
-        <div class="store-bar phase-b" style="left: 50%; width: 50%;">フェーズB（3月半ば〜）</div>
-      </div>
-    </div>
-    <div class="store-row">
-      <div class="store-name">上板橋</div>
-      <div class="store-bar-wrap">
-        <div class="store-bar phase-a" style="left: 0; width: 60%;">フェーズA</div>
-        <div class="store-bar phase-b" style="left: 60%; width: 40%;">フェーズB（3月半ば〜後半）</div>
-      </div>
-    </div>
-    <div class="store-row">
-      <div class="store-name">柏</div>
-      <div class="store-bar-wrap">
-        <div class="store-bar phase-a" style="left: 0; width: 80%;">フェーズA</div>
-        <div class="store-bar phase-b" style="left: 80%; width: 20%;">B</div>
-      </div>
-    </div>
-
-    <div class="legend">
-      <div class="legend-item"><div class="legend-dot gray"></div>フェーズA（Must定着期間）</div>
-      <div class="legend-item"><div class="legend-dot green"></div>フェーズB（困りごと解決期間）</div>
-    </div>
-  </div>
-
-  <!-- オーナーへの開示 -->
-  <div class="section-gap"></div>
-
-  <div class="store-timeline">
-    <h2>オーナーへの開示タイミング</h2>
-    <div style="font-size: 13px; color: #555; line-height: 2;">
-      <strong style="color: #1a1a1a;">2月（テスト期間）：</strong>ステップ1〜2だけ伝える。「1on1で状況を一緒に確認して、困っていることがあればサポートします」<br>
-      <strong style="color: #1a1a1a;">3月末 全体MTG：</strong>フロー全体を見せる。「テスト期間でわかったのは、原因のほとんどはやり方の問題でした。4月からはやり方を整えた上で見ていきます」<br>
-      <strong style="color: #1a1a1a;">4月以降：</strong>個別に「今ステップ○です」とは言わない。ステップ3に入る時は「期限を決めましょう」と自然に伝わる形
-    </div>
-  </div>
-
-  <div class="note-box" style="margin-top: 20px;">
-    <strong>判定のタイミング：</strong>毎週の1on1終了後、MUST運用シートを更新した時点で判定<br>
-    <strong>記録方法：</strong>ホームシートに各店舗の今のフェーズ（A / B / C / D）を1行で管理<br>
-    <strong>3週間の理由：</strong>2週間では習慣とは言えない。4週間では達成済み店舗のやる気が下がる。3週間がバランス最適
-  </div>
-
 </div>
-
-</body>
-</html>
